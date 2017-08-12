@@ -14,7 +14,7 @@
                         <p>
                             Schedule COMPLETELY FREE consultation with our expert to help you figure out all concerns and doubts about your project. We care about you and your business.
                         </p>
-                        <a class="btn btn-imperium btn-1" href="#" role="button">Free consultation</a>
+                        <a class="btn btn-imperium btn-1" href="<?php echo site_url(); ?>/consultation/" role="button">Free consultation</a>
                     </div>
                 </div>
             </div>

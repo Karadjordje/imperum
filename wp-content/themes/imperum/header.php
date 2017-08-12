@@ -54,8 +54,8 @@
 	                   <!--  <h1 class="logo">Imperium</h1>
 	                    <p class="sub-heading">....</p> -->
 	                    <ul>
-	                        <li class="active"><a href="#home">Home</a></li>
-	                        <li><a href="#services">Service</a></li>
+	                        <li class="active"><a href="<?php bloginfo('url'); ?>">Home</a></li>
+	                        <li><a href="<?php echo site_url(); ?>/Service/">Service</a></li>
 	                        <li><a href="#">Portfolio</a></li>
 	                        <li><a href="#">Videoblog</a></li>
 	                        <li><a href="#">Contact</a></li>
