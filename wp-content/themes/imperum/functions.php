@@ -15,6 +15,12 @@
 	Theme Support
 \*------------------------------------*/
 
+function url_shortcode() {
+    return get_bloginfo('url');
+}
+add_shortcode('url','url_shortcode');
+
+
 if (!isset($content_width))
 {
     $content_width = 900;
@@ -87,7 +93,7 @@ function html5blank_nav()
 	);
 }
 
-// Load HTML5 Blank scripts (header.php)
+// Load HTML5 Blank scripts (header.php) > addid true to wp_register_script means they will load in footer
 function html5blank_header_scripts()
 {
     if ($GLOBALS['pagenow'] != 'wp-login.php' && !is_admin()) {
@@ -98,10 +104,18 @@ function html5blank_header_scripts()
         wp_register_script('modernizr', get_template_directory_uri() . '/js/lib/modernizr-2.7.1.min.js', array(), '2.7.1'); // Modernizr
         wp_enqueue_script('modernizr'); // Enqueue it!
 
-        wp_register_script('html5blankscripts', get_template_directory_uri() . '/js/scripts.js', array('jquery'), '1.0.0'); // Custom scripts
+        wp_register_script('midnightjs', get_template_directory_uri() . '/js/midnight.jquery.min.js', array('jquery'), '1.0.0', true); // Custom scripts
+        wp_enqueue_script('midnightjs'); // Enqueue it!
+
+        wp_register_script('bootstrapJS', get_template_directory_uri() . '/js/bootstrap.min.js', array('jquery'), '1.0.0', true); // Custom scripts
+        wp_enqueue_script('bootstrapJS'); // Enqueue it!
+
+        wp_register_script('html5blankscripts', get_template_directory_uri() . '/js/scripts.js', array('jquery'), '1.0.0', true); // Custom scripts
         wp_enqueue_script('html5blankscripts'); // Enqueue it!
+
     }
 }
+
 
 // Load HTML5 Blank conditional scripts
 function html5blank_conditional_scripts()
@@ -115,11 +129,18 @@ function html5blank_conditional_scripts()
 // Load HTML5 Blank styles
 function html5blank_styles()
 {
-    wp_register_style('normalize', get_template_directory_uri() . '/normalize.css', array(), '1.0', 'all');
-    wp_enqueue_style('normalize'); // Enqueue it!
+    // wp_register_style('normalize', get_template_directory_uri() . '/normalize.css', array(), '1.0', 'all');
+    // wp_enqueue_style('normalize'); // Enqueue it!
 
     wp_register_style('html5blank', get_template_directory_uri() . '/style.css', array(), '1.0', 'all');
     wp_enqueue_style('html5blank'); // Enqueue it!
+
+    // Adding my custom css file for enternal.php
+    if ( is_page_template( 'enternal.php' ) ) {
+        wp_deregister_style('html5blank', get_template_directory_uri() . '/style.css', array(), '1.0', 'all');
+        wp_dequeue_script('html5blank'); // Dequeue it!
+        wp_enqueue_style( 'enternal', get_template_directory_uri() . '/css/enternal.css' );
+    }
 }
 
 // Register HTML5 Blank Navigation
