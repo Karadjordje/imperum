@@ -27,17 +27,21 @@
 
 	</head>
 	<body <?php body_class(); ?>>
+		
 
-		<div class="loadingPage container-fluid">
-	        <h1>Imperium</h1>
-	        <div class="bs-example">
-	            <img class="img-responsive center-block" src="<?php bloginfo('template_directory'); ?>/img/landingLogo.png">
-	            <div id="milos"></div>
-	        </div>
-            <div class="loadingText">
-                <h3>Dare to be extraordinary.</h3>
-            </div>
-	    </div>	
+		<!-- I load this HTML only front page (HTML for loading screen) -->
+		<?php if ( is_front_page() ) { ?>
+			<div class="loadingPage container-fluid">
+		        <h1>Imperium</h1>
+		        <div class="bs-example">
+		            <img class="img-responsive center-block" src="<?php bloginfo('template_directory'); ?>/img/landingLogo.png">
+		            <div id="milos"></div>
+		        </div>
+	            <div class="loadingText">
+	                <h3>Dare to be extraordinary.</h3>
+	            </div>
+		    </div>
+		<?php } ?>
 
 		<div class="head-nav">
 	        <div class="container">

@@ -104,9 +104,6 @@ function html5blank_header_scripts()
         wp_register_script('modernizr', get_template_directory_uri() . '/js/lib/modernizr-2.7.1.min.js', array(), '2.7.1'); // Modernizr
         wp_enqueue_script('modernizr'); // Enqueue it!
 
-        wp_register_script('progressbarjs', get_template_directory_uri() . '/js/progressbar.js', array('jquery'), '1.0.0', true); // Custom scripts
-        wp_enqueue_script('progressbarjs'); // Enqueue it!
-
         wp_register_script('midnightjs', get_template_directory_uri() . '/js/midnight.jquery.min.js', array('jquery'), '1.0.0', true); // Custom scripts
         wp_enqueue_script('midnightjs'); // Enqueue it!
 
@@ -118,6 +115,20 @@ function html5blank_header_scripts()
 
     }
 }
+
+
+// This where I load scripts I need for loading screen
+function mytheme_enqueue_front_page_scripts() {
+    if( is_front_page() )
+    {
+        wp_register_script('progressbarjs', get_template_directory_uri() . '/js/progressbar.js', array('jquery'), '1.0.0', true); // Custom scripts
+        wp_enqueue_script('progressbarjs'); // Enqueue it!
+
+        wp_register_script('myprogressjs', get_template_directory_uri() . '/js/myprogressjs.js', array('jquery'), '1.0.0', true); // Custom scripts
+        wp_enqueue_script('myprogressjs'); // Enqueue it!
+    }
+}
+add_action( 'wp_enqueue_scripts', 'mytheme_enqueue_front_page_scripts' );
 
 
 // Load HTML5 Blank conditional scripts
