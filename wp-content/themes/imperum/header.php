@@ -10,10 +10,6 @@
 			
         <!-- My Fonts -->
 		<link href="https://fonts.googleapis.com/css?family=Exo+2:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=latin-ext" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/icons/style.css">
-
-		<!-- Bootstrap core CSS -->
-        <link href="<?php bloginfo('template_url'); ?>/css/bootstrap.min.css" rel="stylesheet">
 
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -31,6 +27,17 @@
 
 	</head>
 	<body <?php body_class(); ?>>
+
+		<div class="loadingPage container-fluid">
+	        <h1>Imperium</h1>
+	        <div class="bs-example">
+	            <img class="img-responsive center-block" src="<?php bloginfo('template_directory'); ?>/img/landingLogo.png">
+	            <div id="milos"></div>
+	        </div>
+            <div class="loadingText">
+                <h3>Dare to be extraordinary.</h3>
+            </div>
+	    </div>	
 
 		<div class="head-nav">
 	        <div class="container">

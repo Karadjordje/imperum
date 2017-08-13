@@ -90,14 +90,24 @@ section#services .btn-imperium {
     margin-bottom: 60px
 }
 
+#home .main-content {
+    z-index: 11;
+}
+
 section .main {
     padding-top: 200px;
     padding-bottom: 100px;
     border-left: 1px solid #b4b5bd;
     position: relative;
 }
-section#services  .main {
+section#services .main {
     padding-bottom: 50px;
+}
+#services .buttonArea {
+    z-index: 11;
+}
+#video-blog .buttonArea {
+    z-index: 11;
 }
 section#calendly .main {
     padding-top: 0px;
@@ -122,7 +132,9 @@ section#clients-say .main-content p {
 .clients-carousel-controls {
     position: absolute;
     height: 100%;
+    top: 0%;
     right: 8.33%;
+    z-index: 11;
 }
 .clients-carousel-controls .carousel-control {
     width: 50%;
@@ -260,6 +272,7 @@ h3 {
 }
 #our-work-carousel {
     width: 100%;
+    z-index: 11;
 }
 @media (min-width: 992px) {
     #our-work-carousel {
@@ -371,6 +384,9 @@ textarea {
 #contact .main-content ul li span {
     vertical-align: text-bottom;
 }
+#contact .main-content {
+    z-index: 11;
+}
 .service h3 {
     font-family: worldwide;
     font-size: 1em;
@@ -398,6 +414,7 @@ textarea {
 .footer,
 .style-nav {
     display: none;
+    z-index: 10;
 }
 
 @media (min-width: 992px) {
@@ -503,4 +520,48 @@ textarea {
 .hash-sign {
     color: #000;
     font-size: 1.5em;
+}
+
+
+
+/* CSS for loading screen */
+.loadingPage {
+    text-align: center;
+    background: #fff url('./img/pattern-10%opacity.png');
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 99;
+}
+.loadingPage h1 {
+    text-transform: uppercase;
+    margin-top: 40px;
+    margin-bottom: 150px;
+    font-weight: normal;
+    font-size: 1.5em;
+    color: #000;
+    position: relative;
+    z-index: 99999;
+}
+#milos {
+    max-width: 170px !important;
+    display: block !important;
+    margin: 40px auto 10px auto !important;
+    height: 2px !important;
+    font-size: 1em !important;
+}
+.loadingText h3 {
+    position: fixed;
+    bottom: 10%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    color: #000;
+}
+.progressbar-text {
+    position: inherit !important;
 }

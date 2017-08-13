@@ -62,7 +62,7 @@
                             You need help, explanation or training? Need it fast? We’re always ready to jump in. Our clients don’t wait a minute for assistance.
                         </p>
                     </div>
-                    <div class="col-md-8 col-md-offset-4">
+                    <div class="col-md-8 col-md-offset-4 buttonArea">
                         <a class="btn btn-imperium btn-2" href="#" role="button">See more</a>
                     </div>
                     <div class="col-md-9 col-md-offset-3">
@@ -75,50 +75,53 @@
 
         <section class="container-fluid dark-bg" id="clients-say" data-midnight="dark">
             <div class="row">
-                <div class="container" id="clients-carousel" class="carousel slide" data-interval="2000" data-ride="carousel">
-                <!-- <div class="container" id="clients-carousel"> -->
-                    <div class="carousel-inner">
 
-                        <div class="item active">
-                            <div class="col-md-4">
-                                <div class="row clients-info">
-                                    <div class="clients-num">
-                                        <h5 title="01">01</h5>
-                                    </div>
-                                    <div class="clients-img" style="background-image: url(<?php bloginfo('template_directory'); ?>/img/clients.jpg);"></div> 
-                                    <div class="clients-name">
-                                        <h3>Adam Pittaway</h3>
-                                        <h4 class="sub-heading">Ceo - eat and live</h4>
+                <div class="container">
+                    <div id="clients-carousel" class="carousel slide" data-interval="2000" data-ride="carousel">
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <div class="col-md-4">
+                                    <div class="row clients-info">
+                                        <div class="clients-num">
+                                            <h5 title="01">01</h5>
+                                        </div>
+                                        <div class="clients-img" style="background-image: url(<?php bloginfo('template_directory'); ?>/img/clients.jpg);"></div> 
+                                        <div class="clients-name">
+                                            <h3>Adam Pittaway</h3>
+                                            <h4 class="sub-heading">Ceo - eat and live</h4>
+                                        </div>
                                     </div>
                                 </div>
+                                <div class="col-md-6 main-content">
+                                    <p>
+                                        The guys at Imperium are fast, accurate to the spec and great fun to deal with. Highly recommend for use on projects of all scopes and complexities. Now I can notice that users don't leave my website like before. They made awesome user experence.
+                                    </p>
+                                </div>
                             </div>
-                            <div class="col-md-6 main-content">
-                                <p>
-                                    The guys at Imperium are fast, accurate to the spec and great fun to deal with. Highly recommend for use on projects of all scopes and complexities. Now I can notice that users don't leave my website like before. They made awesome user experence.
-                                </p>
+
+                            <div class="item">
+                                <div class="col-md-4">
+                                    <div class="row clients-info">
+                                        <div class="clients-num">
+                                            <h5 title="01">02</h5>
+                                        </div>
+                                        <div class="clients-img" style="background-image: url(<?php bloginfo('template_directory'); ?>/img/clients.jpg););"></div>
+                                        <div class="clients-name">
+                                            <h3>damir kozic</h3>
+                                            <h4 class="sub-heading">Skroman decko</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 main-content">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt inventore quam, distinctio esse voluptate maiores temporibus velit at earum voluptatem minus, impedit corporis perspiciatis eveniet ullam, tempora fuga tenetur quia.
+                                    </p>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="item">
-                            <div class="col-md-4">
-                                <div class="row clients-info">
-                                    <div class="clients-num">
-                                        <h5 title="01">01</h5>
-                                    </div>
-                                    <div class="clients-img" style="background-image: url(<?php bloginfo('template_directory'); ?>/img/clients.jpg););"></div>
-                                    <div class="clients-name">
-                                        <h3>damir kozic</h3>
-                                        <h4 class="sub-heading">Car</h4>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 main-content">
-                                <p>
-                                    The guys at Imperium are fast, accurate to the spec and great fun to deal with. Highly recommend for use on projects of all scopes and complexities. Now I can notice that users don't leave my website like before. They made awesome user experence.
-                                </p>
-                            </div>
-                        </div>
-
+                        <!-- Left and right controls -->
                         <div class="col-md-1 clients-carousel-controls">
                             <a class="left carousel-control" href="#clients-carousel" role="button" data-slide="prev">
                                 <span class="icon-left_arrow" aria-hidden="true"></span>
@@ -130,7 +133,8 @@
                             </a>
                         </div>
                     </div>
-                </div>
+                </div> 
+
             </div>
         </section>
 
@@ -204,14 +208,14 @@
                                 <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                                 <span class="sr-only">Next</span>
                             </a>
-                        </div>
 
-                        <!-- Indicators -->
-                        <ol class="carousel-indicators our-work-indicators">
-                            <li data-target="#our-work-carousel" data-slide-to="0" class="active"></li>
-                            <li data-target="#our-work-carousel" data-slide-to="1"></li>
-                            <li data-target="#our-work-carousel" data-slide-to="2"></li>
-                        </ol>
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators our-work-indicators">
+                                <li data-target="#our-work-carousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#our-work-carousel" data-slide-to="1"></li>
+                                <li data-target="#our-work-carousel" data-slide-to="2"></li>
+                            </ol>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -245,7 +249,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-8 col-md-offset-4">
+                    <div class="col-md-8 col-md-offset-4 buttonArea">
                         <a class="btn btn-imperium btn-2" href="#" role="button">See more</a>
                     </div>
                 </div>
@@ -301,7 +305,7 @@
                             <li><span class="icon-world sub-heading"></span> www.imperium-la.com</li>
                             <li><span class="icon-mail sub-heading"></span> hello@imperium-la.com</li>
                         </ul>
-                        <a class="btn btn-imperium btn-2" href="#" role="button">Free consultation</a>
+                        <a class="btn btn-imperium btn-2" href="<?php echo site_url(); ?>/consultation/" role="button">Free consultation</a>
                     </div>
                 </div>
             </div>
