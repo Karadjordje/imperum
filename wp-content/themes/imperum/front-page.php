@@ -86,16 +86,16 @@
                                         <div class="clients-num">
                                             <h5 title="01">01</h5>
                                         </div>
-                                        <div class="clients-img" style="background-image: url(<?php bloginfo('template_directory'); ?>/img/clients.jpg);"></div> 
+                                        <div class="clients-img" style="background-image: url(<?php the_field('change_image'); ?>);"></div> 
                                         <div class="clients-name">
-                                            <h3>Adam Pittaway</h3>
-                                            <h4 class="sub-heading">Ceo - eat and live</h4>
+                                            <h3><?php the_field('change_client_name'); ?></h3>
+                                            <h4 class="sub-heading"><?php the_field('change_subtext'); ?></h4>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-md-6 main-content">
                                     <p>
-                                        The guys at Imperium are fast, accurate to the spec and great fun to deal with. Highly recommend for use on projects of all scopes and complexities. Now I can notice that users don't leave my website like before. They made awesome user experence.
+                                        <?php the_field('main_text'); ?>
                                     </p>
                                 </div>
                             </div>
@@ -104,21 +104,42 @@
                                 <div class="col-md-4">
                                     <div class="row clients-info">
                                         <div class="clients-num">
-                                            <h5 title="01">02</h5>
+                                            <h5 title="02">02</h5>
                                         </div>
-                                        <div class="clients-img" style="background-image: url(<?php bloginfo('template_directory'); ?>/img/clients.jpg););"></div>
+                                        <div class="clients-img" style="background-image: url(<?php the_field('change_image2'); ?>);"></div> 
                                         <div class="clients-name">
-                                            <h3>damir kozic</h3>
-                                            <h4 class="sub-heading">Skroman decko</h4>
+                                            <h3><?php the_field('change_client_name2'); ?></h3>
+                                            <h4 class="sub-heading"><?php the_field('change_subtext2'); ?></h4>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-md-6 main-content">
                                     <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt inventore quam, distinctio esse voluptate maiores temporibus velit at earum voluptatem minus, impedit corporis perspiciatis eveniet ullam, tempora fuga tenetur quia.
+                                        <?php the_field('main_text2'); ?>
                                     </p>
                                 </div>
                             </div>
+
+                            <div class="item">
+                                <div class="col-md-4">
+                                    <div class="row clients-info">
+                                        <div class="clients-num">
+                                            <h5 title="03">03</h5>
+                                        </div>
+                                        <div class="clients-img" style="background-image: url(<?php the_field('change_image3'); ?>);"></div> 
+                                        <div class="clients-name">
+                                            <h3><?php the_field('change_client_name3'); ?></h3>
+                                            <h4 class="sub-heading"><?php the_field('change_subtext3'); ?></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 main-content">
+                                    <p>
+                                        <?php the_field('main_text3'); ?>
+                                    </p>
+                                </div>
+                            </div>
+
                         </div>
 
                         <!-- Left and right controls -->
