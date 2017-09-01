@@ -27,60 +27,58 @@
 
 	</head>
 	<body <?php body_class(); ?>>
-		
 
 		<!-- I load this HTML only front page (HTML for loading screen) -->
 		<?php if ( is_front_page() ) { ?>
 			<div class="loadingPage container-fluid">
 		        <h1>Imperium</h1>
-		        <div class="bs-example">
-		            <img class="img-responsive center-block" src="<?php bloginfo('template_directory'); ?>/img/landingLogo.png">
-		            <div id="milos"></div>
+		        <img class="img-responsive center-block" src="<?php bloginfo('template_directory'); ?>/img/landingLogo.png">
+		        <div id="progressbar"></div>
+		        <div class="loadingText">
+		            <h3>Dare to be extraordinary.</h3>
 		        </div>
-	            <div class="loadingText">
-	                <h3>Dare to be extraordinary.</h3>
-	            </div>
 		    </div>
 		<?php } ?>
 
-		<div class="head-nav">
-	        <div class="container">
-	            <div class="row">
-	                <div class="col-xs-2 custum-nav">
-	                    <h1 class="logo">Imperium</h1>
-	                    <p class="sub-heading">....</p>
-	                    <ul>
-	                </div>
-	                <div class="col-xs-10">
-	                    <p class="rotate">Follow us:</p>
-	                </div>
-	            </div>
+	    <nav class="small-nav">
+	        <div class="small-logo">
+	            <h1 class="logo text-uppercase">Imperium <span class="glyphicon glyphicon-align-justify"></span></h1>
+	        </div>
+	        <ul>
+	            <li><a href="<?php bloginfo('url'); ?>">Home</a></li>
+	            <li><a href="<?php echo site_url(); ?>/Service/">Service</a></li>
+	            <li><a href="#">Portfolio</a></li>
+	            <li><a href="#">Videoblog</a></li>
+	            <li><a href="#">Contact</a></li>
+	        </ul>
+	    </nav>
+
+	    <div class="head-nav">
+	        <h1 class="logo text-uppercase">Imperium</h1>
+	        <p class="logo-dots">....</p>
+	    </div>
+
+	    <div class="follow-nav">
+	        <div class="follow-nav-container">
+	            <p class="rotate">Follow us:</p>
 	        </div>
 	    </div>
 
-		<div class="style-nav">
-	        <nav class="container">
-	            <div class="row">
-	                <div class="col-xs-2 custum-nav">
-	                   <!--  <h1 class="logo">Imperium</h1>
-	                    <p class="sub-heading">....</p> -->
-	                    <ul>
-	                        <li class="active"><a href="<?php bloginfo('url'); ?>">Home</a></li>
-	                        <li><a href="<?php echo site_url(); ?>/Service/">Service</a></li>
-	                        <li><a href="#">Portfolio</a></li>
-	                        <li><a href="#">Videoblog</a></li>
-	                        <li><a href="#">Contact</a></li>
-	                    </ul>
-	                </div>
-	                <div class="col-xs-10">
-	                    <!-- <p class="rotate">Follow us:</p> -->
-	                    <ul class="icons">
-	                        <li><a href="#"><span class="icon-fb"></span></a></li>
-	                        <li><a href="#"><span class="icon-tw"></span></a></li>
-	                        <li><a href="#"><span class="icon-insta"></span></a></li>
-	                        <li><a href="#"><span class="icon-in"></span></a></li>
-	                    </ul>
-	                </div>
-	            </div>
-	        </nav>
-	    </div>	    
+	    <div class="style-nav">
+	        <ul class="custom-nav">
+	            <li class="scrollToHome active"><a href="index.html#home">Home</a></li>
+	            <li><a href="services.html">Service</a></li>
+	            <li><a href="portfolio.html">Portfolio</a></li>
+	            <li><a href="videoBlog.html">Videoblog</a></li>
+	            <li class="scrollToContact"><a href="#contact">Contact</a></li>
+	        </ul>
+	    </div>
+
+	    <div class="icons-nav">
+	        <ul class="icons">
+	            <li><a href="#"><span class="icon-fb"></span></a></li>
+	            <li><a href="#"><span class="icon-tw"></span></a></li>
+	            <li><a href="#"><span class="icon-insta"></span></a></li>
+	            <li><a href="#"><span class="icon-in"></span></a></li>
+	        </ul>
+	    </div>

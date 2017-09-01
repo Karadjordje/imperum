@@ -1,13 +1,7 @@
 		<div class="footer">
-	        <nav class="container">
-	            <div class="row">
-	                <div class="col-xs-2">
-	                    <p class="copyright">
-	                        MMXVII copyright Imperium.
-	                    </p>
-	                </div>
-	            </div>
-	        </nav>
+	        <p class="copyright">
+	            MMXVII copyright Imperium.
+	        </p>
 	    </div>
 
 		<?php wp_footer(); ?>

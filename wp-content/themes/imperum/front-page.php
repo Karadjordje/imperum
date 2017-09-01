@@ -7,12 +7,12 @@
                         <h4 class="sub-heading">Tailoring</h4>
                     </div>
                     <div class="col-md-9 col-md-offset-3">
-                        <h1 class="">Tasteful Designs<br/>By Your Measurements.</h1>
+                        <h1 class="headline">Tasteful Designs<br/>By Your Measurements.</h1>
                         <div class="col-md-offset-1 col-md-2"><hr class="line" /></div>
                     </div>
                     <div class="col-md-7 col-md-offset-4 main-content">
                         <p>
-                            Schedule COMPLETELY FREE consultation with our expert to help you figure out all concerns and doubts about your project. We care about you and your business.
+                            Schedule COMPLETELY FREE consultation with our expert<br/>to help you figure out all concerns and doubts about your project.<br/>We care about you and your business.
                         </p>
                         <a class="btn btn-imperium btn-1" href="<?php echo site_url(); ?>/consultation/" role="button">Free consultation</a>
                     </div>
@@ -31,7 +31,7 @@
                 </div>
                 <div class="container main">
                     <div class="col-md-9 col-md-offset-3">
-                        <h1 class="">Services</h1>
+                        <h1 class="headline">Services</h1>
                         <div class="col-md-offset-1 col-md-2"><hr class="line" /></div>
                     </div>
                     <div class="col-md-2 col-md-offset-2 service" title="01">
@@ -62,11 +62,11 @@
                             You need help, explanation or training? Need it fast? We’re always ready to jump in. Our clients don’t wait a minute for assistance.
                         </p>
                     </div>
-                    <div class="col-md-8 col-md-offset-4 buttonArea">
-                        <a class="btn btn-imperium btn-2" href="#" role="button">See more</a>
+                    <div class="col-md-8 col-md-offset-4">
+                        <a class="btn btn-imperium btn-2" href="services.html" role="button">See more</a>
                     </div>
                     <div class="col-md-9 col-md-offset-3">
-                        <h1 class="">What our clients say</h1>
+                        <h1 class="headline">What our clients say</h1>
                         <div class="col-md-offset-1 col-md-2"><hr class="line" /></div>
                     </div>
                 </div>
@@ -76,9 +76,8 @@
         <section class="container-fluid dark-bg" id="clients-say" data-midnight="dark">
             <div class="row">
 
-                <div class="container">
-                    <div id="clients-carousel" class="carousel slide" data-interval="2000" data-ride="carousel">
-                        <!-- Wrapper for slides -->
+                <div class="container main">
+                    <div id="clients-carousel" class="carousel slide" data-interval="3000" data-ride="carousel">
                         <div class="carousel-inner">
                             <div class="item active">
                                 <div class="col-md-4">
@@ -86,7 +85,7 @@
                                         <div class="clients-num">
                                             <h5 title="01">01</h5>
                                         </div>
-                                        <div class="clients-img" style="background-image: url(<?php the_field('change_image'); ?>);"></div> 
+                                        <div class="clients-img" style="background: linear-gradient( to bottom, rgba(255,255,255,0) 0%, rgba(7,11,38,.7) 100%), url(<?php the_field('change_image'); ?>) no-repeat center/cover;"></div>
                                         <div class="clients-name">
                                             <h3><?php the_field('change_client_name'); ?></h3>
                                             <h4 class="sub-heading"><?php the_field('change_subtext'); ?></h4>
@@ -104,10 +103,10 @@
                                 <div class="col-md-4">
                                     <div class="row clients-info">
                                         <div class="clients-num">
-                                            <h5 title="02">02</h5>
+                                            <h5 title="01">01</h5>
                                         </div>
-                                        <div class="clients-img" style="background-image: url(<?php the_field('change_image2'); ?>);"></div> 
-                                        <div class="clients-name">
+                                        <div class="clients-img" style="background: linear-gradient( to bottom, rgba(255,255,255,0) 0%, rgba(7,11,38,.7) 100%), url(<?php the_field('change_image2'); ?>) no-repeat center/cover;"></div>
+                                        <div class="clients-name2">
                                             <h3><?php the_field('change_client_name2'); ?></h3>
                                             <h4 class="sub-heading"><?php the_field('change_subtext2'); ?></h4>
                                         </div>
@@ -124,10 +123,10 @@
                                 <div class="col-md-4">
                                     <div class="row clients-info">
                                         <div class="clients-num">
-                                            <h5 title="03">03</h5>
+                                            <h5 title="01">01</h5>
                                         </div>
-                                        <div class="clients-img" style="background-image: url(<?php the_field('change_image3'); ?>);"></div> 
-                                        <div class="clients-name">
+                                        <div class="clients-img" style="background: linear-gradient( to bottom, rgba(255,255,255,0) 0%, rgba(7,11,38,.7) 100%), url(<?php the_field('change_image3'); ?>) no-repeat center/cover;"></div>
+                                        <div class="clients-name3">
                                             <h3><?php the_field('change_client_name3'); ?></h3>
                                             <h4 class="sub-heading"><?php the_field('change_subtext3'); ?></h4>
                                         </div>
@@ -140,24 +139,21 @@
                                 </div>
                             </div>
 
-                        </div>
-
-                        <!-- Left and right controls -->
-                        <div class="col-md-1 clients-carousel-controls">
-                            <a class="left carousel-control" href="#clients-carousel" role="button" data-slide="prev">
-                                <span class="icon-left_arrow" aria-hidden="true"></span>
-                                <span class="sr-only">Previous</span>
-                            </a>
-                            <a class="right carousel-control" href="#clients-carousel" role="button" data-slide="next">
-                                <span class="icon-right_arrow" aria-hidden="true"></span>
-                                <span class="sr-only">Next</span>
-                            </a>
+                            <div class="col-md-1 clients-carousel-controls">
+                                <a class="left carousel-control" href="#clients-carousel" role="button" data-slide="prev">
+                                    <span class="icon-left_arrow" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="right carousel-control" href="#clients-carousel" role="button" data-slide="next">
+                                    <span class="icon-right_arrow" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                </div> 
-
+                </div>
             </div>
-        </section>
+        </section>      
 
         <section class="container-fluid lite-bg" id="our-work" data-midnight="light">
             <div class="row">
@@ -173,69 +169,80 @@
                         <h4 class="sub-heading">This is some of</h4>
                     </div>
                     <div class="col-md-9 col-md-offset-3">
-                        <h1 class="">Our work</h1>
+                        <h1 class="headline">Our work</h1>
                         <div class="col-md-offset-1 col-md-2"><hr class="line" /></div>
                     </div>
 
-                    <div class="col-md-7 col-md-offset-4 main-content">
-                        <div class="checkbox">
-                          <label class="checkbox-inline">
-                            <input type="checkbox" name="allRadios" id="allRadios" value="all">
-                            all
-                          </label>
-                          <label class="checkbox-inline">
-                            <input type="checkbox" name="frontendRadios" id="frontendRadios" value="frontend" checked>
-                            front end
-                          </label>
-                          <label class="checkbox-inline">
-                            <input type="checkbox" name="wordpressRadios" id="wordpressRadios" value="wordpress" checked>
-                            wordpress
-                          </label>
-                          <label class="checkbox-inline">
-                            <input type="checkbox" name="designRadios" id="designRadios" value="design" checked>
-                            design
-                          </label>
-                          <label class="checkbox-inline">
-                            <input type="checkbox" name="seoRadios" id="seoRadios" value="seo" checked>
-                            seo
-                          </label>
+                    <div class="col-md-7 col-md-offset-4 checkbox-content">
+                        <div class="checkboxCustom">
+                            <input type="checkbox" name="allChb" id="allChb">
+                            <label for="allChb">All</label>
+                        </div>
+                        <div class="checkboxCustom">
+                            <input type="checkbox" name="frontendChb" id="frontendChb">
+                            <label for="frontendChb">Front End</label>
+                        </div>
+                        <div class="checkboxCustom">
+                            <input type="checkbox" name="wordpressChb" id="wordpressChb">
+                            <label for="wordpressChb">Wordpress</label>
+                        </div>
+                        <div class="checkboxCustom">
+                            <input type="checkbox" name="designChb" id="designChb">
+                            <label for="designChb">Design</label>
+                        </div>
+                        <div class="checkboxCustom">
+                            <input type="checkbox" name="seoChb" id="seoChb">
+                            <label for="seoChb">Seo</label>
                         </div>
                     </div>
+                    
 
+                    <!-- Here starts carousel loop -->
+                    <?php $carouselLoop = new WP_Query( array( 'post_type' => 'post', 'posts_per_page' => -1 ) ); ?>
+                    <?php $i=1; ?>
                     <div class="col-md-4 our-work-info">
                         <div class="clients-num">
                             <h5 title="01">01</h5>
                         </div>
-                        <span class="glyphicon glyphicon-link"></span>
+                        <span class="icon-link link-glow"></span>
                         <h3>Crossroads</h3>
                         <h4 class="sub-heading">front end / wordpress</h4>
                     </div>
 
                     <div class="col-md-7">
-                        <div id="our-work-carousel" class="carousel slide" data-ride="carousel">
-                            <!-- Wrapper for slides -->
-                            <div class="carousel-inner" role="listbox">
-                                <div class="our-work-item item active" style="background-image: url(<?php bloginfo('template_directory'); ?>/img/our-work.jpg););"></div>
-                                <div class="our-work-item item" style="background-image: url(<?php bloginfo('template_directory'); ?>/img/our-work.jpg););"></div>
-                                <div class="our-work-item item" style="background-image: url(<?php bloginfo('template_directory'); ?>/img/our-work.jpg););"></div>
+                        <div class="row">
+                            <div id="our-work-carousel" class="carousel slide" data-ride="carousel">
+                                <!-- Wrapper for slides -->
+                                <div class="carousel-inner" role="listbox">
+                                    <?php while ( $carouselLoop->have_posts() ) : $carouselLoop->the_post(); ?>
+                                        <div class="item <?php if ($i == 1) echo 'active'; ?>">
+                                            <img src="<?php echo wp_get_attachment_url( get_post_thumbnail_id() ); ?>" alt="<?php the_title(); ?>">
+                                            <div class="carousel-caption">
+                                                <a href="<?php the_permalink() ?>"><h3><?php the_title(); ?></h3></a>
+                                            </div>
+                                        </div>
+                                    <?php $i++; ?>
+                                    <?php endwhile; wp_reset_query(); ?>    
+                                </div>
+
+                                <div class="our-work-carousel-controls">
+                                    <a class="left carousel-control" href="#our-work-carousel" role="button" data-slide="prev">
+                                        <span class="icon-left_arrow" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="right carousel-control" href="#our-work-carousel" role="button" data-slide="next">
+                                        <span class="icon-right_arrow" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+
+                                <!-- Indicators -->
+                                <ol class="carousel-indicators our-work-indicators">
+                                    <li data-target="#our-work-carousel" data-slide-to="0" class="active"></li>
+                                    <li data-target="#our-work-carousel" data-slide-to="1"></li>
+                                    <li data-target="#our-work-carousel" data-slide-to="2"></li>
+                                </ol>
                             </div>
-
-                            <!-- Controls -->
-                            <a class="left carousel-control" href="#our-work-carousel" role="button" data-slide="prev">
-                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                                <span class="sr-only">Previous</span>
-                            </a>
-                            <a class="right carousel-control" href="#our-work-carousel" role="button" data-slide="next">
-                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                                <span class="sr-only">Next</span>
-                            </a>
-
-                            <!-- Indicators -->
-                            <ol class="carousel-indicators our-work-indicators">
-                                <li data-target="#our-work-carousel" data-slide-to="0" class="active"></li>
-                                <li data-target="#our-work-carousel" data-slide-to="1"></li>
-                                <li data-target="#our-work-carousel" data-slide-to="2"></li>
-                            </ol>
                         </div>
                     </div>
                 </div>
@@ -246,10 +253,10 @@
             <div class="row">
                 <div class="container main">
                     <div class="col-md-8 col-md-offset-4">
-                        <h4 class="sub-heading">Learn mre through</h4>
+                        <h4 class="sub-heading">Learn more through</h4>
                     </div>
                     <div class="col-md-9 col-md-offset-3">
-                        <h1 class="">Latest Videoblogs</h1>
+                        <h1 class="headline">Latest Videoblogs</h1>
                         <div class="col-md-offset-1 col-md-2"><hr class="line" /></div>
                     </div>
                     <div class="col-md-7 col-md-offset-4 main-content">
@@ -257,21 +264,33 @@
                             One minute videos to help you learn web design, marketing, seo and business.
                         </p>
                     </div>
-                    <div class="col-md-9 col-md-offset-2 video-blog-posts">
+                    <div class="col-lg-9 col-lg-offset-2 video-blog-posts">
                         <div class="row">
                             <div class="col-md-4">
-                                <div class="video-blog-img" style="background-image: url(http://localhost/imperum/wp-content/themes/imperum/img/video-blog.jpg);"></div>
+                                <div class="video-blog-img" style="background-image: url(http://localhost/imperum/wp-content/themes/imperum/img/video-blog.jpg);">
+                                    <div class="video-blog-link">
+                                        <span class="icon-eye"></span>
+                                    </div>
+                                </div>
                             </div>
                             <div class="col-md-4">
-                                <div class="video-blog-img" style="background-image: url(http://localhost/imperum/wp-content/themes/imperum/img/video-blog.jpg);"></div>
+                                <div class="video-blog-img" style="background-image: url(http://localhost/imperum/wp-content/themes/imperum/img/video-blog.jpg);">
+                                    <div class="video-blog-link">
+                                        <span class="icon-eye"></span>
+                                    </div>
+                                </div>
                             </div>
                             <div class="col-md-4">
-                                <div class="video-blog-img" style="background-image: url(http://localhost/imperum/wp-content/themes/imperum/img/video-blog.jpg);"></div>
+                                <div class="video-blog-img" style="background-image: url(http://localhost/imperum/wp-content/themes/imperum/img/video-blog.jpg);">
+                                    <div class="video-blog-link">
+                                        <span class="icon-eye"></span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-8 col-md-offset-4 buttonArea">
-                        <a class="btn btn-imperium btn-2" href="#" role="button">See more</a>
+                    <div class="col-md-8 col-md-offset-4">
+                        <a class="btn btn-imperium btn-2" href="videoBlog.html" role="button">See more</a>
                     </div>
                 </div>
             </div>
@@ -288,30 +307,27 @@
                 </div>
                 <div class="container main">
                     <div class="col-md-8 col-md-offset-4">
-                        <h4 class="sub-heading">This is some of</h4>
+                        <h4 class="sub-heading">Feel free to contact us</h4>
                     </div>
                     <div class="col-md-9 col-md-offset-3">
-                        <h1 class="">Get in touch</h1>
+                        <h1 class="headline">Get in touch</h1>
                         <div class="col-md-offset-1 col-md-2"><hr class="line" /></div>
                     </div>
 
                     <div class="col-md-8 col-md-offset-4 main-content">
                         <form>
-                            <!-- <label for="name">First Name</label> -->
                             <div class="inputs-style">
                                 <input type="text" id="name" name="name" required>
                                 <span class="floating-label">YOUR NAME</span>
                             </div>
 
-                            <!-- <label for="email">Last Name</label> -->
                             <div class="inputs-style">
                                 <input type="text" id="email" name="email" required>
                                 <span class="floating-label">YOUR E-MAIL</span>
                             </div>
 
-                            <!-- <label for="message">Last Name</label> -->
                             <div class="inputs-style">
-                                <textarea rows="1" required></textarea>
+                                <textarea class="autoExpand" data-min-rows='' rows="1" required></textarea>
                                 <span class="floating-label">YOUR MESSAGE</span>
                             </div>
 
@@ -323,8 +339,8 @@
                         </p>
 
                         <ul>
-                            <li><span class="icon-world sub-heading"></span> www.imperium-la.com</li>
-                            <li><span class="icon-mail sub-heading"></span> hello@imperium-la.com</li>
+                            <li><span class="icon-world sub-heading"></span> <a href="http://www.imperium-la.com" target="_blank">www.imperium-la.com</a></li>
+                            <li><span class="icon-mail sub-heading"></span> <a href="mailto:hello@imperium-la.com" target="_blank">hello@imperium-la.com</a></li>
                         </ul>
                         <a class="btn btn-imperium btn-2" href="<?php echo site_url(); ?>/consultation/" role="button">Free consultation</a>
                     </div>

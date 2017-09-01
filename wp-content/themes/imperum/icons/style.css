@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?ah7688');
-  src:  url('fonts/icomoon.eot?ah7688#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?ah7688') format('truetype'),
-    url('fonts/icomoon.woff?ah7688') format('woff'),
-    url('fonts/icomoon.svg?ah7688#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?61yhtx');
+  src:  url('fonts/icomoon.eot?61yhtx#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?61yhtx') format('truetype'),
+    url('fonts/icomoon.woff?61yhtx') format('woff'),
+    url('fonts/icomoon.svg?61yhtx#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,8 +24,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-mail:before {
-  content: "\e904";
+.icon-pokusaj-cvet-ikone:before {
+  content: "\e905";
+  color: #8e8e8e;
 }
 .icon-down_arrow:before {
   content: "\e90a";
@@ -62,4 +63,7 @@
 }
 .icon-tw:before {
   content: "\e903";
+}
+.icon-mail:before {
+  content: "\e904";
 }
