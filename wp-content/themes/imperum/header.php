@@ -45,10 +45,10 @@
 	            <h1 class="logo text-uppercase">Imperium <span class="glyphicon glyphicon-align-justify"></span></h1>
 	        </div>
 	        <ul>
-	            <li><a href="<?php bloginfo('url'); ?>">Home</a></li>
+	            <li><a href="<?php echo home_url(); ?>">Home</a></li>
 	            <li><a href="<?php echo site_url(); ?>/Service/">Service</a></li>
-	            <li><a href="#">Portfolio</a></li>
-	            <li><a href="#">Videoblog</a></li>
+	            <li><a href="<?php echo site_url(); ?>/Portfolio/">Portfolio</a></li>
+	            <li><a href="<?php echo site_url(); ?>/Videoblog/">Videoblog</a></li>
 	            <li><a href="#">Contact</a></li>
 	        </ul>
 	    </nav>
@@ -66,10 +66,10 @@
 
 	    <div class="style-nav">
 	        <ul class="custom-nav">
-	            <li class="scrollToHome active"><a href="index.html#home">Home</a></li>
-	            <li><a href="services.html">Service</a></li>
-	            <li><a href="portfolio.html">Portfolio</a></li>
-	            <li><a href="videoBlog.html">Videoblog</a></li>
+	            <li class="scrollToHome active"><a href="<?php echo home_url(); ?>">Home</a></li>
+	            <li><a href="<?php echo site_url(); ?>/Service/">Service</a></li>
+	            <li><a href="<?php echo site_url(); ?>/Portfolio/">Portfolio</a></li>
+	            <li><a href="<?php echo site_url(); ?>/Videoblog/">Videoblog</a></li>
 	            <li class="scrollToContact"><a href="#contact">Contact</a></li>
 	        </ul>
 	    </div>
