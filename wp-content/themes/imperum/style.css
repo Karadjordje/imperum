@@ -307,7 +307,7 @@ section#clients-say .main-content p {
 .service {
     margin-bottom: 45px;
 }
-.service h3 {
+/*.service h3 {
     font-family: worldwide;
     font-size: 1em;
     font-weight: 600;
@@ -316,7 +316,7 @@ section#clients-say .main-content p {
 .service h3:first-child {
     margin-left: 20px;
     font-weight: 400;
-}
+}*/
 .service h3:nth-last-child(2) {
     margin-bottom: 30px;
 }
