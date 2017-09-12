@@ -266,31 +266,23 @@
                     </div>
                     <div class="col-lg-9 col-lg-offset-2 video-blog-posts">
                         <div class="row">
+                            <?php $args = array( 'post_type' => 'html5-blank', 'posts_per_page' => 3 ); ?>
+                            <?php $loop = new WP_Query( $args ); ?>
+                            <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
                             <div class="col-md-4">
-                                <div class="video-blog-img" style="background-image: url(http://localhost/imperum/wp-content/themes/imperum/img/video-blog.jpg);">
-                                    <div class="video-blog-link">
-                                        <span class="icon-eye"></span>
-                                    </div>
+                                <div class="video-blog-img" style="background-image: url(<?php echo wp_get_attachment_url( get_post_thumbnail_id() ); ?>);">
+                                    <a href="<?php the_permalink() ?>">
+                                        <div class="video-blog-link">
+                                            <span class="icon-eye"></span>
+                                        </div>    
+                                    </a> 
                                 </div>
                             </div>
-                            <div class="col-md-4">
-                                <div class="video-blog-img" style="background-image: url(http://localhost/imperum/wp-content/themes/imperum/img/video-blog.jpg);">
-                                    <div class="video-blog-link">
-                                        <span class="icon-eye"></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="video-blog-img" style="background-image: url(http://localhost/imperum/wp-content/themes/imperum/img/video-blog.jpg);">
-                                    <div class="video-blog-link">
-                                        <span class="icon-eye"></span>
-                                    </div>
-                                </div>
-                            </div>
+                            <?php endwhile; ?>
                         </div>
                     </div>
                     <div class="col-md-8 col-md-offset-4">
-                        <a class="btn btn-imperium btn-2" href="videoBlog.html" role="button">See more</a>
+                        <a class="btn btn-imperium btn-2" href="<?php echo site_url(); ?>/Videoblog/" role="button">See more</a>
                     </div>
                 </div>
             </div>
