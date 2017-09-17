@@ -215,7 +215,19 @@
                                 <!-- Wrapper for slides -->
                                 <div class="carousel-inner" role="listbox">
                                     <?php while ( $carouselLoop->have_posts() ) : $carouselLoop->the_post(); ?>
-                                        <div class="item <?php if ($i == 1) echo 'active'; ?>">
+                                        <?php 
+                                            $categories = get_the_category();
+                                            $cat = '';
+                                            if ( ! empty( $categories ) ) {
+                                                $cat = esc_html( $categories[0]->name );
+                                                $myCat = strtolower($cat); // I'm using this one so I can add remove categories with JQ (wanted to make them lowercase first)
+                                            }
+                                        ?>
+                                        <div 
+                                            class="item <?php if ($i == 1) echo 'active'; ?> <?= $myCat ?>" 
+                                            data-title="<?php the_title() ?>"
+                                            data-category="<?= $cat ?>"
+                                        >
                                             <img src="<?php echo wp_get_attachment_url( get_post_thumbnail_id() ); ?>" alt="<?php the_title(); ?>">
                                             <div class="carousel-caption">
                                                 <a href="<?php the_permalink() ?>"><h3><?php the_title(); ?></h3></a>
@@ -274,7 +286,7 @@
                                     <a href="<?php the_permalink() ?>">
                                         <div class="video-blog-link">
                                             <span class="icon-eye"></span>
-                                        </div>    
+                                        </div>
                                     </a> 
                                 </div>
                             </div>

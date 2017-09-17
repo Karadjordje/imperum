@@ -342,7 +342,7 @@ function html5blankcomments($comment, $args, $depth)
 		$tag = 'div';
 		$add_below = 'comment';
 	} else {
-		$tag = 'li';
+		$tag = 'p';
 		$add_below = 'div-comment';
 	}
 ?>
@@ -352,8 +352,7 @@ function html5blankcomments($comment, $args, $depth)
 	<div id="div-comment-<?php comment_ID() ?>" class="comment-body">
 	<?php endif; ?>
 	<div class="comment-author vcard">
-	<?php if ($args['avatar_size'] != 0) echo get_avatar( $comment, $args['180'] ); ?>
-	<?php printf(__('<cite class="fn">%s</cite> <span class="says">says:</span>'), get_comment_author_link()) ?>
+	<?php printf(__('<h4>%s</h4>'), get_comment_author_link()) ?>
 	</div>
 <?php if ($comment->comment_approved == '0') : ?>
 	<em class="comment-awaiting-moderation"><?php _e('Your comment is awaiting moderation.') ?></em>
@@ -362,15 +361,12 @@ function html5blankcomments($comment, $args, $depth)
 
 	<div class="comment-meta commentmetadata"><a href="<?php echo htmlspecialchars( get_comment_link( $comment->comment_ID ) ) ?>">
 		<?php
-			printf( __('%1$s at %2$s'), get_comment_date(),  get_comment_time()) ?></a><?php edit_comment_link(__('(Edit)'),'  ','' );
+			 ?></a><?php edit_comment_link(__('(Edit)'),'  ','' );
 		?>
 	</div>
 
 	<?php comment_text() ?>
 
-	<div class="reply">
-	<?php comment_reply_link(array_merge( $args, array('add_below' => $add_below, 'depth' => $depth, 'max_depth' => $args['max_depth']))) ?>
-	</div>
 	<?php if ( 'div' != $args['style'] ) : ?>
 	</div>
 	<?php endif; ?>
@@ -464,7 +460,8 @@ function create_post_type_html5()
             'title',
             'editor',
             'excerpt',
-            'thumbnail'
+            'thumbnail',
+            'comments'
         ), // Go to Dashboard Custom HTML5 Blank post for supports
         'can_export' => true, // Allows export in Tools > Export
         'taxonomies' => array(
@@ -489,5 +486,61 @@ function html5_shortcode_demo_2($atts, $content = null) // Demo Heading H2 short
 {
     return '<h2>' . $content . '</h2>';
 }
+
+
+
+// This is used to enable comments in bulp for custom post types
+function default_comments_on( $data ) {
+    if( $data['post_type'] == 'html5-blank' ) {
+        $data['comment_status'] = 1;
+    }
+
+    return $data;
+}
+add_filter( 'wp_insert_post_data', 'default_comments_on' );
+
+// function switch_on_comments_automatically(){
+//     global $wpdb;
+//     $wpdb->query( $wpdb->prepare("UPDATE $wpdb->posts SET comment_status = 'open'")); // Switch comments on automatically
+// }
+// switch_on_comments_automatically();
+
+
+/**
+ * Customize comment form default fields.
+ * Move the comment_field below the author, email, and url fields.
+ */
+function wpse250243_comment_form_default_fields( $fields ) {
+    $commenter     = wp_get_current_commenter();
+    $user          = wp_get_current_user();
+    $user_identity = $user->exists() ? $user->display_name : '';
+    $req           = get_option( 'require_name_email' );
+    $aria_req      = ( $req ? " aria-required='true'" : '' );
+
+    $fields = [
+        'author' => '<div  class="inputs-style">' . '<input id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) . '" maxlength="245"' . $aria_req . $html_req . ' . required="required" /> <span class="floating-label">' . __( 'YOUR NAME' ) . '</span> </div>',
+        'email' => '<div class="inputs-style"> <input id="email" name="email" type="text" value="' . esc_attr(  $commenter['comment_author_email'] ) .
+                '" ' . $aria_req . ' . required="required"> <span class="floating-label">' . __( 'YOUR E-MAIL' ) . '</span> </div>',
+        'comment_field' => '<div class="inputs-style"> <textarea id="comment" name="comment" rows="1" maxlength="65525" aria-required="true" required="required"></textarea> <span class="floating-label">' . __( 'YOUR MESSAGE' ) . '</span> </div>',
+    ];
+
+    return $fields;
+}
+add_filter( 'comment_form_default_fields', 'wpse250243_comment_form_default_fields' );
+
+/**
+ * Remove the original comment field because we've added it to the default fields
+ * using wpse250243_comment_form_default_fields(). If we don't do this, the comment
+ * field will appear twice.
+ */
+function wpse250243_comment_form_defaults( $defaults ) {
+    if ( isset( $defaults[ 'comment_field' ] ) ) {
+        $defaults[ 'comment_field' ] = '';
+    }
+
+    return $defaults;
+}
+add_filter( 'comment_form_defaults', 'wpse250243_comment_form_defaults', 10, 1 );
+
 
 ?>

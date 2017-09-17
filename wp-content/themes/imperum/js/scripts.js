@@ -190,5 +190,26 @@
 
 	});
 
+	$('#our-work-carousel').carousel().on('slide.bs.carousel', function(e) {
+		var trenutniElement = $(e.relatedTarget);
+		var title = trenutniElement.data('title');
+		var cat = trenutniElement.data('category');
+	  	$('.our-work-info h3').text(title);
+	  	$('.our-work-info h4').text(cat);
+	});
+
+
+	$('#allChb').on('click', function(){
+
+	})
+
+	$('#checkbox-content :checkbox').change(function() {
+	    // this will contain a reference to the checkbox   
+	    if (this.checked) {
+	        $('.testing').parent().hide();
+	    } else {
+	        // the checkbox is now no longer checked
+	    }
+	});
 	
 })(jQuery, this);
