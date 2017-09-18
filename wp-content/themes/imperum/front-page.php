@@ -153,7 +153,7 @@
                     </div>
                 </div>
             </div>
-        </section>      
+        </section>
 
         <section class="container-fluid lite-bg" id="our-work" data-midnight="light">
             <div class="row">
@@ -173,29 +173,37 @@
                         <div class="col-md-offset-1 col-md-2"><hr class="line" /></div>
                     </div>
 
-                    <div class="col-md-7 col-md-offset-4 checkbox-content">
+                    <div class="col-md-7 col-md-offset-4 checkbox-content" id="category-checkboxes">
                         <div class="checkboxCustom">
-                            <input type="checkbox" name="allChb" id="allChb">
+                            <input disabled checked type="checkbox" name="allChb" id="allChb" data-category="all">
                             <label for="allChb">All</label>
                         </div>
                         <div class="checkboxCustom">
-                            <input type="checkbox" name="frontendChb" id="frontendChb">
+                            <input type="checkbox" name="frontendChb" id="frontendChb" data-category="frontend">
                             <label for="frontendChb">Front End</label>
                         </div>
                         <div class="checkboxCustom">
-                            <input type="checkbox" name="wordpressChb" id="wordpressChb">
+                            <input type="checkbox" name="testingChb" id="testingChb" data-category="testing">
+                            <label for="testingChb">Testing</label>
+                        </div>
+                        <div class="checkboxCustom">
+                            <input type="checkbox" name="uncategorizedChb" id="uncategorizedChb" data-category="uncategorized">
+                            <label for="uncategorizedChb">Uncategorized</label>
+                        </div>
+                        <div class="checkboxCustom">
+                            <input type="checkbox" name="wordpressChb" id="wordpressChb" data-category="wordpress">
                             <label for="wordpressChb">Wordpress</label>
                         </div>
                         <div class="checkboxCustom">
-                            <input type="checkbox" name="designChb" id="designChb">
+                            <input type="checkbox" name="designChb" id="designChb" data-category="design">
                             <label for="designChb">Design</label>
                         </div>
                         <div class="checkboxCustom">
-                            <input type="checkbox" name="seoChb" id="seoChb">
+                            <input type="checkbox" name="seoChb" id="seoChb" data-category="seo">
                             <label for="seoChb">Seo</label>
                         </div>
                     </div>
-                    
+
 
                     <!-- Here starts carousel loop -->
                     <?php $carouselLoop = new WP_Query( array( 'post_type' => 'post', 'posts_per_page' => -1 ) ); ?>
@@ -214,27 +222,28 @@
                             <div id="our-work-carousel" class="carousel slide" data-ride="carousel">
                                 <!-- Wrapper for slides -->
                                 <div class="carousel-inner" role="listbox">
-                                    <?php while ( $carouselLoop->have_posts() ) : $carouselLoop->the_post(); ?>
-                                        <?php 
+                                    <?php while ( $carouselLoop->have_posts() ) : ?>
+                                        <?php $carouselLoop->the_post(); ?>
+                                        <?php
                                             $categories = get_the_category();
                                             $cat = '';
                                             if ( ! empty( $categories ) ) {
                                                 $cat = esc_html( $categories[0]->name );
-                                                $myCat = strtolower($cat); // I'm using this one so I can add remove categories with JQ (wanted to make them lowercase first)
                                             }
                                         ?>
-                                        <div 
-                                            class="item <?php if ($i == 1) echo 'active'; ?> <?= $myCat ?>" 
+                                        <div
+                                            class="cat-all cat-<?= strtolower($cat) ?> item <?php if ($i == 1) echo 'active'; ?>"
                                             data-title="<?php the_title() ?>"
-                                            data-category="<?= $cat ?>"
+                                            data-category="<?= strtolower($cat) ?>"
                                         >
                                             <img src="<?php echo wp_get_attachment_url( get_post_thumbnail_id() ); ?>" alt="<?php the_title(); ?>">
                                             <div class="carousel-caption">
                                                 <a href="<?php the_permalink() ?>"><h3><?php the_title(); ?></h3></a>
                                             </div>
                                         </div>
-                                    <?php $i++; ?>
-                                    <?php endwhile; wp_reset_query(); ?>    
+                                        <?php $i++; ?>
+                                    <?php endwhile; ?>
+                                    <?php wp_reset_query(); ?>
                                 </div>
 
                                 <div class="our-work-carousel-controls">
@@ -287,7 +296,7 @@
                                         <div class="video-blog-link">
                                             <span class="icon-eye"></span>
                                         </div>
-                                    </a> 
+                                    </a>
                                 </div>
                             </div>
                             <?php endwhile; ?>
@@ -351,5 +360,5 @@
                 </div>
             </div>
         </section>
-        
+
 <?php get_footer(); ?>
