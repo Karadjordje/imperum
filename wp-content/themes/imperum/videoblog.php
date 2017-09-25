@@ -58,8 +58,11 @@
 	                    <div role="tabpanel" class="tab-pane active" id="latest">
 	                        <div class="vb-posts clearfix">
 	                            <!-- ONE POST -->
+	                            <?php $args = array( 'post_type' => 'html5-blank', 'posts_per_page' => 3 ); ?>
+                            	<?php $loop = new WP_Query( $args ); ?>
+                            	<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 	                            <div class="col-md-3 col-md-offset-1">
-	                                <div class="featured-img featured-img-small" style="background-image: url('<?php bloginfo('template_directory'); ?>/img/video-blog.jpg');"></div>
+	                                <div class="featured-img featured-img-small" style="background-image: url(<?php echo wp_get_attachment_url( get_post_thumbnail_id() ); ?>);"></div>
 	                            </div>
 	                            <div class="col-md-1 post-num">
 	                                <h3>01</h3>
@@ -68,16 +71,30 @@
 	                                <hr class="dark-line" />
 	                            </div>
 	                            <div class="col-md-5">
-	                                <h4 class="post-headline text-uppercase">EAT PREPARED MEAL</h4>
+	                                <h4 class="post-headline text-uppercase"><?php the_title() ?></h4>
 	                                <div class="post-body-short">
-	                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure atque quasi eum, reprehenderit nam odit repellat dicta possimus modi, ducimus placeat magni quo similique quis iste minus -</p>
+	                                    <p><?php the_content(); ?></p>
 	                                </div>
 	                                <div class="subject">
-	                                    <p>Marketing tactics</p>
+	                                    <p>
+	                                    	<?php foreach ((get_the_category()) as $category) {
+				                    			echo $category->cat_name . ' ';
+				                    		} ?>
+	                                    </p>
 	                                </div><div class="tags">
-	                                    <p>Tag1, Tag2, Tag3, Tag4</p>
+	                                    <p>
+		                                   	<?php
+											  	$posttags = get_the_tags();
+											  	if ($posttags) {
+											    	foreach($posttags as $tag) {
+											      		echo $tag->name . ', ';
+											    	}
+											  	}
+											?>
+	                                    </p>
 	                                </div>
 	                            </div>
+	                            <?php endwhile; ?>
 
 	                            <!-- ONE POST -->
 	                            <div class="col-md-3 col-md-offset-1">
@@ -286,4 +303,4 @@
 	        </div>
 	    </section>
 
-<?php get_footer(); ?>	    
+<?php get_footer(); ?>
