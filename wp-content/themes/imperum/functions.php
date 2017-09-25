@@ -440,18 +440,18 @@ function create_post_type_html5()
     register_post_type('html5-blank', // Register Custom Post Type
         array(
         'labels' => array(
-            'name' => __('HTML5 Blank Custom Post', 'html5blank'), // Rename these to suit
-            'singular_name' => __('HTML5 Blank Custom Post', 'html5blank'),
-            'add_new' => __('Add New', 'html5blank'),
-            'add_new_item' => __('Add New HTML5 Blank Custom Post', 'html5blank'),
-            'edit' => __('Edit', 'html5blank'),
-            'edit_item' => __('Edit HTML5 Blank Custom Post', 'html5blank'),
-            'new_item' => __('New HTML5 Blank Custom Post', 'html5blank'),
-            'view' => __('View HTML5 Blank Custom Post', 'html5blank'),
-            'view_item' => __('View HTML5 Blank Custom Post', 'html5blank'),
-            'search_items' => __('Search HTML5 Blank Custom Post', 'html5blank'),
-            'not_found' => __('No HTML5 Blank Custom Posts found', 'html5blank'),
-            'not_found_in_trash' => __('No HTML5 Blank Custom Posts found in Trash', 'html5blank')
+            'name' => __('VideoBlog Custom Post', 'VideoBlog'), // Rename these to suit
+            'singular_name' => __('VideoBlog Custom Post', 'VideoBlog'),
+            'add_new' => __('Add New', 'VideoBlog'),
+            'add_new_item' => __('Add New VideoBlog Custom Post', 'VideoBlog'),
+            'edit' => __('Edit', 'VideoBlog'),
+            'edit_item' => __('Edit VideoBlog Custom Post', 'VideoBlog'),
+            'new_item' => __('New VideoBlog Custom Post', 'VideoBlog'),
+            'view' => __('View VideoBlog Custom Post', 'VideoBlog'),
+            'view_item' => __('View VideoBlog Custom Post', 'VideoBlog'),
+            'search_items' => __('Search VideoBlog Custom Post', 'VideoBlog'),
+            'not_found' => __('No VideoBlog Custom Posts found', 'VideoBlog'),
+            'not_found_in_trash' => __('No VideoBlog Custom Posts found in Trash', 'VideoBlog')
         ),
         'public' => true,
         'hierarchical' => true, // Allows your posts to behave like Hierarchy Pages
@@ -489,7 +489,7 @@ function html5_shortcode_demo_2($atts, $content = null) // Demo Heading H2 short
 
 
 
-// This is used to enable comments in bulp for custom post types
+// This is used to enable comments in bulk for custom post types
 function default_comments_on( $data ) {
     if( $data['post_type'] == 'html5-blank' ) {
         $data['comment_status'] = 1;
@@ -541,6 +541,69 @@ function wpse250243_comment_form_defaults( $defaults ) {
     return $defaults;
 }
 add_filter( 'comment_form_defaults', 'wpse250243_comment_form_defaults', 10, 1 );
+
+
+
+
+
+// Custom pagination
+function custom_pagination($numpages = '', $pagerange = '', $paged='') {
+
+  if (empty($pagerange)) {
+    $pagerange = 2;
+  }
+
+  /**
+   * This first part of our function is a fallback
+   * for custom pagination inside a regular loop that
+   * uses the global $paged and global $wp_query variables.
+   *
+   * It's good because we can now override default pagination
+   * in our theme, and use this function in default quries
+   * and custom queries.
+   */
+  global $paged;
+  if (empty($paged)) {
+    $paged = 1;
+  }
+  if ($numpages == '') {
+    global $wp_query;
+    $numpages = $wp_query->max_num_pages;
+    if(!$numpages) {
+        $numpages = 1;
+    }
+  }
+
+  /**
+   * We construct the pagination arguments to enter into our paginate_links
+   * function.
+   */
+  $pagination_args = array(
+    'base'            => get_pagenum_link(1) . '%_%',
+    'format'          => 'page/%#%',
+    'total'           => $numpages,
+    'current'         => $paged,
+    'show_all'        => False,
+    'end_size'        => 1,
+    'mid_size'        => $pagerange,
+    'prev_next'       => false,
+    'prev_text'       => __('&laquo;'),
+    'next_text'       => __('&raquo;'),
+    'type'            => 'plain',
+    'add_args'        => false,
+    'add_fragment'    => ''
+  );
+
+  $paginate_links = paginate_links($pagination_args);
+
+  if ($paginate_links) {
+    echo "<li>";
+      echo $paginate_links;
+    echo "</li>";
+  }
+
+}
+
 
 
 ?>

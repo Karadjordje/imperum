@@ -1347,6 +1347,10 @@ section#vbSingle-body .main {
     margin-top: 2px;
     font-weight: 500;
     margin-bottom: 25px;
+    color: #060b26;
+}
+.post-headline:hover, .post-headline:visited {
+    text-decoration: none;
 }
 .post-body {
     font-weight: 500;
@@ -1489,6 +1493,12 @@ section#vbSingle-comments .main {
     font-weight: 500;
     margin-bottom: 25px;
 }
+.post-body-short a {
+    color: #060b26;
+}
+.post-body-short a:hover, .post-body-short a:visited {
+    text-decoration: none;
+}
 .paginations {
     text-align: center;
 }
@@ -1515,4 +1525,22 @@ section#vbSingle-comments .main {
     background-color: #c09858;
     border-color: #c09858;
     cursor: pointer;
+}
+
+
+/* css added for new pagination on videoblog page */
+.pagination>li>span {
+    background-color: #fff;
+    color: #070b26;
+    border: 1px solid #070b26;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.pagination>li>span:hover {
+    background-color: #c09858;
+    border-color: #c09858;
+    cursor: pointer;
+    color: #fff;
 }

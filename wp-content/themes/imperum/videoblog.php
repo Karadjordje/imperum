@@ -58,7 +58,14 @@
 	                    <div role="tabpanel" class="tab-pane active" id="latest">
 	                        <div class="vb-posts clearfix">
 	                            <!-- ONE POST -->
-	                            <?php $args = array( 'post_type' => 'html5-blank', 'posts_per_page' => 3 ); ?>
+	                            <?php
+	                            	$paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
+	                            	$args = array(
+		                            	'post_type' => 'html5-blank',
+		                            	'posts_per_page' => 4,
+		                            	'paged' => $paged
+	                            	);
+	                            ?>
                             	<?php $loop = new WP_Query( $args ); ?>
                             	<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 	                            <div class="col-md-3 col-md-offset-1">
@@ -71,9 +78,11 @@
 	                                <hr class="dark-line" />
 	                            </div>
 	                            <div class="col-md-5">
-	                                <h4 class="post-headline text-uppercase"><?php the_title() ?></h4>
+	                            	<a class="post-headline text-uppercase" href="<?php the_permalink() ?>">
+	                            		<h4 class="post-headline text-uppercase"><?php the_title() ?></h4>
+	                            	</a>
 	                                <div class="post-body-short">
-	                                    <p><?php the_content(); ?></p>
+	                                    <p><?php the_excerpt(); ?></p>
 	                                </div>
 	                                <div class="subject">
 	                                    <p>
@@ -95,6 +104,24 @@
 	                                </div>
 	                            </div>
 	                            <?php endwhile; ?>
+
+								<?php if ($loop->max_num_pages > 1) { // check if the max number of pages is greater than 1
+									$nextUrl = get_next_posts_page_link();
+									$prevUrl = get_previous_posts_page_link();
+								?>
+	                            <div class="paginations clearfix">
+		                            <ul class="pagination">
+		                                <li><a href="<?php echo esc_url( $prevUrl ); ?>"><span class="icon-left_arrow"></span></a></li>
+		                                <!-- pagination here -->
+		                                <?php
+									      if (function_exists(custom_pagination)) {
+									        custom_pagination($loop->max_num_pages,"",$paged);
+									      }
+									    ?>
+		                                <li><a href="<?php echo esc_url( $nextUrl ); ?>"><span class="icon-right_arrow"></span></a></li>
+		                            </ul>
+		                        </div>
+		                        <?php } ?>
 
 	                            <!-- ONE POST -->
 	                            <div class="col-md-3 col-md-offset-1">
