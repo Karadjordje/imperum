@@ -13,19 +13,30 @@
 	                </div>
 	                <div class="col-md-6 col-md-offset-3 vb-posts-info">
 	                    <div class="categories">
-	                        <h3 title="58">58</h3>
+	                    	<?php
+	                    		$cat_count_web = get_category( '8' );
+	                    		$cat_count_marketing = get_category( '3' );
+	                    		$car_count_uncatagorized = get_category( '1');
+	                    	?>
+	                        <h3 title="<?php echo $cat_count_web->count; ?>">
+	                        	<?php echo $cat_count_web->count; ?>
+	                        </h3>
 	                        <div class="checkboxCustom">
 	                            <input type="checkbox" name="uxWebChb" id="uxWebChb">
 	                            <label for="uxWebChb">UX WEB TACTICS</label>
 	                        </div>
 	                    </div><div class="categories">
-	                        <h3 title="58">58</h3>
+	                        <h3 title="<?php echo $cat_count_marketing->count; ?>">
+	                        	<?php echo $cat_count_marketing->count; ?>
+	                        </h3>
 	                        <div class="checkboxCustom">
 	                            <input type="checkbox" name="marketingChb" id="marketingChb">
 	                            <label for="marketingChb">MARKETING TACTICS</label>
 	                        </div>
 	                    </div><div class="categories">
-	                        <h3 title="58">58</h3>
+	                        <h3 title="<?php echo $car_count_uncatagorized->count; ?>">
+	                        	<?php echo $car_count_uncatagorized->count; ?>
+	                        </h3>
 	                        <div class="checkboxCustom">
 	                            <input type="checkbox" name="outherChb" id="outherChb">
 	                            <label for="outherChb">OTHER TACTICS</label>
@@ -57,12 +68,11 @@
 	                <div class="tab-content">
 	                    <div role="tabpanel" class="tab-pane active" id="latest">
 	                        <div class="vb-posts clearfix">
-	                            <!-- ONE POST -->
 	                            <?php
 	                            	$paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
 	                            	$args = array(
 		                            	'post_type' => 'html5-blank',
-		                            	'posts_per_page' => 4,
+		                            	'posts_per_page' => 5,
 		                            	'paged' => $paged
 	                            	);
 	                            ?>
@@ -122,136 +132,27 @@
 		                            </ul>
 		                        </div>
 		                        <?php } ?>
-
-	                            <!-- ONE POST -->
-	                            <div class="col-md-3 col-md-offset-1">
-	                                <div class="featured-img featured-img-small" style="background-image: url('<?php bloginfo('template_directory'); ?>/img/video-blog.jpg');"></div>
-	                            </div>
-	                            <div class="col-md-1 post-num">
-	                                <h3>01</h3>
-	                            </div>
-	                            <div class="col-md-1">
-	                                <hr class="dark-line" />
-	                            </div>
-	                            <div class="col-md-5">
-	                                <h4 class="post-headline text-uppercase">EAT PREPARED MEAL</h4>
-	                                <div class="post-body-short">
-	                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure atque quasi eum, reprehenderit nam odit repellat dicta possimus modi, ducimus placeat magni quo similique quis iste minus -</p>
-	                                </div>
-	                                <div class="subject">
-	                                    <p>Marketing tactics</p>
-	                                </div><div class="tags">
-	                                    <p>Tag1, Tag2, Tag3, Tag4</p>
-	                                </div>
-	                            </div>
-
-	                            <!-- ONE POST -->
-	                            <div class="col-md-3 col-md-offset-1">
-	                                <div class="featured-img featured-img-small" style="background-image: url('<?php bloginfo('template_directory'); ?>/img/video-blog.jpg');"></div>
-	                            </div>
-	                            <div class="col-md-1 post-num">
-	                                <h3>01</h3>
-	                            </div>
-	                            <div class="col-md-1">
-	                                <hr class="dark-line" />
-	                            </div>
-	                            <div class="col-md-5">
-	                                <h4 class="post-headline text-uppercase">EAT PREPARED MEAL</h4>
-	                                <div class="post-body-short">
-	                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure atque quasi eum, reprehenderit nam odit repellat dicta possimus modi, ducimus placeat magni quo similique quis iste minus -</p>
-	                                </div>
-	                                <div class="subject">
-	                                    <p>Marketing tactics</p>
-	                                </div><div class="tags">
-	                                    <p>Tag1, Tag2, Tag3, Tag4</p>
-	                                </div>
-	                            </div>
-
-	                            <!-- ONE POST -->
-	                            <div class="col-md-3 col-md-offset-1">
-	                                <div class="featured-img featured-img-small" style="background-image: url('<?php bloginfo('template_directory'); ?>/img/video-blog.jpg');"></div>
-	                            </div>
-	                            <div class="col-md-1 post-num">
-	                                <h3>01</h3>
-	                            </div>
-	                            <div class="col-md-1">
-	                                <hr class="dark-line" />
-	                            </div>
-	                            <div class="col-md-5">
-	                                <h4 class="post-headline text-uppercase">EAT PREPARED MEAL</h4>
-	                                <div class="post-body-short">
-	                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure atque quasi eum, reprehenderit nam odit repellat dicta possimus modi, ducimus placeat magni quo similique quis iste minus -</p>
-	                                </div>
-	                                <div class="subject">
-	                                    <p>Marketing tactics</p>
-	                                </div><div class="tags">
-	                                    <p>Tag1, Tag2, Tag3, Tag4</p>
-	                                </div>
-	                            </div>
-
-	                            <!-- ONE POST -->
-	                            <div class="col-md-3 col-md-offset-1">
-	                                <div class="featured-img featured-img-small" style="background-image: url('<?php bloginfo('template_directory'); ?>/img/video-blog.jpg');"></div>
-	                            </div>
-	                            <div class="col-md-1 post-num">
-	                                <h3>01</h3>
-	                            </div>
-	                            <div class="col-md-1">
-	                                <hr class="dark-line" />
-	                            </div>
-	                            <div class="col-md-5">
-	                                <h4 class="post-headline text-uppercase">EAT PREPARED MEAL</h4>
-	                                <div class="post-body-short">
-	                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure atque quasi eum, reprehenderit nam odit repellat dicta possimus modi, ducimus placeat magni quo similique quis iste minus -</p>
-	                                </div>
-	                                <div class="subject">
-	                                    <p>Marketing tactics</p>
-	                                </div><div class="tags">
-	                                    <p>Tag1, Tag2, Tag3, Tag4</p>
-	                                </div>
-	                            </div>
 	                        </div>
-
-	                        <div class="paginations clearfix">
-	                            <ul class="pagination">
-	                                <li><a href=""><span class="icon-left_arrow"></span></a></li>
-	                                <li><a href=""><span class="icon-left_arrow"></span></a></li>
-	                                <li class="active"><a href="">1</a></li>
-	                                <li><a href="">2</a></li>
-	                                <li><a href="">3</a></li>
-	                                <li><a href=""><span class="icon-right_arrow"></span></a></li>
-	                                <li><a href=""><span class="icon-right_arrow"></span></a></li>
-	                            </ul>
-	                        </div>
-
 	                    </div>
+
 	                    <div role="tabpanel" class="tab-pane" id="most-popular">
-	                        <div class="vb-posts clearfix">
-	                            <!-- ONE POST -->
-	                            <div class="col-md-3 col-md-offset-1">
-	                                <div class="featured-img featured-img-small" style="background-image: url('<?php bloginfo('template_directory'); ?>/img/video-blog.jpg');"></div>
-	                            </div>
-	                            <div class="col-md-1 post-num">
-	                                <h3>01</h3>
-	                            </div>
-	                            <div class="col-md-1">
-	                                <hr class="dark-line" />
-	                            </div>
-	                            <div class="col-md-5">
-	                                <h4 class="post-headline text-uppercase">Web Design speed art - monter</h4>
-	                                <div class="post-body-short">
-	                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure atque quasi eum, reprehenderit nam odit repellat dicta possimus modi, ducimus placeat magni quo similique quis iste minus -</p>
-	                                </div>
-	                                <div class="subject">
-	                                    <p>Marketing tactics</p>
-	                                </div><div class="tags">
-	                                    <p>Tag1, Tag2, Tag3, Tag4</p>
-	                                </div>
-	                            </div>
 
-	                            <!-- ONE POST -->
+							<div class="vb-posts clearfix">
+	                            <?php
+	                            	$paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
+	                            	$args = array(
+		                            	'post_type' => 'html5-blank',
+		                            	'posts_per_page' => 5,
+		                            	'paged' => $paged,
+		                            	'meta_key' => 'wpb_post_views_count',
+		                            	'orderby' => 'meta_value_num',
+		                            	'order' => 'DESC'
+	                            	);
+	                            ?>
+                            	<?php $popularpost = new WP_Query( $args ); ?>
+                            	<?php while ( $popularpost->have_posts() ) : $popularpost->the_post(); ?>
 	                            <div class="col-md-3 col-md-offset-1">
-	                                <div class="featured-img featured-img-small" style="background-image: url('<?php bloginfo('template_directory'); ?>/img/video-blog.jpg');"></div>
+	                                <div class="featured-img featured-img-small" style="background-image: url(<?php echo wp_get_attachment_url( get_post_thumbnail_id() ); ?>);"></div>
 	                            </div>
 	                            <div class="col-md-1 post-num">
 	                                <h3>01</h3>
@@ -260,71 +161,53 @@
 	                                <hr class="dark-line" />
 	                            </div>
 	                            <div class="col-md-5">
-	                                <h4 class="post-headline text-uppercase">Web Design speed art - monter</h4>
+	                            	<a class="post-headline text-uppercase" href="<?php the_permalink() ?>">
+	                            		<h4 class="post-headline text-uppercase"><?php the_title() ?></h4>
+	                            	</a>
 	                                <div class="post-body-short">
-	                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure atque quasi eum, reprehenderit nam odit repellat dicta possimus modi, ducimus placeat magni quo similique quis iste minus -</p>
+	                                    <p><?php the_excerpt(); ?></p>
 	                                </div>
 	                                <div class="subject">
-	                                    <p>Marketing tactics</p>
+	                                    <p>
+	                                    	<?php foreach ((get_the_category()) as $category) {
+				                    			echo $category->cat_name . ' ';
+				                    		} ?>
+	                                    </p>
 	                                </div><div class="tags">
-	                                    <p>Tag1, Tag2, Tag3, Tag4</p>
+	                                    <p>
+		                                   	<?php
+											  	$posttags = get_the_tags();
+											  	if ($posttags) {
+											    	foreach($posttags as $tag) {
+											      		echo $tag->name . ', ';
+											    	}
+											  	}
+											?>
+	                                    </p>
 	                                </div>
 	                            </div>
+	                            <?php endwhile; ?>
 
-	                            <!-- ONE POST -->
-	                            <div class="col-md-3 col-md-offset-1">
-	                                <div class="featured-img featured-img-small" style="background-image: url('<?php bloginfo('template_directory'); ?>/img/video-blog.jpg');"></div>
-	                            </div>
-	                            <div class="col-md-1 post-num">
-	                                <h3>01</h3>
-	                            </div>
-	                            <div class="col-md-1">
-	                                <hr class="dark-line" />
-	                            </div>
-	                            <div class="col-md-5">
-	                                <h4 class="post-headline text-uppercase">Web Design speed art - monter</h4>
-	                                <div class="post-body-short">
-	                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure atque quasi eum, reprehenderit nam odit repellat dicta possimus modi, ducimus placeat magni quo similique quis iste minus -</p>
-	                                </div>
-	                                <div class="subject">
-	                                    <p>Marketing tactics</p>
-	                                </div><div class="tags">
-	                                    <p>Tag1, Tag2, Tag3, Tag4</p>
-	                                </div>
-	                            </div>
-
-	                            <!-- ONE POST -->
-	                            <div class="col-md-3 col-md-offset-1">
-	                                <div class="featured-img featured-img-small" style="background-image: url('<?php bloginfo('template_directory'); ?>/img/video-blog.jpg');"></div>
-	                            </div>
-	                            <div class="col-md-1 post-num">
-	                                <h3>01</h3>
-	                            </div>
-	                            <div class="col-md-1">
-	                                <hr class="dark-line" />
-	                            </div>
-	                            <div class="col-md-5">
-	                                <h4 class="post-headline text-uppercase">Web Design speed art - monter</h4>
-	                                <div class="post-body-short">
-	                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure atque quasi eum, reprehenderit nam odit repellat dicta possimus modi, ducimus placeat magni quo similique quis iste minus -</p>
-	                                </div>
-	                                <div class="subject">
-	                                    <p>Marketing tactics</p>
-	                                </div><div class="tags">
-	                                    <p>Tag1, Tag2, Tag3, Tag4</p>
-	                                </div>
-	                            </div>
+	                            <?php if ($popularpost->max_num_pages > 1) { // check if the max number of pages is greater than 1
+									$nextUrl = get_next_posts_page_link();
+									$prevUrl = get_previous_posts_page_link();
+								?>
+	                            <div class="paginations clearfix">
+		                            <ul class="pagination">
+		                                <li><a href="<?php echo esc_url( $prevUrl ); ?>"><span class="icon-left_arrow"></span></a></li>
+		                                <!-- pagination here -->
+		                                <?php
+									      if (function_exists(custom_pagination)) {
+									        custom_pagination($popularpost->max_num_pages,"",$paged);
+									      }
+									    ?>
+		                                <li><a href="<?php echo esc_url( $nextUrl ); ?>"><span class="icon-right_arrow"></span></a></li>
+		                            </ul>
+		                        </div>
+		                        <?php } ?>
 	                        </div>
-
-	                        <div class="paginates clearfix">
-	                            <span class="icon-left_arrow"></span>
-	                            <span class="icon-left_arrow"></span>
-	                            <span>1</span>
-	                            <span class="icon-right_arrow"></span>
-	                            <span class="icon-right_arrow"></span>
-	                        </div>
-
 	                    </div>
+
 	                </div>
 	            </div>
 	        </div>

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 25, 2017 at 09:53 PM
+-- Generation Time: Sep 26, 2017 at 08:42 PM
 -- Server version: 5.7.14
 -- PHP Version: 5.6.25
 
@@ -244,12 +244,12 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (104, 'widget_media_video', 'a:1:{s:12:"_multiwidget";i:1;}', 'yes'),
 (105, 'widget_tag_cloud', 'a:1:{s:12:"_multiwidget";i:1;}', 'yes'),
 (106, 'widget_nav_menu', 'a:1:{s:12:"_multiwidget";i:1;}', 'yes'),
-(107, 'cron', 'a:5:{i:1506393174;a:2:{s:17:"wp_update_plugins";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}s:16:"wp_update_themes";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}}i:1506414593;a:1:{s:16:"wp_version_check";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}}i:1506426357;a:1:{s:30:"wp_scheduled_auto_draft_delete";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}i:1506436394;a:1:{s:19:"wp_scheduled_delete";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}s:7:"version";i:2;}', 'yes'),
+(107, 'cron', 'a:5:{i:1506479574;a:2:{s:17:"wp_update_plugins";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}s:16:"wp_update_themes";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}}i:1506500993;a:1:{s:16:"wp_version_check";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}}i:1506512757;a:1:{s:30:"wp_scheduled_auto_draft_delete";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}i:1506522794;a:1:{s:19:"wp_scheduled_delete";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}s:7:"version";i:2;}', 'yes'),
 (108, 'theme_mods_twentyseventeen', 'a:2:{s:18:"custom_css_post_id";i:-1;s:16:"sidebars_widgets";a:2:{s:4:"time";i:1501339511;s:4:"data";a:4:{s:19:"wp_inactive_widgets";a:0:{}s:9:"sidebar-1";a:6:{i:0;s:8:"search-2";i:1;s:14:"recent-posts-2";i:2;s:17:"recent-comments-2";i:3;s:10:"archives-2";i:4;s:12:"categories-2";i:5;s:6:"meta-2";}s:9:"sidebar-2";a:0:{}s:9:"sidebar-3";a:0:{}}}}', 'yes'),
-(453, '_site_transient_timeout_theme_roots', '1506373220', 'no'),
-(454, '_site_transient_theme_roots', 'a:2:{s:7:"imperum";s:7:"/themes";s:15:"twentyseventeen";s:7:"/themes";}', 'no'),
+(457, '_site_transient_timeout_theme_roots', '1506457962', 'no'),
+(458, '_site_transient_theme_roots', 'a:2:{s:7:"imperum";s:7:"/themes";s:15:"twentyseventeen";s:7:"/themes";}', 'no'),
 (151, '_site_transient_timeout_browser_75e9097c94a05f6726efc439671445f0', '1503142454', 'no'),
-(140, '_site_transient_update_themes', 'O:8:"stdClass":4:{s:12:"last_checked";i:1506371422;s:7:"checked";a:2:{s:7:"imperum";s:5:"1.0.0";s:15:"twentyseventeen";s:3:"1.3";}s:8:"response";a:0:{}s:12:"translations";a:0:{}}', 'no'),
+(140, '_site_transient_update_themes', 'O:8:"stdClass":4:{s:12:"last_checked";i:1506457799;s:7:"checked";a:2:{s:7:"imperum";s:5:"1.0.0";s:15:"twentyseventeen";s:3:"1.3";}s:8:"response";a:0:{}s:12:"translations";a:0:{}}', 'no'),
 (136, '_site_transient_timeout_wporg_theme_feature_list', '1501349824', 'no'),
 (137, '_site_transient_wporg_theme_feature_list', 'a:3:{s:6:"Layout";a:7:{i:0;s:11:"grid-layout";i:1;s:10:"one-column";i:2;s:11:"two-columns";i:3;s:13:"three-columns";i:4;s:12:"four-columns";i:5;s:12:"left-sidebar";i:6;s:13:"right-sidebar";}s:8:"Features";a:20:{i:0;s:19:"accessibility-ready";i:1;s:10:"buddypress";i:2;s:17:"custom-background";i:3;s:13:"custom-colors";i:4;s:13:"custom-header";i:5;s:11:"custom-menu";i:6;s:12:"editor-style";i:7;s:21:"featured-image-header";i:8;s:15:"featured-images";i:9;s:15:"flexible-header";i:10;s:14:"footer-widgets";i:11;s:20:"front-page-post-form";i:12;s:19:"full-width-template";i:13;s:12:"microformats";i:14;s:12:"post-formats";i:15;s:20:"rtl-language-support";i:16;s:11:"sticky-post";i:17;s:13:"theme-options";i:18;s:17:"threaded-comments";i:19;s:17:"translation-ready";}s:7:"Subject";a:9:{i:0;s:4:"blog";i:1;s:10:"e-commerce";i:2;s:9:"education";i:3;s:13:"entertainment";i:4;s:14:"food-and-drink";i:5;s:7:"holiday";i:6;s:4:"news";i:7;s:11:"photography";i:8;s:9:"portfolio";}}', 'no'),
 (119, '_site_transient_timeout_browser_6aa1710f6cbdaeb3492b9b81a594db91', '1501943594', 'no'),
@@ -265,9 +265,9 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (345, '_transient_feed_mod_d117b5738fbd35bd8c0391cda1f2b5d9', '1505131217', 'no'),
 (346, '_transient_timeout_dash_v2_88ae138922fe95674369b1cb3d215a2b', '1505174417', 'no'),
 (347, '_transient_dash_v2_88ae138922fe95674369b1cb3d215a2b', '<div class="rss-widget"><ul><li><a class=\'rsswidget\' href=\'https://wordpress.org/news/2017/09/the-month-in-wordpress-august-2017/\'>The Month in WordPress: August 2017</a></li></ul></div><div class="rss-widget"><ul><li><a class=\'rsswidget\' href=\'https://wptavern.com/the-final-word-plugin-extends-o2-to-pin-a-highlighted-comment-to-the-top-of-a-thread\'>WPTavern: “The Final Word” Plugin Extends O2 to Pin a Highlighted Comment to the Top of a Thread</a></li><li><a class=\'rsswidget\' href=\'https://wptavern.com/equifax-launches-wordpress-powered-site-for-consumers-affected-by-security-breach\'>WPTavern: Equifax Launches WordPress-Powered Site for Consumers Affected by Security Breach</a></li><li><a class=\'rsswidget\' href=\'https://wptavern.com/swfupload-will-officially-be-removed-from-wordpress\'>WPTavern: SWFUpload Will Officially Be Removed From WordPress</a></li></ul></div>', 'no'),
-(455, '_site_transient_update_plugins', 'O:8:"stdClass":4:{s:12:"last_checked";i:1506371422;s:8:"response";a:2:{s:30:"advanced-custom-fields/acf.php";O:8:"stdClass":8:{s:2:"id";s:36:"w.org/plugins/advanced-custom-fields";s:4:"slug";s:22:"advanced-custom-fields";s:6:"plugin";s:30:"advanced-custom-fields/acf.php";s:11:"new_version";s:6:"4.4.12";s:3:"url";s:53:"https://wordpress.org/plugins/advanced-custom-fields/";s:7:"package";s:72:"https://downloads.wordpress.org/plugin/advanced-custom-fields.4.4.12.zip";s:6:"tested";s:5:"4.9.0";s:13:"compatibility";O:8:"stdClass":0:{}}s:19:"akismet/akismet.php";O:8:"stdClass":8:{s:2:"id";s:21:"w.org/plugins/akismet";s:4:"slug";s:7:"akismet";s:6:"plugin";s:19:"akismet/akismet.php";s:11:"new_version";s:3:"4.0";s:3:"url";s:38:"https://wordpress.org/plugins/akismet/";s:7:"package";s:54:"https://downloads.wordpress.org/plugin/akismet.4.0.zip";s:6:"tested";s:5:"4.8.1";s:13:"compatibility";O:8:"stdClass":0:{}}}s:12:"translations";a:0:{}s:9:"no_update";a:1:{s:9:"hello.php";O:8:"stdClass":6:{s:2:"id";s:25:"w.org/plugins/hello-dolly";s:4:"slug";s:11:"hello-dolly";s:6:"plugin";s:9:"hello.php";s:11:"new_version";s:3:"1.6";s:3:"url";s:42:"https://wordpress.org/plugins/hello-dolly/";s:7:"package";s:58:"https://downloads.wordpress.org/plugin/hello-dolly.1.6.zip";}}}', 'no'),
+(463, '_site_transient_update_plugins', 'O:8:"stdClass":4:{s:12:"last_checked";i:1506457799;s:8:"response";a:2:{s:30:"advanced-custom-fields/acf.php";O:8:"stdClass":8:{s:2:"id";s:36:"w.org/plugins/advanced-custom-fields";s:4:"slug";s:22:"advanced-custom-fields";s:6:"plugin";s:30:"advanced-custom-fields/acf.php";s:11:"new_version";s:6:"4.4.12";s:3:"url";s:53:"https://wordpress.org/plugins/advanced-custom-fields/";s:7:"package";s:72:"https://downloads.wordpress.org/plugin/advanced-custom-fields.4.4.12.zip";s:6:"tested";s:5:"4.9.0";s:13:"compatibility";O:8:"stdClass":0:{}}s:19:"akismet/akismet.php";O:8:"stdClass":8:{s:2:"id";s:21:"w.org/plugins/akismet";s:4:"slug";s:7:"akismet";s:6:"plugin";s:19:"akismet/akismet.php";s:11:"new_version";s:3:"4.0";s:3:"url";s:38:"https://wordpress.org/plugins/akismet/";s:7:"package";s:54:"https://downloads.wordpress.org/plugin/akismet.4.0.zip";s:6:"tested";s:5:"4.8.1";s:13:"compatibility";O:8:"stdClass":0:{}}}s:12:"translations";a:0:{}s:9:"no_update";a:1:{s:9:"hello.php";O:8:"stdClass":6:{s:2:"id";s:25:"w.org/plugins/hello-dolly";s:4:"slug";s:11:"hello-dolly";s:6:"plugin";s:9:"hello.php";s:11:"new_version";s:3:"1.6";s:3:"url";s:42:"https://wordpress.org/plugins/hello-dolly/";s:7:"package";s:58:"https://downloads.wordpress.org/plugin/hello-dolly.1.6.zip";}}}', 'no'),
 (152, '_site_transient_browser_75e9097c94a05f6726efc439671445f0', 'a:9:{s:8:"platform";s:7:"Windows";s:4:"name";s:6:"Chrome";s:7:"version";s:12:"60.0.3112.90";s:10:"update_url";s:28:"http://www.google.com/chrome";s:7:"img_src";s:49:"http://s.wordpress.org/images/browsers/chrome.png";s:11:"img_src_ssl";s:48:"https://wordpress.org/images/browsers/chrome.png";s:15:"current_version";s:2:"18";s:7:"upgrade";b:0;s:8:"insecure";b:0;}', 'no'),
-(169, '_site_transient_update_core', 'O:8:"stdClass":4:{s:7:"updates";a:2:{i:0;O:8:"stdClass":10:{s:8:"response";s:7:"upgrade";s:8:"download";s:59:"https://downloads.wordpress.org/release/wordpress-4.8.2.zip";s:6:"locale";s:5:"en_US";s:8:"packages";O:8:"stdClass":5:{s:4:"full";s:59:"https://downloads.wordpress.org/release/wordpress-4.8.2.zip";s:10:"no_content";s:70:"https://downloads.wordpress.org/release/wordpress-4.8.2-no-content.zip";s:11:"new_bundled";s:71:"https://downloads.wordpress.org/release/wordpress-4.8.2-new-bundled.zip";s:7:"partial";s:69:"https://downloads.wordpress.org/release/wordpress-4.8.2-partial-1.zip";s:8:"rollback";b:0;}s:7:"current";s:5:"4.8.2";s:7:"version";s:5:"4.8.2";s:11:"php_version";s:5:"5.2.4";s:13:"mysql_version";s:3:"5.0";s:11:"new_bundled";s:3:"4.7";s:15:"partial_version";s:5:"4.8.1";}i:1;O:8:"stdClass":11:{s:8:"response";s:10:"autoupdate";s:8:"download";s:59:"https://downloads.wordpress.org/release/wordpress-4.8.2.zip";s:6:"locale";s:5:"en_US";s:8:"packages";O:8:"stdClass":5:{s:4:"full";s:59:"https://downloads.wordpress.org/release/wordpress-4.8.2.zip";s:10:"no_content";s:70:"https://downloads.wordpress.org/release/wordpress-4.8.2-no-content.zip";s:11:"new_bundled";s:71:"https://downloads.wordpress.org/release/wordpress-4.8.2-new-bundled.zip";s:7:"partial";s:69:"https://downloads.wordpress.org/release/wordpress-4.8.2-partial-1.zip";s:8:"rollback";s:70:"https://downloads.wordpress.org/release/wordpress-4.8.2-rollback-1.zip";}s:7:"current";s:5:"4.8.2";s:7:"version";s:5:"4.8.2";s:11:"php_version";s:5:"5.2.4";s:13:"mysql_version";s:3:"5.0";s:11:"new_bundled";s:3:"4.7";s:15:"partial_version";s:5:"4.8.1";s:9:"new_files";s:0:"";}}s:12:"last_checked";i:1506371418;s:15:"version_checked";s:5:"4.8.1";s:12:"translations";a:0:{}}', 'no'),
+(169, '_site_transient_update_core', 'O:8:"stdClass":4:{s:7:"updates";a:2:{i:0;O:8:"stdClass":10:{s:8:"response";s:7:"upgrade";s:8:"download";s:59:"https://downloads.wordpress.org/release/wordpress-4.8.2.zip";s:6:"locale";s:5:"en_US";s:8:"packages";O:8:"stdClass":5:{s:4:"full";s:59:"https://downloads.wordpress.org/release/wordpress-4.8.2.zip";s:10:"no_content";s:70:"https://downloads.wordpress.org/release/wordpress-4.8.2-no-content.zip";s:11:"new_bundled";s:71:"https://downloads.wordpress.org/release/wordpress-4.8.2-new-bundled.zip";s:7:"partial";s:69:"https://downloads.wordpress.org/release/wordpress-4.8.2-partial-1.zip";s:8:"rollback";b:0;}s:7:"current";s:5:"4.8.2";s:7:"version";s:5:"4.8.2";s:11:"php_version";s:5:"5.2.4";s:13:"mysql_version";s:3:"5.0";s:11:"new_bundled";s:3:"4.7";s:15:"partial_version";s:5:"4.8.1";}i:1;O:8:"stdClass":11:{s:8:"response";s:10:"autoupdate";s:8:"download";s:59:"https://downloads.wordpress.org/release/wordpress-4.8.2.zip";s:6:"locale";s:5:"en_US";s:8:"packages";O:8:"stdClass":5:{s:4:"full";s:59:"https://downloads.wordpress.org/release/wordpress-4.8.2.zip";s:10:"no_content";s:70:"https://downloads.wordpress.org/release/wordpress-4.8.2-no-content.zip";s:11:"new_bundled";s:71:"https://downloads.wordpress.org/release/wordpress-4.8.2-new-bundled.zip";s:7:"partial";s:69:"https://downloads.wordpress.org/release/wordpress-4.8.2-partial-1.zip";s:8:"rollback";s:70:"https://downloads.wordpress.org/release/wordpress-4.8.2-rollback-1.zip";}s:7:"current";s:5:"4.8.2";s:7:"version";s:5:"4.8.2";s:11:"php_version";s:5:"5.2.4";s:13:"mysql_version";s:3:"5.0";s:11:"new_bundled";s:3:"4.7";s:15:"partial_version";s:5:"4.8.1";s:9:"new_files";s:0:"";}}s:12:"last_checked";i:1506457796;s:15:"version_checked";s:5:"4.8.1";s:12:"translations";a:0:{}}', 'no'),
 (144, 'theme_mods_imperum', 'a:2:{i:0;b:0;s:18:"custom_css_post_id";i:-1;}', 'yes'),
 (141, 'current_theme', 'HTML5 Blank', 'yes'),
 (142, 'theme_mods_html5blank-stable', 'a:3:{i:0;b:0;s:18:"custom_css_post_id";i:-1;s:16:"sidebars_widgets";a:2:{s:4:"time";i:1501339979;s:4:"data";a:3:{s:19:"wp_inactive_widgets";a:0:{}s:13:"widget-area-1";a:6:{i:0;s:8:"search-2";i:1;s:14:"recent-posts-2";i:2;s:17:"recent-comments-2";i:3;s:10:"archives-2";i:4;s:12:"categories-2";i:5;s:6:"meta-2";}s:13:"widget-area-2";a:0:{}}}}', 'yes'),
@@ -461,10 +461,19 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (168, 44, '_edit_lock', '1505940637:1'),
 (169, 44, '_thumbnail_id', '42'),
 (170, 45, '_edit_last', '1'),
-(171, 45, '_edit_lock', '1506361573:1'),
+(171, 45, '_edit_lock', '1506457638:1'),
 (172, 45, '_thumbnail_id', '42'),
 (177, 48, '_thumbnail_id', '22'),
-(178, 48, '_edit_lock', '1506364341:1');
+(178, 48, '_edit_lock', '1506364341:1'),
+(179, 48, 'wpb_post_views_count', '1'),
+(180, 47, 'wpb_post_views_count', '0'),
+(181, 45, 'wpb_post_views_count', '0'),
+(182, 44, 'wpb_post_views_count', '0'),
+(183, 41, 'wpb_post_views_count', '0'),
+(184, 50, '_edit_last', '1'),
+(185, 50, '_edit_lock', '1506457783:1'),
+(186, 50, '_thumbnail_id', '22'),
+(187, 50, 'wpb_post_views_count', '0');
 
 -- --------------------------------------------------------
 
@@ -539,7 +548,9 @@ INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post
 (41, 1, '2017-09-12 21:33:25', '2017-09-12 21:33:25', '<h4>Web Design speed art - monter</h4>\r\nLorem ipsum dolor sit amet, consectetur adipisicing elit. Iure atque quasi eum, reprehenderit nam odit repellat dicta possimus modi, ducimus placeat magni quo similique quis iste minus necessitatibus at. Et.\r\n\r\nLorem ipsum dolor sit amet, consectetur adipisicing elit. Iure atque quasi eum, reprehenderit nam odit repellat dicta possimus modi, ducimus placeat magni quo similique quis iste minus necessitatibus at. Et.\r\n\r\nLorem ipsum dolor sit amet, consectetur adipisicing elit. Iure atque quasi eum, reprehenderit nam odit repellat dicta possimus modi, ducimus placeat magni quo similique quis iste minus necessitatibus at. Et.', 'Video 1', '', 'publish', 'open', 'closed', '', 'video-1', '', '', '2017-09-14 14:32:54', '2017-09-14 14:32:54', '', 0, 'http://localhost/imperum/?post_type=html5-blank&#038;p=41', 0, 'html5-blank', '', 2),
 (42, 1, '2017-09-12 21:33:20', '2017-09-12 21:33:20', '', 'video-blog', '', 'inherit', 'open', 'closed', '', 'video-blog', '', '', '2017-09-12 21:33:20', '2017-09-12 21:33:20', '', 41, 'http://localhost/imperum/wp-content/uploads/2017/09/video-blog.jpg', 0, 'attachment', 'image/jpeg', 0),
 (44, 1, '2017-09-12 21:33:43', '2017-09-12 21:33:43', '<div>\r\n\r\n<strong>Lorem Ipsum</strong> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\r\n\r\n</div>\r\n<div></div>', 'Video 2', '', 'publish', '1', 'closed', '', 'video-2', '', '', '2017-09-20 20:52:59', '2017-09-20 20:52:59', '', 0, 'http://localhost/imperum/?post_type=html5-blank&#038;p=44', 0, 'html5-blank', '', 0),
-(45, 1, '2017-09-12 21:33:57', '2017-09-12 21:33:57', '<div>\r\n\r\n<strong>Lorem Ipsum</strong> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\r\n\r\n</div>\r\n<div></div>', 'Video 3', '', 'publish', '1', 'closed', '', 'video-3', '', '', '2017-09-20 20:54:31', '2017-09-20 20:54:31', '', 0, 'http://localhost/imperum/?post_type=html5-blank&#038;p=45', 0, 'html5-blank', '', 0);
+(45, 1, '2017-09-12 21:33:57', '2017-09-12 21:33:57', '<div>\r\n\r\n<strong>Lorem Ipsum</strong> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\r\n\r\n</div>\r\n<div></div>', 'Video 3', '', 'publish', '1', 'closed', '', 'video-3', '', '', '2017-09-20 20:54:31', '2017-09-20 20:54:31', '', 0, 'http://localhost/imperum/?post_type=html5-blank&#038;p=45', 0, 'html5-blank', '', 0),
+(49, 1, '2017-09-26 20:29:42', '0000-00-00 00:00:00', '', 'Auto Draft', '', 'auto-draft', '1', 'closed', '', '', '', '', '2017-09-26 20:29:42', '0000-00-00 00:00:00', '', 0, 'http://localhost/imperum/?post_type=html5-blank&p=49', 0, 'html5-blank', '', 0),
+(50, 1, '2017-09-26 20:30:27', '2017-09-26 20:30:27', '<div>\r\n\r\n<strong>Lorem Ipsum</strong> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\r\n\r\n</div>\r\n<div></div>', 'Video 6', '', 'publish', '1', 'closed', '', 'video-6', '', '', '2017-09-26 20:30:27', '2017-09-26 20:30:27', '', 0, 'http://localhost/imperum/?post_type=html5-blank&#038;p=50', 0, 'html5-blank', '', 0);
 
 -- --------------------------------------------------------
 
@@ -579,7 +590,9 @@ INSERT INTO `wp_terms` (`term_id`, `name`, `slug`, `term_group`) VALUES
 (5, 'Test2', 'test2', 0),
 (6, 'Test3', 'test3', 0),
 (7, 'Test4', 'test4', 0),
-(8, 'Ux Web Tactics', 'ux-web-tactics', 0);
+(8, 'Ux Web Tactics', 'ux-web-tactics', 0),
+(9, 'Kozic', 'kozic', 0),
+(10, 'Damir', 'damir', 0);
 
 -- --------------------------------------------------------
 
@@ -598,6 +611,7 @@ CREATE TABLE `wp_term_relationships` (
 --
 
 INSERT INTO `wp_term_relationships` (`object_id`, `term_taxonomy_id`, `term_order`) VALUES
+(50, 3, 0),
 (41, 3, 0),
 (25, 1, 0),
 (27, 1, 0),
@@ -610,7 +624,9 @@ INSERT INTO `wp_term_relationships` (`object_id`, `term_taxonomy_id`, `term_orde
 (44, 5, 0),
 (45, 6, 0),
 (45, 7, 0),
-(45, 8, 0);
+(45, 8, 0),
+(50, 9, 0),
+(50, 10, 0);
 
 -- --------------------------------------------------------
 
@@ -634,12 +650,14 @@ CREATE TABLE `wp_term_taxonomy` (
 INSERT INTO `wp_term_taxonomy` (`term_taxonomy_id`, `term_id`, `taxonomy`, `description`, `parent`, `count`) VALUES
 (1, 1, 'category', '', 0, 2),
 (2, 2, 'category', '', 0, 1),
-(3, 3, 'category', '', 0, 1),
+(3, 3, 'category', '', 0, 2),
 (4, 4, 'post_tag', '', 0, 2),
 (5, 5, 'post_tag', '', 0, 2),
 (6, 6, 'post_tag', '', 0, 2),
 (7, 7, 'post_tag', '', 0, 2),
-(8, 8, 'category', '', 0, 1);
+(8, 8, 'category', '', 0, 1),
+(9, 9, 'post_tag', '', 0, 1),
+(10, 10, 'post_tag', '', 0, 1);
 
 -- --------------------------------------------------------
 
@@ -673,7 +691,7 @@ INSERT INTO `wp_usermeta` (`umeta_id`, `user_id`, `meta_key`, `meta_value`) VALU
 (12, 1, 'wp_user_level', '10'),
 (13, 1, 'dismissed_wp_pointers', ''),
 (14, 1, 'show_welcome_panel', '1'),
-(15, 1, 'session_tokens', 'a:3:{s:64:"d9e0a6bd1d16babb1bb7c7c4acd265681cc7b0db0fbe110ab37e66bfca3e484b";a:4:{s:10:"expiration";i:1506429628;s:2:"ip";s:3:"::1";s:2:"ua";s:102:"Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36";s:5:"login";i:1506256828;}s:64:"b9da71c2a8a3619e61689e1fec45bb5ee9e994a72bebf8ab938dda6e8a1e3724";a:4:{s:10:"expiration";i:1506494900;s:2:"ip";s:3:"::1";s:2:"ua";s:102:"Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36";s:5:"login";i:1506322100;}s:64:"ce21fcbd36ef8805d3fbac89532dc9e8443cb1b2732d741573784b0a59e82253";a:4:{s:10:"expiration";i:1506533371;s:2:"ip";s:3:"::1";s:2:"ua";s:102:"Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36";s:5:"login";i:1506360571;}}'),
+(15, 1, 'session_tokens', 'a:3:{s:64:"b9da71c2a8a3619e61689e1fec45bb5ee9e994a72bebf8ab938dda6e8a1e3724";a:4:{s:10:"expiration";i:1506494900;s:2:"ip";s:3:"::1";s:2:"ua";s:102:"Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36";s:5:"login";i:1506322100;}s:64:"ce21fcbd36ef8805d3fbac89532dc9e8443cb1b2732d741573784b0a59e82253";a:4:{s:10:"expiration";i:1506533371;s:2:"ip";s:3:"::1";s:2:"ua";s:102:"Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36";s:5:"login";i:1506360571;}s:64:"c68e811e65ee47b9773a3639162529e422a747c7365a39a00e1a8cc3c3544405";a:4:{s:10:"expiration";i:1506628972;s:2:"ip";s:3:"::1";s:2:"ua";s:102:"Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36";s:5:"login";i:1506456172;}}'),
 (16, 1, 'wp_dashboard_quick_press_last_post_id', '32'),
 (17, 1, 'community-events-location', 'a:1:{s:2:"ip";s:2:"::";}'),
 (18, 1, 'wp_user-settings', 'libraryContent=browse'),
@@ -831,17 +849,17 @@ ALTER TABLE `wp_links`
 -- AUTO_INCREMENT for table `wp_options`
 --
 ALTER TABLE `wp_options`
-  MODIFY `option_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=456;
+  MODIFY `option_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=464;
 --
 -- AUTO_INCREMENT for table `wp_postmeta`
 --
 ALTER TABLE `wp_postmeta`
-  MODIFY `meta_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=179;
+  MODIFY `meta_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=188;
 --
 -- AUTO_INCREMENT for table `wp_posts`
 --
 ALTER TABLE `wp_posts`
-  MODIFY `ID` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=49;
+  MODIFY `ID` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=51;
 --
 -- AUTO_INCREMENT for table `wp_termmeta`
 --
@@ -851,12 +869,12 @@ ALTER TABLE `wp_termmeta`
 -- AUTO_INCREMENT for table `wp_terms`
 --
 ALTER TABLE `wp_terms`
-  MODIFY `term_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `term_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 --
 -- AUTO_INCREMENT for table `wp_term_taxonomy`
 --
 ALTER TABLE `wp_term_taxonomy`
-  MODIFY `term_taxonomy_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `term_taxonomy_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 --
 -- AUTO_INCREMENT for table `wp_usermeta`
 --
