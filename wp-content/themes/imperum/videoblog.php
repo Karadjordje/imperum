@@ -16,13 +16,13 @@
 	                    	<?php
 	                    		$cat_count_web = get_category( '8' );
 	                    		$cat_count_marketing = get_category( '3' );
-	                    		$car_count_uncatagorized = get_category( '1');
+	                    		$cat_count_other = get_category( '12');
 	                    	?>
 	                        <h3 title="<?php echo $cat_count_web->count; ?>">
 	                        	<?php echo $cat_count_web->count; ?>
 	                        </h3>
 	                        <div class="checkboxCustom">
-	                            <input type="checkbox" name="uxWebChb" id="uxWebChb">
+	                            <input checked type="checkbox" name="uxWebChb" id="uxWebChb">
 	                            <label for="uxWebChb">UX WEB TACTICS</label>
 	                        </div>
 	                    </div><div class="categories">
@@ -30,15 +30,15 @@
 	                        	<?php echo $cat_count_marketing->count; ?>
 	                        </h3>
 	                        <div class="checkboxCustom">
-	                            <input type="checkbox" name="marketingChb" id="marketingChb">
+	                            <input checked type="checkbox" name="marketingChb" id="marketingChb">
 	                            <label for="marketingChb">MARKETING TACTICS</label>
 	                        </div>
 	                    </div><div class="categories">
-	                        <h3 title="<?php echo $car_count_uncatagorized->count; ?>">
-	                        	<?php echo $car_count_uncatagorized->count; ?>
+	                        <h3 title="<?php echo $cat_count_other->count; ?>">
+	                        	<?php echo $cat_count_other->count; ?>
 	                        </h3>
 	                        <div class="checkboxCustom">
-	                            <input type="checkbox" name="outherChb" id="outherChb">
+	                            <input checked type="checkbox" name="outherChb" id="outherChb">
 	                            <label for="outherChb">OTHER TACTICS</label>
 	                        </div>
 	                    </div>
@@ -68,70 +68,7 @@
 	                <div class="tab-content">
 	                    <div role="tabpanel" class="tab-pane active" id="latest">
 	                        <div class="vb-posts clearfix">
-	                            <?php
-	                            	$paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
-	                            	$args = array(
-		                            	'post_type' => 'html5-blank',
-		                            	'posts_per_page' => 5,
-		                            	'paged' => $paged
-	                            	);
-	                            ?>
-                            	<?php $loop = new WP_Query( $args ); ?>
-                            	<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
-	                            <div class="col-md-3 col-md-offset-1">
-	                                <div class="featured-img featured-img-small" style="background-image: url(<?php echo wp_get_attachment_url( get_post_thumbnail_id() ); ?>);"></div>
-	                            </div>
-	                            <div class="col-md-1 post-num">
-	                                <h3>01</h3>
-	                            </div>
-	                            <div class="col-md-1">
-	                                <hr class="dark-line" />
-	                            </div>
-	                            <div class="col-md-5">
-	                            	<a class="post-headline text-uppercase" href="<?php the_permalink() ?>">
-	                            		<h4 class="post-headline text-uppercase"><?php the_title() ?></h4>
-	                            	</a>
-	                                <div class="post-body-short">
-	                                    <p><?php the_excerpt(); ?></p>
-	                                </div>
-	                                <div class="subject">
-	                                    <p>
-	                                    	<?php foreach ((get_the_category()) as $category) {
-				                    			echo $category->cat_name . ' ';
-				                    		} ?>
-	                                    </p>
-	                                </div><div class="tags">
-	                                    <p>
-		                                   	<?php
-											  	$posttags = get_the_tags();
-											  	if ($posttags) {
-											    	foreach($posttags as $tag) {
-											      		echo $tag->name . ', ';
-											    	}
-											  	}
-											?>
-	                                    </p>
-	                                </div>
-	                            </div>
-	                            <?php endwhile; ?>
-
-								<?php if ($loop->max_num_pages > 1) { // check if the max number of pages is greater than 1
-									$nextUrl = get_next_posts_page_link();
-									$prevUrl = get_previous_posts_page_link();
-								?>
-	                            <div class="paginations clearfix">
-		                            <ul class="pagination">
-		                                <li><a href="<?php echo esc_url( $prevUrl ); ?>"><span class="icon-left_arrow"></span></a></li>
-		                                <!-- pagination here -->
-		                                <?php
-									      if (function_exists(custom_pagination)) {
-									        custom_pagination($loop->max_num_pages,"",$paged);
-									      }
-									    ?>
-		                                <li><a href="<?php echo esc_url( $nextUrl ); ?>"><span class="icon-right_arrow"></span></a></li>
-		                            </ul>
-		                        </div>
-		                        <?php } ?>
+	                        	<?php include('videoblog-checkboxes.php'); ?>
 	                        </div>
 	                    </div>
 
