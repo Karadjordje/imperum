@@ -11,7 +11,7 @@
 	                    <h1 class="headline text-uppercase">Videoblog page</h1>
 	                    <div class="col-md-offset-5 col-md-2"><hr class="line" /></div>
 	                </div>
-	                <div class="col-md-6 col-md-offset-3 vb-posts-info">
+	                <div id="video-checkboxes" class="col-md-6 col-md-offset-3 vb-posts-info">
 	                    <div class="categories">
 	                    	<?php
 	                    		$cat_count_web = get_category( '8' );
@@ -22,7 +22,7 @@
 	                        	<?php echo $cat_count_web->count; ?>
 	                        </h3>
 	                        <div class="checkboxCustom">
-	                            <input checked type="checkbox" name="uxWebChb" id="uxWebChb">
+	                            <input checked type="checkbox" name="uxWebChb" id="uxWebChb" data-category="ux-web-tactics">
 	                            <label for="uxWebChb">UX WEB TACTICS</label>
 	                        </div>
 	                    </div><div class="categories">
@@ -30,7 +30,7 @@
 	                        	<?php echo $cat_count_marketing->count; ?>
 	                        </h3>
 	                        <div class="checkboxCustom">
-	                            <input checked type="checkbox" name="marketingChb" id="marketingChb">
+	                            <input checked type="checkbox" name="marketingChb" id="marketingChb" data-category="marketing-tactic">
 	                            <label for="marketingChb">MARKETING TACTICS</label>
 	                        </div>
 	                    </div><div class="categories">
@@ -38,7 +38,7 @@
 	                        	<?php echo $cat_count_other->count; ?>
 	                        </h3>
 	                        <div class="checkboxCustom">
-	                            <input checked type="checkbox" name="outherChb" id="outherChb">
+	                            <input checked type="checkbox" name="outherChb" id="outherChb" data-category="other-tactics">
 	                            <label for="outherChb">OTHER TACTICS</label>
 	                        </div>
 	                    </div>
@@ -67,8 +67,8 @@
 	            <div class="container main">
 	                <div class="tab-content">
 	                    <div role="tabpanel" class="tab-pane active" id="latest">
-	                        <div class="vb-posts clearfix">
-	                        	<?php include('videoblog-checkboxes.php'); ?>
+	                        <div id="vb-posts" class="vb-posts clearfix">
+	                        	<?php include('videoblog-checkboxes.php'); ?>  <!-- we include this file so we can show content when page loads we later change this with ajax based on checkboxes which are checked -->
 	                        </div>
 	                    </div>
 

@@ -190,12 +190,36 @@
 
 	});
 
+
+	// Front page carousel dynamic change of content
 	$('#our-work-carousel').carousel().on('slide.bs.carousel', function(e) {
 		var currentElement = $(e.relatedTarget);
+
 		var title = currentElement.data('title');
 		var cat = currentElement.data('category');
+
 	  	$('.our-work-info h3').text(title);
 	  	$('.our-work-info h4').text(cat);
+	});
+
+
+	// Portfolio carousel dynamic change of content (has custom fields)
+	$('#portfolio-carousel').carousel().on('slide.bs.carousel', function(e) {
+		var currentElement = $(e.relatedTarget);
+
+		var title = currentElement.data('title');
+		var content = currentElement.data('content');
+		var projectLink = currentElement.data('plink');
+		var projectCategory = currentElement.data('pcategory');
+		var projectDate = currentElement.data('pdate');
+		var projectDuration = currentElement.data('pduration');
+
+	  	$('#projectName').text(title);
+	  	$('.main-content p').text(content);
+	  	$('#projectLink').text(projectLink);
+	  	$('#projectCategory').text(projectCategory);
+	  	$('#projectDate').text(projectDate);
+	  	$('#projectDuration').text(projectDuration);
 	});
 
 	var checkedCategories = {
@@ -268,6 +292,33 @@
 		});
 
 		$('.cat-all.item').eq(0).addClass('active');
+	});
+
+
+	// Logic for video-checkboxes
+	var $vbPosts = $('#vb-posts');
+	var videoCats  = {
+		'ux-web-tactics': true,
+		'marketing-tactic': true,
+		'other-tactics': true,
+	};
+
+	$('#video-checkboxes').on('change', 'input:checkbox', function() {
+		var cat = $(this).data('category'); // ux-web-tactics
+		videoCats[cat] = this.checked;
+		var lookupCategories = [];
+		for (key in videoCats) {
+			if (videoCats[key] === true) {
+				lookupCategories.push(key);
+			}
+		}
+
+		// This doesnt allow for checkboxes to be turned off
+		if (lookupCategories.length === 0) {
+			this.checked = true;
+			return;
+		}
+		$vbPosts.load('video-checkboxes/?category_name=' + lookupCategories.join(','));
 	});
 
 })(jQuery, this);

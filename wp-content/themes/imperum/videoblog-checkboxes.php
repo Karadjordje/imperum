@@ -1,9 +1,13 @@
+<?php /* Template Name: video-checkboxes */ ?>
+
+								<!-- get_query_var allows us to change query directly in URL we use it for category_name -->
 								<?php
 	                            	$paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
 	                            	$args = array(
 		                            	'post_type' => 'html5-blank',
 		                            	'posts_per_page' => 5,
-		                            	'paged' => $paged
+		                            	'paged' => $paged,
+		                            	'category_name' => get_query_var('category_name')
 	                            	);
 	                            ?>
                             	<?php $loop = new WP_Query( $args ); ?>
@@ -62,3 +66,5 @@
 		                            </ul>
 		                        </div>
 		                        <?php } ?>
+
+
