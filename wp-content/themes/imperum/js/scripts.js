@@ -213,13 +213,33 @@
 		var projectCategory = currentElement.data('pcategory');
 		var projectDate = currentElement.data('pdate');
 		var projectDuration = currentElement.data('pduration');
+		var shortDescription = currentElement.data('pshortdescription');
 
 	  	$('#projectName').text(title);
-	  	$('.main-content p').text(content);
+	  	$('.headline').text(title);
+	  	$('#projectContent').text(content);
 	  	$('#projectLink').text(projectLink);
 	  	$('#projectCategory').text(projectCategory);
 	  	$('#projectDate').text(projectDate);
 	  	$('#projectDuration').text(projectDuration);
+	  	$('#shortDescription').text(shortDescription);
+
+
+	  	var colorOne = currentElement.data('colorone');
+		var colorTwo = currentElement.data('colortwo');
+		var colorThree = currentElement.data('colorthree');
+		var colorFour = currentElement.data('colorfour');
+
+		$("#colorOne span").css("color", "#" + colorOne);
+		$("#colorTwo span").css("color", "#" + colorTwo);
+		$("#colorThree span").css("color", "#" + colorThree);
+		$("#colorFour span").css("color", "#" + colorFour);
+
+		$("#colorOne h5").text(colorOne);
+		$("#colorTwo h5").text(colorTwo);
+		$("#colorThree h5").text(colorThree);
+		$("#colorFour h5").text(colorFour);
+
 	});
 
 	var checkedCategories = {

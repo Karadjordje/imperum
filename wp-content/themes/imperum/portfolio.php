@@ -7,7 +7,7 @@
 	            <div class="container main">
 	                <div class="col-md-8 col-md-offset-2 text-center">
 	                    <img src="<?php bloginfo('template_directory'); ?>/img/whiteKeys.png">
-	                    <h4 class="sub-heading text-uppercase">Short movie</h4>
+	                    <h4 class="sub-heading text-uppercase" id="shortDescription">Short movie</h4>
 	                    <h1 class="headline">Crossroads</h1>
 	                    <div class="col-md-offset-5 col-md-2"><hr class="line" /></div>
 	                </div>
@@ -58,6 +58,11 @@
 		                                    	data-pcategory="<?php the_field('project_category'); ?>"
 		                                    	data-pdate="<?php the_field('project_date'); ?>"
 		                                    	data-pduration="<?php the_field('project_duration'); ?>"
+		                                    	data-pshortdescription="<?php the_field('short_description') ?>"
+		                                    	data-colorone="<?php the_field('color_one') ?>"
+		                                    	data-colortwo="<?php the_field('color_two') ?>"
+		                                    	data-colorthree="<?php the_field('color_three') ?>"
+		                                    	data-colorfour="<?php the_field('color_four') ?>"
 		                                    >
 		                                        <img src="<?php echo wp_get_attachment_url( get_post_thumbnail_id() ); ?>" alt="<?php the_title(); ?>">
 		                                    </div>
@@ -81,24 +86,24 @@
 
 	                    <div class="col-md-8 col-md-offset-2">
 	                        <div class="project-icons">
-	                            <div class="project-icon-info">
+	                            <div class="project-icon-info" id="colorOne">
 	                                <div class="project-icon">
-	                                    <span class="glyphicon glyphicon-remove" style="color: #c29b5a;"></span>
+	                                    <span class="glyphicon glyphicon-remove"></span>
 	                                </div>
 	                                <h5>223300</h5>
-	                            </div><div class="project-icon-info">
+	                            </div><div class="project-icon-info" id="colorTwo">
 	                                <div class="project-icon">
-	                                    <span class="glyphicon glyphicon-remove" style="color: #c29b5a;"></span>
+	                                    <span class="glyphicon glyphicon-remove"></span>
 	                                </div>
 	                                <h5>223300</h5>
-	                            </div><div class="project-icon-info">
+	                            </div><div class="project-icon-info" id="colorThree">
 	                                <div class="project-icon">
-	                                    <span class="glyphicon glyphicon-remove" style="color: #c29b5a;"></span>
+	                                    <span class="glyphicon glyphicon-remove"></span>
 	                                </div>
 	                                <h5>223300</h5>
-	                            </div><div class="project-icon-info">
+	                            </div><div class="project-icon-info" id="colorFour">
 	                                <div class="project-icon">
-	                                    <span class="glyphicon glyphicon-remove" style="color: #c29b5a;"></span>
+	                                    <span class="glyphicon glyphicon-remove"></span>
 	                                </div>
 	                                <h5>223300</h5>
 	                            </div>
@@ -112,7 +117,7 @@
 	                        <div class="col-md-offset-1 col-md-2"><hr class="line" /></div>
 	                    </div>
 	                    <div class="col-md-6 col-md-offset-4 main-content">
-	                        <p>
+	                        <p id="projectContent">
 
 	                        </p>
 	                    </div>
