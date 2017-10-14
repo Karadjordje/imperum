@@ -40,9 +40,9 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-1 col-md-offset-1 text-right"><h2 class="hash-sign">#</h2></div>
-                        <div class="col-md-1"><hr class="dark-line" /></div>
-                        <div class="col-md-7">
+                        <div class="col-md-1 col-sm-1 col-md-offset-1 text-right hidden-xs"><h2 class="hash-sign">#</h2></div>
+                        <div class="col-md-1 col-sm-1 hidden-xs"><hr class="dark-line" /></div>
+                        <div class="col-md-7 col-sm-7">
                             <p>
                                 Congratulations, you’re about to take the first step toward taking control of your business online. Please follow the steps below to schedule your strategy call. Be prepared to talk about your goals, and what is currently holding you back from reaching them.
                             </p>
