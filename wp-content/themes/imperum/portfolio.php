@@ -128,23 +128,23 @@
 	                    <table id="portfolioTable" class="text-uppercase col-md-9 col-md-offset-1">
 	                        <tr>
 	                            <td class="col-md-4" align="right">Project name:</td>
-	                            <td id="projectName" class="col-md-8"> <span class="dot">&#9679;</span></td>
+	                            <td id="projectName" class="col-md-8 addSpan"> <span class="dot">&#9679;</span></td>
 	                        </tr>
 	                        <tr>
 	                            <td class="col-md-4" align="right">Project link:</td>
-	                            <td id="projectLink" class="col-md-8"> <span class="dot">&#9679;</span></td>
+	                            <td id="projectLink" class="col-md-8 addSpan"> <span class="dot">&#9679;</span></td>
 	                        </tr>
 	                        <tr>
 	                            <td class="col-md-4" align="right">Category:</td>
-	                            <td id="projectCategory" class="col-md-8"> <span class="dot">&#9679;</span></td>
+	                            <td id="projectCategory" class="col-md-8 addSpan"> <span class="dot">&#9679;</span></td>
 	                        </tr>
 	                        <tr>
 	                            <td class="col-md-4" align="right">Date:</td>
-	                            <td id="projectDate" class="col-md-8"> <span class="dot">&#9679;</span></td>
+	                            <td id="projectDate" class="col-md-8 addSpan"> <span class="dot">&#9679;</span></td>
 	                        </tr>
 	                        <tr>
 	                            <td class="col-md-4" align="right">Duration:</td>
-	                            <td id="projectDuration" class="col-md-8"> <span class="dot">&#9679;</span></td>
+	                            <td id="projectDuration" class="col-md-8 addSpan"> <span class="dot">&#9679;</span></td>
 	                        </tr>
 	                    </table>
 	                </div>

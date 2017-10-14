@@ -204,6 +204,9 @@
 	  	$("#externalLink").attr('href', projectLink);
 	});
 
+	// This will link to specific slide when page loads so we dont have empty content
+	$('#our-work-carousel').carousel(1);
+
 
 	// Portfolio carousel dynamic change of content (has custom fields)
 	$('#portfolio-carousel').carousel().on('slide.bs.carousel', function(e) {
@@ -243,7 +246,13 @@
 		$("#colorFour h5").text(colorFour);
 		$("#linkToProject").attr('href', projectLink);
 
+		var span = '<span class="dot">&#9679;</span>'
+		$(".addSpan").append(span);
 	});
+
+	// This will link to specific slide when page loads so we dont have empty content
+	$('#portfolio-carousel').carousel(1);
+
 
 	var checkedCategories = {
 		frontend: false,
