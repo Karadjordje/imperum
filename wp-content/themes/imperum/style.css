@@ -510,6 +510,9 @@ section#clients-say .main-content p {
     font-size: 1em;
     color: #cba262;
 }
+#externalLink:hover, #externalLink:active, #externalLink:visited, #externalLink:focus {
+    text-decoration: none;
+}
 #our-work .clients-num h5:after {
     color: rgba(230, 230, 233, 1);
 }
@@ -1050,6 +1053,18 @@ section#portfolio .main {
 .tablet .tablet-btn span {
     line-height: 28px;
     color: #c29b5a;
+}
+.tablet-btn a:hover {
+    text-decoration: none;
+}
+.tablet-btn a:visited {
+    text-decoration: none;
+}
+.tablet-btn a:focus {
+    text-decoration: none;
+}
+.tablet-btn a:active {
+    text-decoration: none;
 }
 .portfolio-indicators {
     bottom: -45px;

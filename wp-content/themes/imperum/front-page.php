@@ -212,7 +212,7 @@
                         <div class="clients-num">
                             <h5 title="01">01</h5>
                         </div>
-                        <span class="icon-link link-glow"></span>
+                        <a id="externalLink" target="_blank" href="#"><span class="icon-link link-glow"></span></a>
                         <h3>Crossroads</h3>
                         <h4 class="sub-heading">front end / wordpress</h4>
                     </div>
@@ -235,10 +235,10 @@
                                             class="cat-all cat-<?= strtolower($cat) ?> item <?php if ($i == 1) echo 'active'; ?>"
                                             data-title="<?php the_title() ?>"
                                             data-category="<?= strtolower($cat) ?>"
+                                            data-link="<?php the_field('external_link') ?>"
                                         >
                                             <img src="<?php echo wp_get_attachment_url( get_post_thumbnail_id() ); ?>" alt="<?php the_title(); ?>">
                                             <div class="carousel-caption">
-                                                <a href="<?php the_permalink() ?>"><h3><?php the_title(); ?></h3></a>
                                             </div>
                                         </div>
                                         <?php $i++; ?>

@@ -197,9 +197,11 @@
 
 		var title = currentElement.data('title');
 		var cat = currentElement.data('category');
+		var projectLink = currentElement.data('link');
 
 	  	$('.our-work-info h3').text(title);
 	  	$('.our-work-info h4').text(cat);
+	  	$("#externalLink").attr('href', projectLink);
 	});
 
 
@@ -239,6 +241,7 @@
 		$("#colorTwo h5").text(colorTwo);
 		$("#colorThree h5").text(colorThree);
 		$("#colorFour h5").text(colorFour);
+		$("#linkToProject").attr('href', projectLink);
 
 	});
 

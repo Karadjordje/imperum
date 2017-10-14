@@ -78,7 +78,11 @@
 	                                    <li data-target="#portfolio-carousel" data-slide-to="2"></li>
 	                                </ol>
 	                            </div>
-	                            <div class="tablet-btn"><span class="icon-link link-glow"></span></div>
+	                            <div class="tablet-btn">
+	                            	<a id="linkToProject" target="_blank" href="#">
+	                            		<span class="icon-link link-glow"></span>
+	                            	</a>
+	                            </div>
 
 	                        </div>
 
