@@ -2,6 +2,10 @@
 
 	$(function () {
 
+		//FB MESSENGER
+		var fbMessenger = $('.tooltiptext');
+		fbMessenger.hide();
+
 		var windowsize = $(window).width();
 
 	    $(window).on('resize', function() {
@@ -49,6 +53,14 @@
 	                'left' : '50%',
 	                'transform' : 'translate(-570px, 0)'
 	            });
+	            $('#fb_link').midnight().css({
+	                'bottom': '5%',
+	                'top': 'auto',
+	                'right' : '-23%',
+	                'width' : '150px',
+	                'left' : 'auto',
+	                'transform' : 'translate(-570px, 0)'
+	            });
 	        }
 	        else {
 	            $('.head-nav').midnight().css({
@@ -91,6 +103,14 @@
 	                'right' : 'auto',
 	                'width' : '150px',
 	                'left' : '50%',
+	                'transform' : 'translate(-470px, 0)'
+	            });
+	            $('#fb_link').midnight().css({
+	                'bottom': '5%',
+	                'top': 'auto',
+	                'right' : '-23%',
+	                'width' : '150px',
+	                'left' : 'auto',
 	                'transform' : 'translate(-470px, 0)'
 	            });
 	        }
