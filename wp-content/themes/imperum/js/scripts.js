@@ -2,6 +2,32 @@
 
 	$(function () {
 
+		// Form validation
+		$("#submit_btn").click(function() {
+
+			var data = {
+			    user_name: $("input[name=name]").val(),
+			    user_email: $("input[name=email]").val(),
+			    subject: $("input[name=subject]").val(),
+			    msg: $("textarea[name=message]").val()
+			};
+			$.post("//imperium-la.com/wp-content/plugins/cfp/contact_me_ENG.php", data, function(e) {
+		        $("#contact_form  input[required=true], #contact_form textarea[required=true]").val("")
+		        $('#contact_results').html(e.text);
+
+		        if (e.type === "message") {
+		        	$("input[name=name]").val(" ");
+		        	$("input[name=email]").val(" ");
+		        	$("input[name=subject]").val(" ");
+		        	$("textarea[name=message]").val(" ");
+		        } else {
+		        	$('#contact_results').html(e.text);
+		        }
+		    }, "json");
+
+		})
+
+
 		var windowsize = $(window).width();
 
 	    $(window).on('resize', function() {

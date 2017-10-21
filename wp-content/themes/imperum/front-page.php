@@ -328,7 +328,11 @@
                     </div>
 
                     <div class="col-md-8 col-md-offset-4 main-content">
-                        <form>
+
+                        <?php echo do_shortcode( '[contactform_ENG]' ) ?>
+
+
+                        <!-- form>
                             <div class="inputs-style">
                                 <input type="text" id="name" name="name" required>
                                 <span class="floating-label">YOUR NAME</span>
@@ -344,9 +348,9 @@
                                 <span class="floating-label">YOUR MESSAGE</span>
                             </div>
 
-                            <a class="btn btn-imperium btn-2" href="#" role="button">Sent message</a>
+                            <a class="btn btn-imperium btn-2" href="#" role="button">Send message</a>
+                        </form> -->
 
-                        </form>
                         <p>
                             We're new raising company specialised in Web Development, making sure to provide high quality with business side of web development. So your website won't only be technicaly great but also optimized for high conversion rates and gathering new clients.
                         </p>
