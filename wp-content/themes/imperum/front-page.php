@@ -63,7 +63,7 @@
                         </p>
                     </div>
                     <div class="col-md-8 col-md-offset-4">
-                        <a class="btn btn-imperium btn-2" href="services.html" role="button">See more</a>
+                        <a class="btn btn-imperium btn-2" href="<?php echo site_url(); ?>/services/" role="button">See more</a>
                     </div>
                     <div class="col-md-9 col-md-offset-3">
                         <h1 class="headline">What our clients say</h1>
