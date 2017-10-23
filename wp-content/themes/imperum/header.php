@@ -45,16 +45,16 @@
 	            <h1 class="logo text-uppercase">Imperium <span class="glyphicon glyphicon-align-justify"></span></h1>
 	        </div>
 	        <ul>
-	            <li class="scrollToHome">
+	            <li class="scrollToHome <?php if ( is_front_page() ) echo 'active' ?>">
 	            	<a href="<?php if(!is_front_page()) echo home_url(); else echo '#' ?>">Home</a>
 	            </li>
-	            <li>
+	            <li class="<?php if(is_page('Service')) echo 'active'; ?>">
 	            	<a href="<?php echo site_url(); ?>/Service/">Service</a>
 	            </li>
-	            <li>
+	            <li class="<?php if(is_page('Portfolio')) echo 'active'; ?>">
 	            	<a href="<?php echo site_url(); ?>/Portfolio/">Portfolio</a>
 	            </li>
-	            <li>
+	            <li class="<?php if(is_page('Videoblog')) echo 'active'; ?>">
 	            	<a href="<?php echo site_url(); ?>/Videoblog/">Videoblog</a>
 	            </li>
 	            <li class="scrollToContact">

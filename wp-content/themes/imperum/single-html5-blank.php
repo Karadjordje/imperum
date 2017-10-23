@@ -18,9 +18,9 @@
 	                </div>
 	                <div class="col-md-6 col-md-offset-3 vb-head-info">
 	                    <div class="average-difficulty">
-	                        <h3><span>Average ROI:</span> 58%</h3>
+	                        <h3><span>Spent Time:</span> <?php the_field('spent_time') ?></h3>
 	                    </div><div class="average-difficulty">
-	                        <h3><span>difficulty:</span> Begginer</h3>
+	                        <h3><span>Difficulty:</span> <?php the_field('difficulty') ?></h3>
 	                    </div>
 	                </div>
 	                <span class="icon-down_arrow arrow-down"></span>
@@ -41,7 +41,7 @@
 	            </div>
 	            <div class="container main">
 	                <div class="col-md-10 col-md-offset-1">
-	                    <div class="featured-img featured-img-big" style="background-image: url('<?php bloginfo('template_directory'); ?>/img/vbsingle.jpg');"></div>
+	                    <div class="featured-img featured-img-big" style="background-image: url(<?php echo wp_get_attachment_url( get_post_thumbnail_id() ); ?>);"></div>
 	                </div>
 	            </div>
 	        </div>
@@ -72,12 +72,14 @@
 	                    	</p>
 	                    </div><div class="tags">
 	                        <p>
-	                        	<?php 
-	                        		$tags= get_tags();
-	                        		foreach ($tags as $tag) {
-	                        			echo $tag -> name . ', ';
-	                        		}
-	                        	?>
+	                        	<?php
+									$posttags = get_the_tags();
+									if ($posttags) {
+									  	foreach($posttags as $tag) {
+									    	echo $tag->name . ' ';
+									  	}
+									}
+								?>
 	                        </p>
 	                    </div><div class="date-of-post">
 	                        <p><?php the_time('F j, Y'); ?></p>
@@ -112,7 +114,7 @@
 	            </div>
 	        </div>
 	    </section>
-	    
+
 
 	<?php endwhile; ?>
 

@@ -528,17 +528,16 @@ function html5_shortcode_demo_2($atts, $content = null) // Demo Heading H2 short
 }
 
 
-
-// This is used to enable comments in bulk for custom post types
 function default_comments_on( $data ) {
     if( $data['post_type'] == 'html5-blank' ) {
-        $data['comment_status'] = 1;
+        $data['comment_status'] = 'open';
     }
 
     return $data;
 }
 add_filter( 'wp_insert_post_data', 'default_comments_on' );
 
+// This is used to enable comments in bulk for custom post types
 // function switch_on_comments_automatically(){
 //     global $wpdb;
 //     $wpdb->query( $wpdb->prepare("UPDATE $wpdb->posts SET comment_status = 'open'")); // Switch comments on automatically
