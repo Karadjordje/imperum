@@ -137,7 +137,7 @@
 		  color: '#000',
 		  trailColor: '#eee',
 		  trailWidth: 1,
-		  svgStyle: {width: '100%', height: '100%'},
+		  svgStyle: {width: '100%', height: '2px'},
 		  text: {
 		    style: {},
 		    autoStyleContainer: false
@@ -176,7 +176,7 @@
 		      this.rows = minRows + rows - 1;
 		  });
 
-		// PREVENT LOADINGSCREEN FROM SHOWING MULTIPLE TIMES
+		PREVENT LOADINGSCREEN FROM SHOWING MULTIPLE TIMES
 		var userHasVisited = sessionStorage.getItem('namespace.visited');
 		sessionStorage.setItem('namespace.visited', 1);
 		if (userHasVisited) {

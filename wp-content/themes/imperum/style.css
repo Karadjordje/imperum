@@ -264,39 +264,46 @@ section#clients-say .main-content p {
     height: 100%;
     top: 0; bottom: 0; right: 0; left: 0;
     z-index: 99;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .loadingPage h1 {
     text-transform: uppercase;
-    margin-top: 40px;
-    margin-bottom: 150px;
+    margin: 0;
+    padding: 40px 0 10px 0;
     font-weight: normal;
     font-size: 1.5em;
     color: #000;
-    position: relative;
-    z-index: 99999;
 }
 #progressbar {
-    max-width: 170px !important;
-    display: block !important;
-    margin: 40px auto 10px auto !important;
-    height: 2px !important;
-    font-size: 1em !important;
+    max-width: 170px;
+    display: block;
+    margin: 0 auto;
+    padding: 20px 0;
+    min-height: 80px;
+    font-size: 1em;
+    width: 40%;
 }
-.loadingText h3 {
-    position: fixed;
-    bottom: 10%;
-    left: 50%;
-    margin-right: -50%;
-    -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+.loadingFooter {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+.loadingPage h3 {
+    padding: 40px 0;
+    text-align: center;
     color: #000;
+    margin: 0;
 }
 .progressbar-text {
-    position: inherit !important;
+    position: inherit;
 }
-
-
+.loadingContent img {
+    width: 60%;
+    max-width: 360px;
+}
 
 /* HOME section */
 #home .main-content p {
