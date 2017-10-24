@@ -176,7 +176,7 @@
 		      this.rows = minRows + rows - 1;
 		  });
 
-		PREVENT LOADINGSCREEN FROM SHOWING MULTIPLE TIMES
+		//PREVENT LOADINGSCREEN FROM SHOWING MULTIPLE TIMES
 		var userHasVisited = sessionStorage.getItem('namespace.visited');
 		sessionStorage.setItem('namespace.visited', 1);
 		if (userHasVisited) {
