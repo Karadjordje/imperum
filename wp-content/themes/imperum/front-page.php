@@ -2,7 +2,7 @@
 
         <section class="container-fluid dark-bg" id="home" data-midnight="dark">
             <div class="row">
-                <div class="container main">
+                <div class="container head-container">
                     <div class="col-md-8 col-md-offset-4">
                         <h4 class="sub-heading">Tailoring</h4>
                     </div>
