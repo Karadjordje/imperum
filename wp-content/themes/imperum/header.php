@@ -31,13 +31,15 @@
 
 		<!-- I load this HTML only front page (HTML for loading screen) -->
 		<?php if ( is_front_page() ) { ?>
-			<div class="loadingPage container-fluid">
+			<div class="loadingPage">
 		        <h1>Imperium</h1>
-		        <img class="img-responsive center-block" src="<?php bloginfo('template_directory'); ?>/img/landingLogo.png">
-		        <div id="progressbar"></div>
-		        <div class="loadingText">
-		            <h3>Dare to be extraordinary.</h3>
+		        <div class="loadingContent">
+		        	<img class="center-block" src="<?php bloginfo('template_directory'); ?>/img/landingLogo.png">
+		        	<div id="progressbar"></div>
 		        </div>
+				<div class="loadingFooter">
+		        	<h3>Dare to be extraordinary.</h3>
+		    	</div>
 		    </div>
 		<?php } ?>
 

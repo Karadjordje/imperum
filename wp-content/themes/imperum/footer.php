@@ -38,7 +38,7 @@
             #fb_link.email_us .tooltiptext{font-size:0}
             #img_email{display:none;}
             #fb_link.email_us .tooltiptext:after{content:"EMAIL US";font-size:12px}
-            .fbmessenger{position:fixed;bottom:15px;right:15px;z-index:999999999}
+            .fbmessenger{position:fixed;bottom:15px;right:15px;z-index:98}
             .fbmessenger span{z-index:999999999;position: absolute;}
             .fbmessenger.wpostop_left{left:2px;right:initial;top:0;bottom:initial}
             .tooltiptext.wpostop_left{left:60px;right:initial;top:8px;bottom:initial}
