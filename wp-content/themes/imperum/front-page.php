@@ -3,16 +3,16 @@
         <section class="container-fluid dark-bg" id="home" data-midnight="dark">
             <div class="row">
                 <div class="container head-container">
-                    <div class="col-md-8 col-md-offset-4">
+                    <div class="col-sm-10 col-md-9 col-lg-8 col-sm-offset-2 col-md-offset-3 col-lg-offset-4">
                         <h4 class="sub-heading">Tailoring</h4>
                     </div>
-                    <div class="col-md-9 col-md-offset-3">
+                    <div class="col-sm-12 col-md-10 col-lg-9 col-md-offset-2 col-lg-offset-3">
                         <h1 class="headline">Tasteful Designs<br/>By Your Measurements.</h1>
-                        <div class="col-md-offset-1 col-md-2"><hr class="line" /></div>
+                        <hr class="line" />
                     </div>
-                    <div class="col-md-7 col-md-offset-4 main-content">
+                    <div class="col-sm-10 col-md-9 col-lg-8 col-sm-offset-2 col-md-offset-3 col-lg-offset-4 main-content">
                         <p>
-                            Schedule COMPLETELY FREE consultation with our expert<br/>to help you figure out all concerns and doubts about your project.<br/>We care about you and your business.
+                            <span class="hidden-min">Schedule COMPLETELY FREE consultation with our expert<br/>to help you figure out all concerns and doubts about your project.<br/></span>We care about you and your business.
                         </p>
                         <a class="btn btn-imperium btn-1" href="<?php echo site_url(); ?>/consultation/" role="button">Free consultation</a>
                     </div>
@@ -355,8 +355,9 @@
                         </p>
 
                         <ul>
-                            <li><span class="icon-world sub-heading"></span> <a href="http://www.imperium-la.com" target="_blank">www.imperium-la.com</a></li>
-                            <li><span class="icon-mail sub-heading"></span> <a href="mailto:hello@imperium-la.com" target="_blank">hello@imperium-la.com</a></li>
+                            <li>
+                                <span class="icon-world sub-heading"></span> <a href="http://www.imperium-la.com" target="_blank">www.imperium-la.com</a></li>
+                            <li><span class="icon-Mail-Icon sub-heading"></span> <a href="mailto:hello@imperium-la.com" target="_blank">hello@imperium-la.com</a></li>
                         </ul>
                         <a class="btn btn-imperium btn-2" href="<?php echo site_url(); ?>/consultation/" role="button">Free consultation</a>
                     </div>
