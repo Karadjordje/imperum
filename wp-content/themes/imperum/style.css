@@ -2,7 +2,7 @@
     Theme Name: Imperum
     Description: Custom theme for Imperium website
     Version: 1.0.0
-    Author: Kauboji iz Pazove
+    Author: Silvan Studio
     Tags: Blank, HTML5, CSS3
     License: MIT
     License URI: http://opensource.org/licenses/mit-license.php
@@ -18,17 +18,30 @@
 body {
     font-size: 14px;
     color: #ffffff;
-    font-family: 'Exo 2', sans-serif;
-}
-@font-face {
-    font-family: worldwide;
-    src: url(./css/Worldwide.ttf);
+    font-family: 'Open Sans', sans-serif;
 }
 h1 {
     font-size: 3.5em;
 }
 h1, h3 {
-    font-family: worldwide;
+    font-family: 'Playfair Display', serif;
+}
+.head-container {
+    height: 100vh;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border-left: 1px solid #b4b5bd;
 }
 .main-content p {
     letter-spacing: 0.2em;
@@ -43,10 +56,11 @@ h1, h3 {
 }
 .sub-heading {
     color: #c09858;
-    font-weight: 600;
+    font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 1.8px;
-    font-size: 1.15em;
+    letter-spacing: 1.5px;
+    font-size: 1em;
+    margin-bottom: 5px;
 }
 hr.line {
     margin-top: 10px;
@@ -69,7 +83,7 @@ hr.line {
             border-radius: 0px;
     text-transform: uppercase;
     border-radius: 0px;
-    padding: 10px 30px;
+    padding: 10px 10px;
     -webkit-transition: background-color .35s ease;
          -o-transition: background-color .35s ease;
             transition: background-color .35s ease;
@@ -106,7 +120,10 @@ hr.line {
 
 .checkboxCustom {
     display: inline-block;
-    margin-right: 30px;
+    margin-right: 20px;
+}
+.checkboxCustom:last-child {
+    margin-right: 0;
 }
 .checkboxCustom input[type="checkbox"] {
     display: none;
@@ -134,7 +151,6 @@ hr.line {
     background: url('./img/checkboxImg.png') no-repeat 0px  top;
 }
 
-section#home .btn-imperium,
 section#services .btn-imperium {
     margin-bottom: 90px;
 }
@@ -149,7 +165,8 @@ section#services-page .main {
     padding-top: 100px;
 }
 section#services .main {
-    padding-bottom: 50px;
+    padding-top: 165px;
+    padding-bottom: 40px;
 }
 
 section#clients-say .main-content {
@@ -163,6 +180,9 @@ section#clients-say .main {
 }
 section#clients-say .main-content p {
     font-size: 13px;
+}
+section#our-work .main {
+    padding-top: 140px;
 }
 .arrow-down {
     position: absolute;
@@ -272,9 +292,19 @@ section#clients-say .main-content p {
     height: 100%;
     top: 0; bottom: 0; right: 0; left: 0;
     z-index: 99;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 .loadingPage h1 {
     text-transform: uppercase;
@@ -294,10 +324,23 @@ section#clients-say .main-content p {
     width: 40%;
 }
 .loadingFooter {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 .loadingPage h3 {
     padding: 40px 0;
@@ -320,10 +363,11 @@ section#clients-say .main-content p {
 
 /* SERVICE section */
 .service {
+    margin-top: 45px;
     margin-bottom: 45px;
 }
 .service h3 {
-    font-family: worldwide;
+    font-family: 'Playfair Display', serif;
     font-size: 1em;
     font-weight: 600;
 }
@@ -337,13 +381,13 @@ section#clients-say .main-content p {
 }
 .service:after {
     content: attr(title);
-    font-family: worldwide;
+    font-family: 'Playfair Display', serif;
     font-size: 5.5em;
-    line-height: 1;
+    line-height: .8;
     color: #e6e6e9;
     position: absolute;
     top: 0;
-    left: 35px;
+    left: 30px;
     z-index: -1;
 }
 
@@ -366,24 +410,47 @@ section#clients-say .main-content p {
 }
 .clients-num {
     width: 50%;
-    float: left;
-    position: relative;
+    position: absolute;
+    height: 100%;
+    max-height: 200px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+        -ms-flex-align: end;
+            align-items: flex-end;
 }
+/*
 .clients-num h5 {
     text-align: right;
     padding-top: 0;
     margin-bottom: 50px;
 }
+*/
 .clients-num h5:after {
     content: attr(title);
-    font-family: worldwide;
+    font-family: 'Playfair Display', serif;
     font-size: 5em;
-    line-height: 1;
+    line-height: .7;
     color: rgba(230, 230, 233, 0.1);
     position: absolute;
-    top: 32%;
-    right: -10px;
+    top: 50%;
+    right: 0;
     z-index: -1;
+    -webkit-transform: translate(0%, -70%);
+        -ms-transform: translate(0%, -70%);
+            transform: translate(0%, -70%);
 }
 #our-work .clients-num h5:after {
     top: 52%;
@@ -478,15 +545,16 @@ section#clients-say .main-content p {
 
 
 @media screen and (min-width: 992px) {
-    .clients-num h5 {
+    /* .clients-num h5 {
         padding-top: 32%;
-    }
+    } */
     #our-work-carousel {
         padding-left: 15px
     }
     #our-work-carousel .carousel-inner {
         width: 84%;
         display: inline-block;
+        height: 309px;
     }
     .our-work-indicators {
         width: 84%;
@@ -520,19 +588,78 @@ section#clients-say .main-content p {
 
 .our-work-info {
     text-align: right;
+    height: 313px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    position: relative;
 }
 .our-work-info span {
     font-size: 1em;
     color: #cba262;
 }
-#externalLink:hover, #externalLink:active, #externalLink:visited, #externalLink:focus {
+#externalLink:hover,
+#externalLink:active,
+#externalLink:visited,
+#externalLink:focus {
     text-decoration: none;
 }
-#our-work .clients-num h5:after {
+.our-work-info-num {
+    width: 92%;
+    position: absolute;
+    height: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    z-index: -1;
+}
+.our-work-info-num h5:after {
+    content: attr(title);
+    font-family: 'Playfair Display', serif;
+    font-size: 5em;
+    line-height: .7;
+    color: rgba(230, 230, 233, 0.1);
+    position: absolute;
+    top: 120px;
+    right: 0;
+    z-index: -1;
+}
+.our-work-info-num h5:after {
     color: rgba(230, 230, 233, 1);
 }
-#our-work .clients-num {
-    width: 100%;
+.our-work-info-num {
+    width: 92%;
+}
+.our-work-info .sub-heading {
+    margin-bottom: 40px;
+}
+.our-work-info h3 {
+    margin-top: 10px;
+    margin-bootom: 10px;
 }
 
 /* VIDEO BLOG section */
@@ -657,7 +784,7 @@ textarea {
 }
 #contact .main-content ul li {
     display: inline-block;
-    font-family: worldwide;
+    font-family: 'Playfair Display', serif;
     font-weight: 600;
     margin-right: 20px;
     letter-spacing: 0.1em;
@@ -760,14 +887,16 @@ textarea {
         display: block;
     }
     .logo {
-        font-size: 1.5em;
+        display: block;
+        margin-bottom: 25px;
+        font-size: 17px;
         letter-spacing: 2.2px;
     }
     .logo-dots {
         color: #c09858;
-        font-size: 1.3em;
+        font-size: 1.1em;
         letter-spacing: 1.8px;
-            margin: 0;
+        margin: 0;
     }
 
     .follow-nav {
@@ -775,14 +904,15 @@ textarea {
     }
     .follow-nav-container {
         width: 20px;
-        height: 90px;
+        height: 70px;
+        font-size: 12px;
     }
-    .rotate {
+   .rotate {
         position:absolute;
-        width: 90px;
+        width: 70px;
         height: 17px;
-        right: -35px;
-        top: 36px;
+        right: -25px;
+        top: 26px;
         -webkit-transform:  rotate(90deg);
            -moz-transform:  rotate(90deg);
              -o-transform:  rotate(90deg);
@@ -790,6 +920,8 @@ textarea {
                   -ms-writing-mode: lr-tb;
                       writing-mode: lr-tb;
         margin: 0;
+        letter-spacing: 1.2px;
+        font-weight: 400;
     }
 
     .style-nav {
@@ -860,9 +992,12 @@ textarea {
     }
     .icons-nav .icons li a {
         color: #fff;
-        margin-bottom: 7px;
+        margin-bottom: 9px;
         display: block;
-        font-size: 1.3em;
+        font-size: 18px;
+    }
+    .icons-nav .icons li a.special {
+        font-size: 12px;
     }
     .icons {
         padding: 0px;
@@ -919,7 +1054,7 @@ section#calendly .main {
 }
 .services-works h4 {
     margin-top: 20px;
-    font-family: worldwide;
+    font-family: 'Playfair Display', serif;
 }
 .services-works ul {
     list-style: none;
@@ -1242,7 +1377,7 @@ section#portfolio .main {
 .pricing-list header > h2,
 .pricing-list header > h3,
 .pricing-list header > h4 {
-    font-family: worldwide;
+    font-family: 'Playfair Display', serif;
     margin-top: 0px;
     margin-bottom: 26px;
     line-height: 1;
@@ -1296,7 +1431,7 @@ section#portfolio .main {
 .enterprise-web .pricing-list-box {
     padding-top: 30px;
     padding-bottom: 27px;
-    font-family: 'Exo 2', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     border-top: 1px solid #8a969f;
 }
 .simple-web .pricing-list-box p:first-child,
@@ -1336,7 +1471,7 @@ section#portfolio .main {
 }
 .vb-head-info span {
     color: #c09858;
-    font-family: 'Exo 2', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 0.6em;
     letter-spacing: 0.1em;
     margin-right: 30px;
@@ -1374,7 +1509,7 @@ section#vbSingle-body .main {
     margin-top: 0px;
 }
 .post-headline {
-    font-family: worldwide;
+    font-family: 'Playfair Display', serif;
     margin-top: 2px;
     font-weight: 500;
     margin-bottom: 25px;

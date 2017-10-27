@@ -2,7 +2,7 @@
 
         <section class="container-fluid dark-bg" id="home" data-midnight="dark">
             <div class="row">
-                <div class="container main">
+                <div class="container head-container">
                     <div class="col-md-8 col-md-offset-4">
                         <h4 class="sub-heading">Tailoring</h4>
                     </div>
@@ -106,7 +106,7 @@
                                             <h5 title="01">01</h5>
                                         </div>
                                         <div class="clients-img" style="background: linear-gradient( to bottom, rgba(255,255,255,0) 0%, rgba(7,11,38,.7) 100%), url(<?php the_field('change_image2'); ?>) no-repeat center/cover;"></div>
-                                        <div class="clients-name2">
+                                        <div class="clients-name">
                                             <h3><?php the_field('change_client_name2'); ?></h3>
                                             <h4 class="sub-heading"><?php the_field('change_subtext2'); ?></h4>
                                         </div>
@@ -126,7 +126,7 @@
                                             <h5 title="01">01</h5>
                                         </div>
                                         <div class="clients-img" style="background: linear-gradient( to bottom, rgba(255,255,255,0) 0%, rgba(7,11,38,.7) 100%), url(<?php the_field('change_image3'); ?>) no-repeat center/cover;"></div>
-                                        <div class="clients-name3">
+                                        <div class="clients-name">
                                             <h3><?php the_field('change_client_name3'); ?></h3>
                                             <h4 class="sub-heading"><?php the_field('change_subtext3'); ?></h4>
                                         </div>
@@ -173,7 +173,7 @@
                         <div class="col-md-offset-1 col-md-2"><hr class="line" /></div>
                     </div>
 
-                    <div class="col-md-7 col-md-offset-4 checkbox-content" id="category-checkboxes">
+                    <div class="col-md-8 col-md-offset-4 checkbox-content" id="category-checkboxes">
                         <div class="checkboxCustom">
                             <input disabled checked type="checkbox" name="allChb" id="allChb" data-category="all">
                             <label for="allChb">All</label>
@@ -204,12 +204,11 @@
                         </div>
                     </div>
 
-
                     <!-- Here starts carousel loop -->
                     <?php $carouselLoop = new WP_Query( array( 'post_type' => 'post', 'posts_per_page' => -1 ) ); ?>
                     <?php $i=1; ?>
                     <div class="col-md-4 our-work-info">
-                        <div class="clients-num">
+                        <div class="our-work-info-num">
                             <h5 title="01">01</h5>
                         </div>
                         <a id="externalLink" target="_blank" href="#"><span class="icon-link link-glow"></span></a>

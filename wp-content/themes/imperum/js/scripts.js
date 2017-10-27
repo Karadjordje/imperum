@@ -32,18 +32,17 @@
 
 	    $(window).on('resize', function() {
 	      var windowsize = $(window).width();
-	        // Change this to the correct selector.
 	        if(windowsize > 1200) {
 	            $('.head-nav').midnight().css({
-	                'top' : '80px',
-	                'width' : '130px',
+	                'top' : '100px',
+	                'width' : '110px',
 	                'right' : 'auto',
 	                'left' : '50%',
 	                'transform' : 'translate(-570px, 0)'
 	            });
 
 	            $('.follow-nav').midnight().css({
-	                'top' : '100px',
+	                'top' : '104px',
 	                'width' : '20px',
 	                'right' : 'auto',
 	                'left' : '50%',
@@ -51,7 +50,7 @@
 	            });
 
 	            $('.style-nav').midnight().css({
-	                'top': '165px',
+	                'top': '180px',
 	                'right' : 'auto',
 	                'width' : '125px',
 	                'left' : '50%',
@@ -59,7 +58,7 @@
 	            });
 
 	            $('.icons-nav').midnight().css({
-	                'top': '190px',
+	                'top': '185px',
 	                'right' : 'auto',
 	                'width' : '20px',
 	                'height' : '140px',
@@ -77,48 +76,49 @@
 	            });
 	        }
 	        else {
-	            $('.head-nav').midnight().css({
-	                'top' : '80px',
-	                'width' : '130px',
-	                'right' : 'auto',
-	                'left' : '50%',
-	                'transform' : 'translate(-470px, 0)'
-	            });
+	        	return;
+	        //     $('.head-nav').midnight().css({
+	        //         'top' : '80px',
+	        //         'width' : '132px',
+	        //         'right' : 'auto',
+	        //         'left' : '50%',
+	        //         'transform' : 'translate(-470px, 0)'
+	        //     });
 
-	            $('.follow-nav').midnight().css({
-	                'top' : '100px',
-	                'width' : '20px',
-	                'right' : 'auto',
-	                'left' : '50%',
-	                'transform' : 'translate(465px, 0)'
-	            });
+	        //     $('.follow-nav').midnight().css({
+	        //         'top' : '100px',
+	        //         'width' : '20px',
+	        //         'right' : 'auto',
+	        //         'left' : '50%',
+	        //         'transform' : 'translate(465px, 0)'
+	        //     });
 
 
-	            $('.style-nav').midnight().css({
-	                'top': '165px',
-	                'right' : 'auto',
-	                'width' : '125px',
-	                'left' : '50%',
-	                'transform' : 'translate(-485px, 0)'
-	            });
+	        //     $('.style-nav').midnight().css({
+	        //         'top': '165px',
+	        //         'right' : 'auto',
+	        //         'width' : '125px',
+	        //         'left' : '50%',
+	        //         'transform' : 'translate(-485px, 0)'
+	        //     });
 
-	            $('.icons-nav').midnight().css({
-	                'top': '190px',
-	                'right' : 'auto',
-	                'width' : '20px',
-	                'height' : '140px',
-	                'left' : '50%',
-	                'transform' : 'translate(465px, 0)'
-	            });
+	        //     $('.icons-nav').midnight().css({
+	        //         'top': '190px',
+	        //         'right' : 'auto',
+	        //         'width' : '20px',
+	        //         'height' : '140px',
+	        //         'left' : '50%',
+	        //         'transform' : 'translate(465px, 0)'
+	        //     });
 
-	            $('.footer').midnight().css({
-	                'bottom': '5%',
-	                'top': 'auto',
-	                'right' : 'auto',
-	                'width' : '150px',
-	                'left' : '50%',
-	                'transform' : 'translate(-470px, 0)'
-	            });
+	        //     $('.footer').midnight().css({
+	        //         'bottom': '5%',
+	        //         'top': 'auto',
+	        //         'right' : 'auto',
+	        //         'width' : '150px',
+	        //         'left' : '50%',
+	        //         'transform' : 'translate(-470px, 0)'
+	        //     });
 	        }
 	    }).trigger('resize');
 

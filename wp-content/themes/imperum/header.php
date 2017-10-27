@@ -9,13 +9,14 @@
         <link href="<?php echo get_template_directory_uri(); ?>/img/icons/touch.png" rel="apple-touch-icon-precomposed">
 
         <!-- My Fonts -->
-		<link href="https://fonts.googleapis.com/css?family=Exo+2:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=latin-ext" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Playfair+Display:400,400i,700,700i,900,900i&amp;subset=latin-ext" rel="stylesheet">
 
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="<?php bloginfo('description'); ?>">
 
 		<?php wp_head(); ?>
+		<link rel="stylesheet" href="http://localhost/imperum/wp-content/themes/imperum/css/icomoon.css">
 		<script>
         // conditionizr.com
         // configure environment tests
@@ -66,7 +67,7 @@
 	    </nav>
 
 	    <div class="head-nav">
-	        <h1 class="logo text-uppercase">Imperium</h1>
+	        <span class="icon-Logo logo"></span>
 	        <p class="logo-dots">....</p>
 	    </div>
 
@@ -98,9 +99,9 @@
 
 	    <div class="icons-nav">
 	        <ul class="icons">
-	            <li><a href="#"><span class="icon-fb"></span></a></li>
-	            <li><a href="#"><span class="icon-tw"></span></a></li>
-	            <li><a href="#"><span class="icon-insta"></span></a></li>
-	            <li><a href="#"><span class="icon-in"></span></a></li>
+	            <li><a href="#"><span class="icon icon-Facebook-Icon"></span></a></li>
+	            <li><a href="#" class="special"><span class="icon icon-Behance-Icon"></span></a></li>
+	            <li><a href="#"><span class="icon icon-Instagram-Icon"></span></a></li>
+	            <li><a href="#"><span class="icon icon-Linked-In-Icon"></span></a></li>
 	        </ul>
 	    </div>

@@ -46,7 +46,15 @@
             .tooltiptext.wpostop_right{left:initial;right:60px;top:8px;bottom:initial}
             .fbmessenger.wposbottom_left{left:2px;right:initial;top:initial;bottom:0}
             .tooltiptext.wposbottom_left{left:60px;right:initial;top:initial;bottom:10px}
-            .fbmessenger.wposbottom_right{ left:50%; margin-left: 535px; right:auto; top:initial; bottom:50px }
+
+            .fbmessenger.wposbottom_right{ left:auto; margin-left: auto; right:15px; top:initial; bottom:50px }
+            @media (min-width: 992px) {
+                .fbmessenger.wposbottom_right{ left:50%; margin-left: 435px; right:auto; top:initial; bottom:50px }
+            }
+            @media (min-width: 1200px) {
+                .fbmessenger.wposbottom_right{ left:50%; margin-left: 535px; right:auto; top:initial; bottom:50px }
+            }
+
             .tooltiptext.wposbottom_right{left:initial;right:60px;top:initial;bottom:10px}
             .fbmessenger img{width:50px;filter:drop-shadow(2px 6px 4px rgba(0,0,0,.3));-webkit-filter:drop-shadow(2px 6px 4px rgba(0,0,0,.3))}
             .tooltiptext{width:120px;background-color:#fff;color:#2c2c2c;text-align:center;padding:5px 0;border:1px solid #eee;border-radius:6px;position:fixed;bottom:30px;right:75px;font-family:inherit;font-size:inherit;text-transform:uppercase;filter:drop-shadow(2px 6px 4px rgba(0,0,0,.3));-webkit-filter:drop-shadow(2px 6px 4px rgba(0,0,0,.3))}
