@@ -49,11 +49,12 @@ h1, h3 {
     font-size: 1.15em;
 }
 hr.line {
-    border-color: #c09858;
     margin-top: 10px;
     margin-bottom: 0px;
-    margin-left: 12px;
-    margin-right: 12px;
+    border-color: #c09858;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60px;
 }
 .dark-line {
     border-color: #070b26;
@@ -77,6 +78,13 @@ hr.line {
 }
 .btn-imperium:focus {
     color: #fff;
+}
+@media (min-width: 768px) {
+    hr.line {
+        margin-left: 12px;
+        margin-right: 12px;
+        width: auto;
+    }
 }
 @media (min-width: 992px) {
     .btn-1 {
