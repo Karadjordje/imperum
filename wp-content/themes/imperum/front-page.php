@@ -30,12 +30,12 @@
                     <div class="col-lg-2 col-md-2 grid-1"><div class="one"></div></div>
                 </div> -->
                 <div class="container grids">
-                    <div class="col-sm-12 col-md-10 col-lg-8 col-md-offset-1 col-lg-offset-2">
+                    <div class="col-xs-12 col-sm-12 col-md-10 col-lg-8 col-md-offset-1 col-lg-offset-2">
                         <div class="row grid-last-line">
-                            <div class="col-sm-3 grid-1"><div class="one"></div></div>
-                            <div class="col-sm-3 grid-1"><div class="one"></div></div>
-                            <div class="col-sm-3 grid-1"><div class="one"></div></div>
-                            <div class="col-sm-3 grid-1"><div class="one"></div></div>
+                            <div class="col-xs-3 grid-1"><div class="one"></div></div>
+                            <div class="col-xs-3 grid-1"><div class="one"></div></div>
+                            <div class="col-xs-3 grid-1"><div class="one"></div></div>
+                            <div class="col-xs-3 grid-1"><div class="one"></div></div>
                         </div>
                      </div>
                 </div>
