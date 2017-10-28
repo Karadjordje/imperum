@@ -46,28 +46,28 @@
                     </div>
                     <div class="col-sm-12 col-md-10 col-lg-8 col-md-offset-1 col-lg-offset-2">
                         <div class="row">
-                            <div class="col-sm-3 service" title="01">
+                            <div class="col-xs-3 service" title="01">
                                 <h3>01</h3>
                                 <h3>WEB DESIGN</h3>
                                 <p>
                                     Your potential clients will love your new beautiful and responsive website with great user experience. The most important: it will MAKE SALES.
                                 </p>
                             </div>
-                            <div class="col-sm-3 service" title="02">
+                            <div class="col-xs-3 service" title="02">
                                 <h3>02</h3>
                                 <h3>WEB DEVELOPMENT</h3>
                                 <p>
                                     It's really important that your website is stable, secure, resistant and 100% up time. Team of experts will provide only high quality con in secured environment.
                                 </p>
                             </div>
-                            <div class="col-sm-3 service" title="03">
+                            <div class="col-xs-3 service" title="03">
                                 <h3>03</h3>
                                 <h3>MAINTENANCE</h3>
                                 <p>
                                     We won’t leave you when you need new features for your website. Great relationship with our clients is our primary focus, so you can get back to us with new requests any time.
                                 </p>
                             </div>
-                            <div class="col-sm-3 service" title="04">
+                            <div class="col-xs-3 service" title="04">
                                 <h3>04</h3>
                                 <h3>SUPPORT</h3>
                                 <p>
