@@ -2,6 +2,24 @@
 
 	$(function () {
 
+		//SMALL NAVIGATION TOGGLE
+		var btnSmallNav = $('.btnSmallNav');
+		var smallNav = $('.smallNav');
+		var closeSmallNav = $('.icon-X');
+		var smallNavLinks = $('.smallNav li');
+
+		smallNav.hide();
+
+		btnSmallNav.click( function() {
+			smallNav.slideDown(350);
+		});
+		closeSmallNav.click( function() {
+			smallNav.slideUp(350);
+		});
+		smallNavLinks.click( function() {
+			smallNav.slideUp(350);
+		});
+
 		// Form validation
 		$("#submit_btn").click(function() {
 

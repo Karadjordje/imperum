@@ -1036,13 +1036,54 @@ textarea {
 
 
 /* -- STILIZACIJA ZA NAVIGACIJU -- */
-.damirkozic {
-
+.btnSmallNav {
+    cursor: pointer;
+    position: relative;
+    z-index: 999999;
 }
-.to-je-element-koji-se-otvara-kad-se-klikne-na-klasu-damir-kozic {
-    display: none;
+.smallNav {
+    display: flex;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(
+        to bottom,
+        rgba(14,41,58,.95) 0%,
+        rgba(7,11,38,.95) 100%
+        ),
+        url(./img/noisy-texture-100x100-o46-d10-c-0e293a-t1.png) repeat,
+        url(./img/overlayPicture.jpg) no-repeat center/cover;
+    z-index: 9999999;
+    padding: 60px 40px;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Playfair Display', serif;
 }
-
+.smallNav ul {
+    list-style: none;
+    padding: 0;
+}
+.smallNav a {
+    color: #fff;
+    display: block;
+    text-decoration: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 2em;
+}
+.smallNav a:hover {
+    text-decoration: underline;
+    text-decoration-color: #c39a59;
+}
+.icon-X {
+    cursor: pointer;
+    position: absolute;
+    top: 60px;
+}
 
 @media (min-width: 1200px) {
     .small-nav {
