@@ -715,6 +715,10 @@ section#our-work .main {
         -ms-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
 }
+#vbSingle-body h3 {
+    margin-top: 0;
+    line-height: 50%;
+}
 
 
 /* CONTAKT FORM section */

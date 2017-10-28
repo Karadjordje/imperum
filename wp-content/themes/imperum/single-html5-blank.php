@@ -8,13 +8,13 @@
 		<section class="container-fluid dark-bg" id="home" data-midnight="dark">
 	        <div class="row">
 	            <div class="container main">
-	                <div class="col-md-8 col-md-offset-2 text-center">
+	                <div class="col-md-8 col-md-offset-2 text-center clearfix">
 	                    <img src="<?php bloginfo('template_directory'); ?>/img/whiteKeys.png">
 	                    <h4 class="sub-heading text-uppercase"><?php foreach ((get_the_category()) as $category) {
 	                    	echo $category->cat_name . ' ';
 	                    } ?></h4>
 	                    <h1 class="headline text-uppercase"><?php the_title(); ?></h1>
-	                    <div class="col-md-offset-5 col-md-2"><hr class="line" /></div>
+	                    <div class="col-sm-offset-5 col-sm-2 clearfix"><hr class="line" /></div>
 	                </div>
 	                <div class="col-md-6 col-md-offset-3 vb-head-info">
 	                    <div class="average-difficulty">
@@ -51,19 +51,19 @@
 	        <div class="row">
 
 	            <div class="container main">
-	                <div class="col-md-1 col-md-offset-1 post-numz">
+	                <div class="col-sm-1 col-md-1 col-md-offset-1 post-numz">
 	                    <h3>01</h3>
 	                </div>
-	                <div class="col-md-1">
+	                <div class="col-sm-1 col-md-1">
 	                    <hr class="dark-line" />
 	                </div>
-	                <div class="col-md-8">
+	                <div class="col-sm-10 col-md-8">
 	                    <h4 class="post-headline">Web Design speed art - monter</h4>
 	                    <div class="post-body">
 	                        <?php the_content(); ?>
 	                    </div>
 	                </div>
-	                <div class="col-md-8 col-md-offset-3 cleatfix post-body-param">
+	                <div class="col-md-8 col-md-offset-3 clearfix post-body-param">
 	                    <div class="subject">
 	                        <p>
 	                        	<?php foreach ((get_the_category()) as $category) {
@@ -81,14 +81,14 @@
 									}
 								?>
 	                        </p>
-	                    </div><div class="date-of-post">
-	                        <p><?php the_time('F j, Y'); ?></p>
+	                    </div><div class="date-of-post hidden-xs hidden-sm">
+	                        <p><?php the_time('j. m. Y'); ?></p>
 	                    </div>
 	                </div>
-	                <div class="col-md-3">
+	                <div class="col-xs-3">
 	                    <p class="text-right">Share this post:</p>
 	                </div>
-	                <div class="col-md-8">
+	                <div class="col-xs-8">
 	                    <ul class="post-icons">
 	                        <li><a href="#"><span class="icon-fb"></span></a></li>
 	                        <li><a href="#"><span class="icon-tw"></span></a></li>
