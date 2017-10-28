@@ -26,6 +26,13 @@ h1 {
 h1, h3 {
     font-family: 'Playfair Display', serif;
 }
+
+
+
+
+
+
+
 .head-container {
     height: 100vh;
     display: -webkit-box;
@@ -42,9 +49,9 @@ h1, h3 {
         -ms-flex-direction: column;
             flex-direction: column;
     border-left: none;
-    font-size: 80%;
 }
-.head-container div > hr.line {
+#services .main .line,
+.head-container .line {
     width: 50%;
     margin-right: 0px;
     margin-left: 0px;
@@ -57,35 +64,29 @@ h1, h3 {
     }
 }
 @media (min-width:576px) {
-    .head-container div > hr.line {
+    #services .main .line,
+    .head-container div > .line {
         width: 70px;
-    }
-    .head-container {
-        font-size: 85%;
     }
 }
 @media (min-width:768px) {
-    .head-container {
-        font-size: 90%;
-    }
-    .head-container div > hr.line {
+    #services .main .line,
+    .head-container div > .line {
         margin-left: 120px;
     }
 }
 @media (min-width:992px) {
-    .head-container {
-        font-size: 95%;
-    }
-    .head-container div > hr.line {
+    #services .main .line,
+    .head-container div > .line {
         margin-left: 78px;
     }
 }
 @media (min-width: 1200px) {
     .head-container {
         border-left: 1px solid #b4b5bd;
-        font-size: 100%;
     }
-    .head-container div > hr.line {
+    #services .main .line,
+    .head-container div > .line {
         margin-left: 96px;
     }
 }
@@ -113,7 +114,7 @@ h1, h3 {
     font-size: 1em;
     margin-bottom: 5px;
 }
-hr.line {
+.line {
     margin-top: 10px;
     margin-bottom: 0px;
     border-color: #c09858;
@@ -145,7 +146,7 @@ hr.line {
     color: #fff;
 }
 @media (min-width: 768px) {
-    hr.line {
+    .line {
         margin-left: 12px;
         margin-right: 12px;
         width: auto;
@@ -162,12 +163,33 @@ hr.line {
     }
 }
 .btn-2 {
-    width: 26.2%;
+    width: 35.2%;
 }
 .btn-imperium:hover {
     background-color: rgba(192, 152, 88, 0.75);
     color: #ffffff;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .checkboxCustom {
     display: inline-block;
@@ -202,6 +224,17 @@ hr.line {
     background: url('./img/checkboxImg.png') no-repeat 0px  top;
 }
 
+.arrow-down {
+    position: absolute;
+    bottom: 0;
+    color: #c99e5a;
+    font-size: 2em;
+    left: 50%;
+    margin-right: -50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+}
 
 
 
@@ -222,11 +255,14 @@ section#services .btn-imperium {
 section .main {
     padding-top: 200px;
     padding-bottom: 100px;
-    border-left: 1px solid #b4b5bd;
+    border-left: none;
     position: relative;
 }
 section#services-page .main {
     padding-top: 100px;
+}
+#services {
+    font-size: 100%;
 }
 section#services .main {
     padding-top: 165px;
@@ -240,7 +276,7 @@ section#clients-say .main-content {
 section#clients-say .main {
     padding-top: 0px;
     padding-bottom: 0px;
-    border-left: 1px solid #b4b5bd;
+    /* border-left: 1px solid #b4b5bd; */
 }
 section#clients-say .main-content p {
     font-size: 13px;
@@ -251,32 +287,25 @@ section#our-work .main {
 section#video-blog .main {
     padding-top: 140px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.arrow-down {
-    position: absolute;
-    bottom: 0;
-    color: #c99e5a;
-    font-size: 2em;
-    left: 50%;
-    margin-right: -50%;
-    -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+@media (min-width: 1200px) {
+    section .main {
+        border-left: 1px solid #b4b5bd;
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .dark-bg {
@@ -321,7 +350,7 @@ section#video-blog .main {
     color: #060b26;
     position: relative;
 }
-.lite-bg .grid:after {
+/* .lite-bg .grids:after {
     content: "";
     position: absolute;
     top: 0;
@@ -329,8 +358,19 @@ section#video-blog .main {
     background-color: #f5eee3;
     width: 1px;
     height: 100%;
+} */
+@media (min-width: 1200px) {
+    .lite-bg .grids:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: #f5eee3;
+        width: 1px;
+        height: 100%;
+    }
 }
-.lite-bg .grid {
+.lite-bg .grids {
     height: 100%;
     position: absolute;
     top: 0%;
@@ -340,19 +380,31 @@ section#video-blog .main {
         -ms-transform: translate(-50%, 0%);
             transform: translate(-50%, 0%);
 }
-.lite-bg .grid .col-md-2 {
+.grids > div,
+.grids > div > div {
     height: 100%;
 }
-.lite-bg .grid .col-md-2 .one {
+.grid-last-line:after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 1px;
+    background-color: #f5eee3;
+    right: -15px;
+}
+.lite-bg .grids .grid-1 {
+    height: 100%;
+}
+.lite-bg .grids .grid-1 .one {
     border-left: 1px solid #f5eee3;
     height: 100%;
 }
-@media (max-width: 992px) {
-    .lite-bg .grid {
+@media (max-width: 768px) {
+    .lite-bg .grids {
         display: none;
     }
 }
-.pattern .grid {
+.pattern .grids {
     display: none;
 }
 .pattern {
@@ -1987,4 +2039,34 @@ section#vbSingle-comments .main {
     border-color: #c09858;
     cursor: pointer;
     color: #fff;
+}
+
+/* -- FONT SIZE -- */
+.head-container,
+#services {
+    font-size: 80%;
+}
+@media (min-width:576px) {
+    .head-container,
+    #services {
+        font-size: 85%;
+    }
+}
+@media (min-width:768px) {
+    .head-container,
+    #services {
+        font-size: 90%;
+    }
+}
+@media (min-width:992px) {
+    .head-container,
+    #services {
+        font-size: 95%;
+    }
+}
+@media (min-width: 1200px) {
+    .head-container,
+    #services {
+        font-size: 100%;
+    }
 }

@@ -124,7 +124,7 @@
 
  		$('.head-nav').midnight().css({
             'top' : '100px',
-            'width' : '110px',
+            'width' : '122px',
             'right' : 'auto',
             'left' : '50%',
             'transform' : 'translate(-570px, 0)'
