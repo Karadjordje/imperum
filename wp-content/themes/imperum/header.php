@@ -43,31 +43,26 @@
 		    </div>
 		<?php } ?>
 
-	    <nav class="small-nav">
+	    <div class="container small-nav">
 	        <div class="small-logo">
-	            <h1 class="logo text-uppercase">Imperium <span class="glyphicon glyphicon-align-justify"></span></h1>
+	            <span class="icon-Logo logo"></span>
+	            <span class="icon-Burger damirkozic"></span>
 	        </div>
-	        <ul>
-	            <li class="scrollToHome <?php if ( is_front_page() ) echo 'active' ?>">
-	            	<a href="<?php if(!is_front_page()) echo home_url(); else echo '#' ?>">Home</a>
-	            </li>
-	            <li class="<?php if(is_page('Service')) echo 'active'; ?>">
-	            	<a href="<?php echo site_url(); ?>/Service/">Service</a>
-	            </li>
-	            <li class="<?php if(is_page('Portfolio')) echo 'active'; ?>">
-	            	<a href="<?php echo site_url(); ?>/Portfolio/">Portfolio</a>
-	            </li>
-	            <li class="<?php if(is_page('Videoblog')) echo 'active'; ?>">
-	            	<a href="<?php echo site_url(); ?>/Videoblog/">Videoblog</a>
-	            </li>
-	            <li class="scrollToContact">
-	            	<a href="<?php if(!is_front_page()) echo home_url(); ?>#contact">Contact</a>
-	            </li>
-	        </ul>
-	    </nav>
+	    </div>
+
+	    <div class="to-je-element-koji-se-otvara-kad-se-klikne-na-klasu-damir-kozic">
+	    	<span class="icon-X"></span>
+	    	<ul>
+	    		<li>home</li>
+	    		<li>service</li>
+	    		<li>porfolio</li>
+	    		<li>videoblog</li>
+	    		<li>content</li>
+	    	</ul>
+	    </div>
 
 	    <div class="head-nav">
-	        <span class="icon-Logo logo"></span>
+	        <span class="icon-Logo midnightLogo"></span>
 	        <p class="logo-dots">....</p>
 	    </div>
 
@@ -100,8 +95,8 @@
 	    <div class="icons-nav">
 	        <ul class="icons">
 	            <li><a href="#"><span class="icon icon-Facebook-Icon"></span></a></li>
-	            <li><a href="#" class="special"><span class="icon icon-Behance-Icon"></span></a></li>
+	            <li><a href="#"><span class="icon icon-Behance-Icon"></span></a></li>
 	            <li><a href="#"><span class="icon icon-Instagram-Icon"></span></a></li>
-	            <li><a href="#"><span class="icon icon-Linked-In-Icon"></span></a></li>
+	            <li><a href="#" class="special"><span class="icon icon-Linked-In-Icon"></span></a></li>
 	        </ul>
 	    </div>
