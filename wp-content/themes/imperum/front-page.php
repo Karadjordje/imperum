@@ -94,66 +94,69 @@
                     <div id="clients-carousel" class="carousel slide" data-interval="3000" data-ride="carousel">
                         <div class="carousel-inner">
                             <div class="item active">
-                                <div class="col-md-4">
-                                    <div class="row clients-info">
+                                <div class="client-one">
+                                    <div class="clients-info">
                                         <div class="clients-num">
                                             <h5 title="01">01</h5>
+                                            <div class="clients-name">
+                                                <h3><?php the_field('change_client_name'); ?></h3>
+                                                <h4 class="sub-heading"><?php the_field('change_subtext'); ?></h4>
+                                            </div>
                                         </div>
-                                        <div class="clients-img" style="background: linear-gradient( to bottom, rgba(255,255,255,0) 0%, rgba(7,11,38,.7) 100%), url(<?php the_field('change_image'); ?>) no-repeat center/cover;"></div>
-                                        <div class="clients-name">
-                                            <h3><?php the_field('change_client_name'); ?></h3>
-                                            <h4 class="sub-heading"><?php the_field('change_subtext'); ?></h4>
+                                        <div class="clients-img" style="background: linear-gradient( to bottom, rgba(255,255,255,0) 0%, rgba(7,11,38,.7) 100%), url(<?php the_field('change_image'); ?>) no-repeat center/cover;">
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-md-6 main-content">
-                                    <p>
-                                        <?php the_field('main_text'); ?>
-                                    </p>
+                                    <div class="client-text">
+
+                                            <?php the_field('main_text'); ?>
+
+                                    </div>
                                 </div>
                             </div>
 
                             <div class="item">
-                                <div class="col-md-4">
-                                    <div class="row clients-info">
+                                <div class="client-one">
+                                    <div class="clients-info">
                                         <div class="clients-num">
-                                            <h5 title="01">01</h5>
+                                            <h5 title="02">02</h5>
+                                            <div class="clients-name">
+                                                <h3><?php the_field('change_client_name2'); ?></h3>
+                                                <h4 class="sub-heading"><?php the_field('change_subtext2'); ?></h4>
+                                            </div>
                                         </div>
-                                        <div class="clients-img" style="background: linear-gradient( to bottom, rgba(255,255,255,0) 0%, rgba(7,11,38,.7) 100%), url(<?php the_field('change_image2'); ?>) no-repeat center/cover;"></div>
-                                        <div class="clients-name">
-                                            <h3><?php the_field('change_client_name2'); ?></h3>
-                                            <h4 class="sub-heading"><?php the_field('change_subtext2'); ?></h4>
+                                        <div class="clients-img" style="background: linear-gradient( to bottom, rgba(255,255,255,0) 0%, rgba(7,11,38,.7) 100%), url(<?php the_field('change_image2'); ?>) no-repeat center/cover;">
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-md-6 main-content">
-                                    <p>
-                                        <?php the_field('main_text2'); ?>
-                                    </p>
+                                    <div class="client-text">
+
+                                            <?php the_field('main_text2'); ?>
+
+                                    </div>
                                 </div>
                             </div>
 
                             <div class="item">
-                                <div class="col-md-4">
-                                    <div class="row clients-info">
+                                <div class="client-one">
+                                    <div class="clients-info">
                                         <div class="clients-num">
-                                            <h5 title="01">01</h5>
+                                            <h5 title="03">03</h5>
+                                            <div class="clients-name">
+                                                <h3><?php the_field('change_client_name3'); ?></h3>
+                                                <h4 class="sub-heading"><?php the_field('change_subtext3'); ?></h4>
+                                            </div>
                                         </div>
-                                        <div class="clients-img" style="background: linear-gradient( to bottom, rgba(255,255,255,0) 0%, rgba(7,11,38,.7) 100%), url(<?php the_field('change_image3'); ?>) no-repeat center/cover;"></div>
-                                        <div class="clients-name">
-                                            <h3><?php the_field('change_client_name3'); ?></h3>
-                                            <h4 class="sub-heading"><?php the_field('change_subtext3'); ?></h4>
+                                        <div class="clients-img" style="background: linear-gradient( to bottom, rgba(255,255,255,0) 0%, rgba(7,11,38,.7) 100%), url(<?php the_field('change_image3'); ?>) no-repeat center/cover;">
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-md-6 main-content">
-                                    <p>
-                                        <?php the_field('main_text3'); ?>
-                                    </p>
+                                    <div class="client-text">
+
+                                            <?php the_field('main_text3'); ?>
+
+                                    </div>
                                 </div>
                             </div>
 
-                            <div class="col-md-1 clients-carousel-controls">
+                            <div class="clients-carousel-controls">
                                 <a class="left carousel-control" href="#clients-carousel" role="button" data-slide="prev">
                                     <span class="icon-left_arrow" aria-hidden="true"></span>
                                     <span class="sr-only">Previous</span>
