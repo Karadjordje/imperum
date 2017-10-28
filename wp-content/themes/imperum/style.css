@@ -163,7 +163,12 @@ h1, h3 {
     }
 }
 .btn-2 {
-    width: 35.2%;
+    width: 100%;
+}
+@media (min-width: 568px) {
+    .btn-2 {
+        width: 35.2%;
+    }
 }
 .btn-imperium:hover {
     background-color: rgba(192, 152, 88, 0.75);
@@ -250,7 +255,7 @@ h1, h3 {
 
 
 section#services .btn-imperium {
-    margin-bottom: 90px;
+    margin-bottom: 60px;
 }
 section .main {
     padding-top: 200px;
@@ -265,10 +270,22 @@ section#services-page .main {
     font-size: 100%;
 }
 section#services .main {
-    padding-top: 165px;
+    padding-top: 50px;
     padding-bottom: 40px;
 }
-
+@media (min-width: 576px) {
+    section#services .main {
+        padding-top: 80px;
+    }
+    section#services .btn-imperium {
+        margin-bottom: 90px;
+    }
+}
+@media (min-width: 992px) {
+    section#services .main {
+        padding-top: 165px;
+    }
+}
 section#clients-say .main-content {
     padding-left: 35px;
     padding-right: 0px;
@@ -380,6 +397,11 @@ section#video-blog .main {
         -ms-transform: translate(-50%, 0%);
             transform: translate(-50%, 0%);
 }
+@media (max-width: 767px) {
+    .lite-bg .grids {
+        width: 100%;
+    }
+}
 .grids > div,
 .grids > div > div {
     height: 100%;
@@ -399,7 +421,7 @@ section#video-blog .main {
     border-left: 1px solid #f5eee3;
     height: 100%;
 }
-@media (max-width: 768px) {
+@media (max-width: 568px) {
     .lite-bg .grids {
         display: none;
     }
@@ -507,22 +529,35 @@ section#video-blog .main {
 }
 .service p,
 .service h3:first-child {
-    margin-left: 20px;
+    margin-left: 0px;
     font-weight: 400;
 }
 .service h3:nth-last-child(2) {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 .service:after {
     content: attr(title);
     font-family: 'Playfair Display', serif;
     font-size: 5.5em;
-    line-height: .8;
+    line-height: .3;
     color: #e6e6e9;
     position: absolute;
     top: 0;
-    left: 30px;
+    left: 10px;
     z-index: -1;
+}
+@media (min-width: 568px) {
+    .service p,
+    .service h3:first-child {
+        margin-left: 20px;
+    }
+    .service:after {
+        line-height: .8;
+        left: 30px;
+    }
+    .service h3:nth-last-child(2) {
+        margin-bottom: 30px;
+    }
 }
 
 /* CLIENTS SAY section */
