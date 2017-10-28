@@ -113,7 +113,7 @@
         <div class='code'>
             <a id="fb_link" href="http://m.me/imperium.mmxvii" target="_blank" class="" style="display: inline;">
                 <div class="fbmessenger wposbottom_right">
-                    <img id="img_msg" src="http://localhost/imperum/wp-content/themes/imperum/img/icon-messenger.png">
+                    <img id="img_msg" src="<?php bloginfo('template_directory'); ?>/img/icon-messenger.png">
                 </div>
             </a>
         </div>

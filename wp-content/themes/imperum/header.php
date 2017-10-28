@@ -16,7 +16,6 @@
 		<meta name="description" content="<?php bloginfo('description'); ?>">
 
 		<?php wp_head(); ?>
-		<link rel="stylesheet" href="http://localhost/imperum/wp-content/themes/imperum/css/icomoon.css">
 		<script>
         // conditionizr.com
         // configure environment tests

@@ -151,7 +151,7 @@ function html5blank_styles()
     // wp_enqueue_style('normalize'); // Enqueue it!
 
     // My icons
-    wp_register_style('myicons', get_template_directory_uri() . '/icons/style.css', array(), '1.0', 'all');
+    wp_register_style('myicons', get_template_directory_uri() . '/css/icomoon.css', array(), '1.0', 'all');
     wp_enqueue_style('myicons'); // Enqueue it!
 
     // Bootstrap core CSS
