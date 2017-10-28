@@ -282,11 +282,10 @@
 
 	var checkedCategories = {
 		frontend: false,
-		testing: false,
-		uncategorized: false,
-		wordpress: false,
+		backend: false,
+		marketing: false,
 		design: false,
-		seo: false,
+		uncategorized: false,
 	};
 
 	function checkedKeys() {

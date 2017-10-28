@@ -180,27 +180,23 @@
                         </div>
                         <div class="checkboxCustom">
                             <input type="checkbox" name="frontendChb" id="frontendChb" data-category="frontend">
-                            <label for="frontendChb">Front End</label>
+                            <label for="frontendChb">Frontend</label>
                         </div>
                         <div class="checkboxCustom">
-                            <input type="checkbox" name="testingChb" id="testingChb" data-category="testing">
-                            <label for="testingChb">Testing</label>
+                            <input type="checkbox" name="backendChb" id="backendChb" data-category="backend">
+                            <label for="backendChb">Backend</label>
                         </div>
                         <div class="checkboxCustom">
-                            <input type="checkbox" name="uncategorizedChb" id="uncategorizedChb" data-category="uncategorized">
-                            <label for="uncategorizedChb">Uncategorized</label>
-                        </div>
-                        <div class="checkboxCustom">
-                            <input type="checkbox" name="wordpressChb" id="wordpressChb" data-category="wordpress">
-                            <label for="wordpressChb">Wordpress</label>
+                            <input type="checkbox" name="marketingChb" id="marketingChb" data-category="marketing">
+                            <label for="marketingChb">Marketing</label>
                         </div>
                         <div class="checkboxCustom">
                             <input type="checkbox" name="designChb" id="designChb" data-category="design">
                             <label for="designChb">Design</label>
                         </div>
                         <div class="checkboxCustom">
-                            <input type="checkbox" name="seoChb" id="seoChb" data-category="seo">
-                            <label for="seoChb">Seo</label>
+                            <input type="checkbox" name="uncategorizedChb" id="uncategorizedChb" data-category="uncategorized">
+                            <label for="uncategorizedChb">Uncategorized</label>
                         </div>
                     </div>
 
