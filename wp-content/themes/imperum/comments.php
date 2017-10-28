@@ -29,7 +29,7 @@
 	'title_reply'       => __( '' ),
 	'title_reply_to'    => __( '' ),
 	'cancel_reply_link' => __( '' ),
-	'label_submit'      => __( 'Send message' ),
+	'label_submit'      => __( 'Post comment' ),
 	'format'            => 'xhtml',
 	'comment_notes_after' => '',
 	'comment_notes_before' => '',

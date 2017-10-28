@@ -2,6 +2,24 @@
 
 	$(function () {
 
+		//SMALL NAVIGATION TOGGLE
+		var btnSmallNav = $('.btnSmallNav');
+		var smallNav = $('.smallNav');
+		var closeSmallNav = $('.icon-X');
+		var smallNavLinks = $('.smallNav li');
+
+		smallNav.hide();
+
+		btnSmallNav.click( function() {
+			smallNav.slideDown(350);
+		});
+		closeSmallNav.click( function() {
+			smallNav.slideUp(350);
+		});
+		smallNavLinks.click( function() {
+			smallNav.slideUp(350);
+		});
+
 		// Form validation
 		$("#submit_btn").click(function() {
 
@@ -28,99 +46,142 @@
 		})
 
 
-		var windowsize = $(window).width();
+		// var windowsize = $(window).width();
 
-	    $(window).on('resize', function() {
-	      var windowsize = $(window).width();
-	        // Change this to the correct selector.
-	        if(windowsize > 1200) {
-	            $('.head-nav').midnight().css({
-	                'top' : '80px',
-	                'width' : '130px',
-	                'right' : 'auto',
-	                'left' : '50%',
-	                'transform' : 'translate(-570px, 0)'
-	            });
+	 //    $(window).on('resize', function() {
+	 //      var windowsize = $(window).width();
+	 //        if(windowsize > 1200) {
+	 //            $('.head-nav').midnight().css({
+	 //                'top' : '100px',
+	 //                'width' : '110px',
+	 //                'right' : 'auto',
+	 //                'left' : '50%',
+	 //                'transform' : 'translate(-570px, 0)'
+	 //            });
 
-	            $('.follow-nav').midnight().css({
-	                'top' : '100px',
-	                'width' : '20px',
-	                'right' : 'auto',
-	                'left' : '50%',
-	                'transform' : 'translate(565px, 0)'
-	            });
+	 //            $('.follow-nav').midnight().css({
+	 //                'top' : '104px',
+	 //                'width' : '20px',
+	 //                'right' : 'auto',
+	 //                'left' : '50%',
+	 //                'transform' : 'translate(565px, 0)'
+	 //            });
 
-	            $('.style-nav').midnight().css({
-	                'top': '165px',
-	                'right' : 'auto',
-	                'width' : '125px',
-	                'left' : '50%',
-	                'transform' : 'translate(-585px, 0)'
-	            });
+	 //            $('.style-nav').midnight().css({
+	 //                'top': '180px',
+	 //                'right' : 'auto',
+	 //                'width' : '125px',
+	 //                'left' : '50%',
+	 //                'transform' : 'translate(-585px, 0)'
+	 //            });
 
-	            $('.icons-nav').midnight().css({
-	                'top': '190px',
-	                'right' : 'auto',
-	                'width' : '20px',
-	                'height' : '140px',
-	                'left' : '50%',
-	                'transform' : 'translate(563px, 0)'
-	            });
+	 //            $('.icons-nav').midnight().css({
+	 //                'top': '185px',
+	 //                'right' : 'auto',
+	 //                'width' : '20px',
+	 //                'height' : '140px',
+	 //                'left' : '50%',
+	 //                'transform' : 'translate(563px, 0)'
+	 //            });
 
-	            $('.footer').midnight().css({
-	                'bottom': '5%',
-	                'top': 'auto',
-	                'right' : 'auto',
-	                'width' : '150px',
-	                'left' : '50%',
-	                'transform' : 'translate(-570px, 0)'
-	            });
-	        }
-	        else {
-	            $('.head-nav').midnight().css({
-	                'top' : '80px',
-	                'width' : '130px',
-	                'right' : 'auto',
-	                'left' : '50%',
-	                'transform' : 'translate(-470px, 0)'
-	            });
+	 //            $('.footer').midnight().css({
+	 //                'bottom': '5%',
+	 //                'top': 'auto',
+	 //                'right' : 'auto',
+	 //                'width' : '150px',
+	 //                'left' : '50%',
+	 //                'transform' : 'translate(-570px, 0)'
+	 //            });
+	 //        }
+	 //        else {
+	 //        	return;
+	 //        //     $('.head-nav').midnight().css({
+	 //        //         'top' : '80px',
+	 //        //         'width' : '132px',
+	 //        //         'right' : 'auto',
+	 //        //         'left' : '50%',
+	 //        //         'transform' : 'translate(-470px, 0)'
+	 //        //     });
 
-	            $('.follow-nav').midnight().css({
-	                'top' : '100px',
-	                'width' : '20px',
-	                'right' : 'auto',
-	                'left' : '50%',
-	                'transform' : 'translate(465px, 0)'
-	            });
+	 //        //     $('.follow-nav').midnight().css({
+	 //        //         'top' : '100px',
+	 //        //         'width' : '20px',
+	 //        //         'right' : 'auto',
+	 //        //         'left' : '50%',
+	 //        //         'transform' : 'translate(465px, 0)'
+	 //        //     });
 
 
-	            $('.style-nav').midnight().css({
-	                'top': '165px',
-	                'right' : 'auto',
-	                'width' : '125px',
-	                'left' : '50%',
-	                'transform' : 'translate(-485px, 0)'
-	            });
+	 //        //     $('.style-nav').midnight().css({
+	 //        //         'top': '165px',
+	 //        //         'right' : 'auto',
+	 //        //         'width' : '125px',
+	 //        //         'left' : '50%',
+	 //        //         'transform' : 'translate(-485px, 0)'
+	 //        //     });
 
-	            $('.icons-nav').midnight().css({
-	                'top': '190px',
-	                'right' : 'auto',
-	                'width' : '20px',
-	                'height' : '140px',
-	                'left' : '50%',
-	                'transform' : 'translate(465px, 0)'
-	            });
+	 //        //     $('.icons-nav').midnight().css({
+	 //        //         'top': '190px',
+	 //        //         'right' : 'auto',
+	 //        //         'width' : '20px',
+	 //        //         'height' : '140px',
+	 //        //         'left' : '50%',
+	 //        //         'transform' : 'translate(465px, 0)'
+	 //        //     });
 
-	            $('.footer').midnight().css({
-	                'bottom': '5%',
-	                'top': 'auto',
-	                'right' : 'auto',
-	                'width' : '150px',
-	                'left' : '50%',
-	                'transform' : 'translate(-470px, 0)'
-	            });
-	        }
-	    }).trigger('resize');
+	 //        //     $('.footer').midnight().css({
+	 //        //         'bottom': '5%',
+	 //        //         'top': 'auto',
+	 //        //         'right' : 'auto',
+	 //        //         'width' : '150px',
+	 //        //         'left' : '50%',
+	 //        //         'transform' : 'translate(-470px, 0)'
+	 //        //     });
+	 //        }
+	 //    });
+
+ 		$('.head-nav').midnight().css({
+            'top' : '100px',
+            'width' : '122px',
+            'right' : 'auto',
+            'left' : '50%',
+            'transform' : 'translate(-570px, 0)'
+        });
+
+        $('.follow-nav').midnight().css({
+            'top' : '104px',
+            'width' : '20px',
+            'right' : 'auto',
+            'left' : '50%',
+            'transform' : 'translate(565px, 0)'
+        });
+
+        $('.style-nav').midnight().css({
+            'top': '180px',
+            'right' : 'auto',
+            'width' : '125px',
+            'left' : '50%',
+            'transform' : 'translate(-585px, 0)'
+        });
+
+        $('.icons-nav').midnight().css({
+            'top': '185px',
+            'right' : 'auto',
+            'width' : '20px',
+            'height' : '137px',
+            'left' : '50%',
+            'transform' : 'translate(563px, 0)'
+        });
+
+        $('.footer').midnight().css({
+            'bottom': '5%',
+            'top': 'auto',
+            'right' : 'auto',
+            'width' : '150px',
+            'left' : '50%',
+            'transform' : 'translate(-570px, 0)'
+        });
+
 
 		// OPENING MENI
 		$('.small-logo').on('click', function () {
@@ -137,7 +198,7 @@
 		  color: '#000',
 		  trailColor: '#eee',
 		  trailWidth: 1,
-		  svgStyle: {width: '100%', height: '100%'},
+		  svgStyle: {width: '100%', height: '2px'},
 		  text: {
 		    style: {},
 		    autoStyleContainer: false
@@ -176,7 +237,7 @@
 		      this.rows = minRows + rows - 1;
 		  });
 
-		// PREVENT LOADINGSCREEN FROM SHOWING MULTIPLE TIMES
+		//PREVENT LOADINGSCREEN FROM SHOWING MULTIPLE TIMES
 		var userHasVisited = sessionStorage.getItem('namespace.visited');
 		sessionStorage.setItem('namespace.visited', 1);
 		if (userHasVisited) {
