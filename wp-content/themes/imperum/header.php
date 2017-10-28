@@ -26,12 +26,13 @@
         });
         </script>
 
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
 	</head>
 	<body <?php body_class(); ?>>
 
 		<!-- I load this HTML only front page (HTML for loading screen) -->
 		<?php if ( is_front_page() ) { ?>
-			<div class="loadingPage">
+			<div class="loadingPage" style="display: none;">
 		        <h1>Imperium</h1>
 		        <div class="loadingContent">
 		        	<img class="center-block" src="<?php bloginfo('template_directory'); ?>/img/landingLogo.png">
@@ -50,7 +51,7 @@
 	        </div>
 	    </div>
 
-	    <div class="smallNav">
+	    <div class="smallNav" style="display: none;">
 	    	<span class="icon-X"></span>
 	    	<ul>
 	    		<li><a href="<?php if(!is_front_page()) echo home_url(); else echo '#' ?>">Home</a></li>
