@@ -1964,7 +1964,8 @@ section#portfolio .main {
 }
 .average-difficulty {
     display: inline-block;
-    width: 50%;
+    width: 100%;
+    text-align: center;
 }
 .vb-head-info span {
     color: #c09858;
@@ -2011,6 +2012,10 @@ section#vbSingle-body .main {
     font-weight: 500;
     margin-bottom: 25px;
     color: #060b26;
+            position: absolute;
+        top: -25px;
+        left: 25%;
+        width: auto;
 }
 .post-headline:hover, .post-headline:visited {
     text-decoration: none;
@@ -2018,6 +2023,7 @@ section#vbSingle-body .main {
 .post-body {
     font-weight: 500;
     margin-bottom: 50px;
+    padding-top: 10%;
 }
 .subject,
 .tags,
@@ -2033,7 +2039,7 @@ section#vbSingle-body .main {
     color: #c09858;
 }
 #vbSingle-body .tags {
-    width: 55%;
+    width: 75%;
     color: #c09858;
 }
 #vbSingle-body .date-of-post {
@@ -2067,6 +2073,55 @@ section#vbSingle-comments .main {
 .comments {
     margin-bottom: 60px;
 }
+.post-numz {
+    text-align: left;
+}
+.share-post-text {
+    text-align: right;
+}
+@media(min-width: 575px) {
+    #vbSingle-body .post-headline {
+        position: relative;
+        top: auto;
+        left: auto;
+    }
+    .post-body {
+        padding-top: 0;
+    }
+    .average-difficulty {
+        width: 50%;
+        text-align: left;
+    }
+    #vbSingle-body .tags {
+        width: 55%;
+    }
+    .post-numz {
+        text-align: right;
+    }
+}
+@media (min-width: 992px) {
+    #vbSingle-body .subject {
+        width: 25%;
+    }
+}
+@media(max-width: 576px){
+    .mobile-video-dark-line {
+        position: absolute;
+        top: 57px;
+        left: 45px;
+        width: 15%;
+    }
+    .share-post-text {
+        text-align: left;
+    }
+}
+
+
+
+
+
+
+
 
 
 /*

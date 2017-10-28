@@ -40,7 +40,7 @@
 	                </div>
 	            </div>
 	            <div class="container main">
-	                <div class="col-md-10 col-md-offset-1">
+	                <div class="col-lg-10 col-lg-offset-1">
 	                    <div class="featured-img featured-img-big" style="background-image: url(<?php echo wp_get_attachment_url( get_post_thumbnail_id() ); ?>);"></div>
 	                </div>
 	            </div>
@@ -51,19 +51,21 @@
 	        <div class="row">
 
 	            <div class="container main">
-	                <div class="col-sm-1 col-md-1 col-md-offset-1 post-numz">
+	                <div class="col-xs-1 col-lg-offset-1 post-numz">
 	                    <h3>01</h3>
 	                </div>
-	                <div class="col-sm-1 col-md-1">
+	                <div class="col-xs-1 mobile-video-dark-line">
 	                    <hr class="dark-line" />
 	                </div>
-	                <div class="col-sm-10 col-md-8">
+	                <div class="col-xs-9">
 	                    <h4 class="post-headline">Web Design speed art - monter</h4>
+					</div>
+	                <div class="col-sm-10 col-lg-8 col-sm-offset-2 col-md-offset-2 col-lg-offset-3">
 	                    <div class="post-body">
 	                        <?php the_content(); ?>
 	                    </div>
 	                </div>
-	                <div class="col-md-8 col-md-offset-3 clearfix post-body-param">
+	                <div class="col-sm-10 col-lg-8 col-lg-offset-3 col-sm-offset-2 clearfix post-body-param">
 	                    <div class="subject">
 	                        <p>
 	                        	<?php foreach ((get_the_category()) as $category) {
@@ -85,15 +87,15 @@
 	                        <p><?php the_time('j. m. Y'); ?></p>
 	                    </div>
 	                </div>
-	                <div class="col-xs-3">
-	                    <p class="text-right">Share this post:</p>
+	                <div class="col-xs-3 col-sm-2 col-lg-3">
+	                    <p class="share-post-text">Share this post:</p>
 	                </div>
-	                <div class="col-xs-8">
+	                <div class="col-xs-8 col-sm-10 col-lg-9">
 	                    <ul class="post-icons">
-	                        <li><a href="#"><span class="icon-fb"></span></a></li>
-	                        <li><a href="#"><span class="icon-tw"></span></a></li>
-	                        <li><a href="#"><span class="icon-insta"></span></a></li>
-	                        <li><a href="#"><span class="icon-in"></span></a></li>
+	                        <li><a href="#"><span class="icon-Facebook-Icon"></span></a></li>
+	                        <li><a href="#"><span class="icon-Twitter-Icon"></span></a></li>
+	                        <li><a href="#"><span class="icon-Google-Plus-Icon"></span></a></li>
+	                        <li><a href="#"><span class="icon-Pinterest-Icon"></span></a></li>
 	                    </ul>
 	                </div>
 	            </div>
