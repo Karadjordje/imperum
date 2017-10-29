@@ -198,7 +198,7 @@ h1, h3 {
 
 .checkboxCustom {
     display: inline-block;
-    margin-right: 20px;
+    margin-right: 15px;
 }
 .checkboxCustom:last-child {
     margin-right: 0;
@@ -759,29 +759,43 @@ section#video-blog .main {
 #our-work .checkbox-content {
     margin-top: 30px;
     margin-bottom: 30px;
+    padding-right: 0;
 }
-#our-work-carousel {
-    padding-left: 0px;
-}
-#our-work-carousel .carousel-inner {
-    border: 2px solid #c99e5a;
-    position: relative;
+.our-work-all {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 100%;
-    overflow: hidden;
-    display: block;
+    height: 313px
 }
-.our-work-item {
-    -webkit-background-size: cover;
-            background-size: cover;
-    background-position: center center;
-    height: 310px;
-}
+
+
+
+
+
+
+
+
 .our-work-carousel-controls {
     position: absolute;
-    width: 100%;
+    width: 12%;
     height: 100%;
     top: 0;
-    right: 0;
+    right: 100px;
 }
 .carousel-control .icon-left_arrow,
 .carousel-control .icon-right_arrow {
@@ -796,6 +810,18 @@ section#video-blog .main {
     display: inline-block;
     color: #c09858;
 }
+.our-work-carousel-controls .carousel-control {
+    width: 50%;
+}
+
+
+
+
+
+
+
+
+
 .our-work-indicators {
     bottom: -20px;
     position: absolute;
@@ -819,6 +845,135 @@ section#video-blog .main {
     margin: 1px;
 }
 
+
+
+
+
+
+
+
+
+.our-work-info {
+    width: 34.7%;
+    text-align: right;
+    padding-right: 20px;
+    height: 313px;
+}
+@-webkit-keyframes pulse {
+    from { text-shadow: 0 0 10px #fff; }
+    50% { text-shadow: 0 0 10px #1a2d3e; }
+    to { text-shadow: 0 0 10px #fff; }
+}
+.glow {
+    -webkit-animation-name: pulse;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: 5;
+}
+
+
+
+
+
+
+
+
+
+#our-work-carousel {
+    width: 65.3%;
+    height: 313px;
+}
+#our-work-carousel .carousel-inner {
+    border: 2px solid #c99e5a;
+    width: 539px;
+}
+#our-work-carousel .carousel-inner .item {
+    height: 309px;
+}
+#our-work-carousel .carousel-inner>.item>img {
+    width: auto;
+    height: 309px;
+}
+
+
+
+
+
+
+/* .our-work-carousel-controls {
+    position: absolute;
+    width: 16.5%;
+    height: 100%;
+    top: 0;
+    right: 0;
+.carousel-control.left,
+.carousel-control.right {
+    background-image: none;
+}
+.carousel-control {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0,0,0,.6);
+    background-color: rgba(0,0,0,0);
+    filter: alpha(opacity=50);
+    opacity: .5;
+} */
+
+
+
+
+
+
+
+/*
+#our-work-carousel {
+    padding-left: 0px;
+    width: 79.5%;
+    height: 313px;
+    margin-right: 8.5%;
+}
+#our-work-carousel .carousel-inner {
+    border: 2px solid #c99e5a;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    display: block;
+}
+#our-work-carousel .carousel-inner .item {
+    height: 313px;
+}
+                                                .our-work-indicators {
+                                                    bottom: -20px;
+                                                    position: absolute;
+                                                    left: 0%;
+                                                    width: 100%;
+                                                    margin-left: 0;
+                                                    margin-bottom: 0px;
+                                                }
+                                                .our-work-indicators li {
+                                                    border: none;
+                                                    background-color: #72737b;
+                                                    width: 6px;
+                                                    height: 6px;
+                                                    -webkit-border-radius: 6px;
+                                                            border-radius: 6px;
+                                                }
+                                                .our-work-indicators .active {
+                                                    background-color: #cba262;
+                                                    width: 6px;
+                                                    height: 6px;
+                                                    margin: 1px;
+                                                }
+
+
+
+
+
 @-webkit-keyframes pulse {
     from { text-shadow: 0 0 10px #fff; }
     50% { text-shadow: 0 0 10px #1a2d3e; }
@@ -833,12 +988,12 @@ section#video-blog .main {
 
 @media screen and (min-width: 992px) {
     #our-work-carousel {
-        padding-left: 15px
+        padding-left: 15px;
     }
     #our-work-carousel .carousel-inner {
         width: 84%;
         display: inline-block;
-        height: 309px;
+        height: 313px;
     }
     .our-work-indicators {
         width: 84%;
@@ -872,7 +1027,8 @@ section#video-blog .main {
 
 .our-work-info {
     text-align: right;
-    height: 313px;
+    height: 100%;
+    width: 46%;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -945,7 +1101,7 @@ section#video-blog .main {
     margin-top: 10px;
     margin-bootom: 10px;
 }
-
+ */
 
 
 
@@ -1170,6 +1326,9 @@ textarea {
     z-index: 999999;
 }
 .smallNav {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
     position: fixed;
     top: 0px;
@@ -1178,6 +1337,28 @@ textarea {
     bottom: 0px;
     height: 100%;
     width: 100%;
+    background: -webkit-gradient(
+        linear,
+        left top, left bottom,
+        from(rgba(14,41,58,.95)),
+        to(rgba(7,11,38,.95))
+        ),
+        url(./img/noisy-texture-100x100-o46-d10-c-0e293a-t1.png) repeat,
+        url(./img/overlayPicture.jpg) no-repeat center/cover;
+    background: -webkit-linear-gradient(
+        top,
+        rgba(14,41,58,.95) 0%,
+        rgba(7,11,38,.95) 100%
+        ),
+        url(./img/noisy-texture-100x100-o46-d10-c-0e293a-t1.png) repeat,
+        url(./img/overlayPicture.jpg) no-repeat center/cover;
+    background: -o-linear-gradient(
+        top,
+        rgba(14,41,58,.95) 0%,
+        rgba(7,11,38,.95) 100%
+        ),
+        url(./img/noisy-texture-100x100-o46-d10-c-0e293a-t1.png) repeat,
+        url(./img/overlayPicture.jpg) no-repeat center/cover;
     background: linear-gradient(
         to bottom,
         rgba(14,41,58,.95) 0%,
@@ -1187,8 +1368,15 @@ textarea {
         url(./img/overlayPicture.jpg) no-repeat center/cover;
     z-index: 9999999;
     padding: 60px 40px;
-    flex-direction: column;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     font-family: 'Playfair Display', serif;
 }
 .smallNav ul {
@@ -1205,7 +1393,8 @@ textarea {
 }
 .smallNav a:hover {
     text-decoration: underline;
-    text-decoration-color: #c39a59;
+    -webkit-text-decoration-color: #c39a59;
+            text-decoration-color: #c39a59;
 }
 .icon-X {
     cursor: pointer;
@@ -2307,34 +2496,39 @@ section#vbSingle-comments .main {
 /* -- FONT SIZE -- */
 .head-container,
 #services,
-#clients-say {
+#clients-say,
+#our-work {
     font-size: 80%;
 }
 @media (min-width:576px) {
     .head-container,
     #services,
-    #clients-say {
+    #clients-say,
+    #our-work {
         font-size: 85%;
     }
 }
 @media (min-width:768px) {
     .head-container,
     #services,
-    #clients-say {
+    #clients-say,
+    #our-work {
         font-size: 90%;
     }
 }
 @media (min-width:992px) {
     .head-container,
     #services,
-    #clients-say {
+    #clients-say,
+    #our-work {
         font-size: 95%;
     }
 }
 @media (min-width: 1200px) {
     .head-container,
     #services,
-    #clients-say {
+    #clients-say,
+    #our-work {
         font-size: 100%;
     }
 }

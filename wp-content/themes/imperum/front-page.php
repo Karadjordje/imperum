@@ -175,110 +175,176 @@
         <section class="container-fluid lite-bg" id="our-work" data-midnight="light">
             <div class="row">
                 <div class="container grids">
-                    <div class="col-md-2 col-md-offset-2"><div class="one"></div></div>
-                    <div class="col-md-2"><div class="one"></div></div>
-                    <div class="col-md-2"><div class="one"></div></div>
-                    <div class="col-md-2"><div class="one"></div></div>
-                    <div class="col-md-2"><div class="one"></div></div>
+                    <div class="col-xs-12 col-sm-12 col-md-10 col-lg-8 col-md-offset-1 col-lg-offset-2">
+                        <div class="row grid-last-line">
+                            <div class="col-xs-3 grid-1"><div class="one"></div></div>
+                            <div class="col-xs-3 grid-1"><div class="one"></div></div>
+                            <div class="col-xs-3 grid-1"><div class="one"></div></div>
+                            <div class="col-xs-3 grid-1"><div class="one"></div></div>
+                        </div>
+                     </div>
                 </div>
                 <div class="container main">
-                    <div class="col-md-8 col-md-offset-4">
-                        <h4 class="sub-heading">This is some of</h4>
+                    <div class="col-xs-12 col-sm-12 col-md-10 col-lg-8 col-md-offset-1 col-lg-offset-2">
+                        <div class="row">
+                            <div class="col-xs-9 col-xs-offset-3">
+                                <h4 class="sub-heading">This is some of</h4>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-md-9 col-md-offset-3">
+                    <div class="col-xs-12 col-sm-10 col-md-10 col-lg-9 col-sm-offset-1 col-md-offset-2 col-lg-offset-3"">
                         <h1 class="headline">Our work</h1>
                         <div class="col-md-offset-1 col-md-2"><hr class="line" /></div>
                     </div>
-
-                    <div class="col-md-8 col-md-offset-4 checkbox-content" id="category-checkboxes">
-                        <div class="checkboxCustom">
-                            <input disabled checked type="checkbox" name="allChb" id="allChb" data-category="all">
-                            <label for="allChb">All</label>
-                        </div>
-                        <div class="checkboxCustom">
-                            <input type="checkbox" name="frontendChb" id="frontendChb" data-category="frontend">
-                            <label for="frontendChb">Frontend</label>
-                        </div>
-                        <div class="checkboxCustom">
-                            <input type="checkbox" name="backendChb" id="backendChb" data-category="backend">
-                            <label for="backendChb">Backend</label>
-                        </div>
-                        <div class="checkboxCustom">
-                            <input type="checkbox" name="marketingChb" id="marketingChb" data-category="marketing">
-                            <label for="marketingChb">Marketing</label>
-                        </div>
-                        <div class="checkboxCustom">
-                            <input type="checkbox" name="designChb" id="designChb" data-category="design">
-                            <label for="designChb">Design</label>
-                        </div>
-                        <div class="checkboxCustom">
-                            <input type="checkbox" name="uncategorizedChb" id="uncategorizedChb" data-category="uncategorized">
-                            <label for="uncategorizedChb">Uncategorized</label>
+                    <div class="col-xs-12 col-sm-12 col-md-10 col-lg-8 col-md-offset-1 col-lg-offset-2">
+                        <div class="row">
+                            <div class="col-xs-9 col-xs-offset-3 checkbox-content" id="category-checkboxes">
+                                <div class="checkboxCustom">
+                                    <input disabled checked type="checkbox" name="allChb" id="allChb" data-category="all">
+                                    <label for="allChb">All</label>
+                                </div>
+                                <div class="checkboxCustom">
+                                    <input type="checkbox" name="frontendChb" id="frontendChb" data-category="frontend">
+                                    <label for="frontendChb">Frontend</label>
+                                </div>
+                                <div class="checkboxCustom">
+                                    <input type="checkbox" name="backendChb" id="backendChb" data-category="backend">
+                                    <label for="backendChb">Backend</label>
+                                </div>
+                                <div class="checkboxCustom">
+                                    <input type="checkbox" name="marketingChb" id="marketingChb" data-category="marketing">
+                                    <label for="marketingChb">Marketing</label>
+                                </div>
+                                <div class="checkboxCustom">
+                                    <input type="checkbox" name="designChb" id="designChb" data-category="design">
+                                    <label for="designChb">Design</label>
+                                </div>
+                                <div class="checkboxCustom">
+                                    <input type="checkbox" name="uncategorizedChb" id="uncategorizedChb" data-category="uncategorized">
+                                    <label for="uncategorizedChb">SEO</label>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
                     <!-- Here starts carousel loop -->
                     <?php $carouselLoop = new WP_Query( array( 'post_type' => 'post', 'posts_per_page' => -1 ) ); ?>
                     <?php $i=1; ?>
-                    <div class="col-md-4 our-work-info">
-                        <div class="our-work-info-num">
-                            <h5 title="01">01</h5>
-                        </div>
-                        <a id="externalLink" target="_blank" href="#"><span class="icon-link link-glow"></span></a>
-                        <h3>Crossroads</h3>
-                        <h4 class="sub-heading">front end / wordpress</h4>
-                    </div>
-
-                    <div class="col-md-7">
-                        <div class="row">
-                            <div id="our-work-carousel" class="carousel slide" data-ride="carousel">
-                                <!-- Wrapper for slides -->
-                                <div class="carousel-inner" role="listbox">
-                                    <?php while ( $carouselLoop->have_posts() ) : ?>
-                                        <?php $carouselLoop->the_post(); ?>
-                                        <?php
-                                            $categories = get_the_category();
-                                            $cat = '';
-                                            if ( ! empty( $categories ) ) {
-                                                $cat = esc_html( $categories[0]->name );
-                                            }
-                                        ?>
-                                        <div
-                                            class="cat-all cat-<?= strtolower($cat) ?> item <?php if ($i == 1) echo 'active'; ?>"
-                                            data-title="<?php the_title() ?>"
-                                            data-category="<?= strtolower($cat) ?>"
-                                            data-link="<?php the_field('external_link') ?>"
-                                        >
-                                            <img src="<?php echo wp_get_attachment_url( get_post_thumbnail_id() ); ?>" alt="<?php the_title(); ?>">
-                                            <div class="carousel-caption">
-                                            </div>
-                                        </div>
-                                        <?php $i++; ?>
-                                    <?php endwhile; ?>
-                                    <?php wp_reset_query(); ?>
-                                </div>
-
-                                <div class="our-work-carousel-controls">
-                                    <a class="left carousel-control" href="#our-work-carousel" role="button" data-slide="prev">
-                                        <span class="icon-left_arrow" aria-hidden="true"></span>
-                                        <span class="sr-only">Previous</span>
-                                    </a>
-                                    <a class="right carousel-control" href="#our-work-carousel" role="button" data-slide="next">
-                                        <span class="icon-right_arrow" aria-hidden="true"></span>
-                                        <span class="sr-only">Next</span>
-                                    </a>
-                                </div>
-
-                                <!-- Indicators -->
-                                <ol class="carousel-indicators our-work-indicators">
-                                    <li data-target="#our-work-carousel" data-slide-to="0" class="active"></li>
-                                    <li data-target="#our-work-carousel" data-slide-to="1"></li>
-                                    <li data-target="#our-work-carousel" data-slide-to="2"></li>
-                                </ol>
+                    <div class="our-work-all">
+                        <div class="our-work-info">
+                            <div class="our-work-info-num">
+                                <h5 title="01">01</h5>
                             </div>
+                            <a id="externalLink" target="_blank" href="#"><span class="icon-link link-glow"></span></a>
+                            <h3>Crossroads</h3>
+                            <h4 class="sub-heading">front end / wordpress</h4>
+                        </div>
+
+                        <div id="our-work-carousel" class="carousel slide" data-ride="carousel">
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner" role="listbox">
+                                <?php while ( $carouselLoop->have_posts() ) : ?>
+                                    <?php $carouselLoop->the_post(); ?>
+                                    <?php
+                                        $categories = get_the_category();
+                                        $cat = '';
+                                        if ( ! empty( $categories ) ) {
+                                            $cat = esc_html( $categories[0]->name );
+                                        }
+                                    ?>
+                                    <div
+                                        class="cat-all cat-<?= strtolower($cat) ?> item <?php if ($i == 1) echo 'active'; ?>"
+                                        data-title="<?php the_title() ?>"
+                                        data-category="<?= strtolower($cat) ?>"
+                                        data-link="<?php the_field('external_link') ?>"
+                                    >
+                                        <img src="<?php echo wp_get_attachment_url( get_post_thumbnail_id() ); ?>" alt="<?php the_title(); ?>">
+                                        <div class="carousel-caption">
+                                        </div>
+                                    </div>
+                                    <?php $i++; ?>
+                                <?php endwhile; ?>
+                                <?php wp_reset_query(); ?>
+                            </div>
+
+                            <div class="our-work-carousel-controls">
+                                <a class="left carousel-control" href="#our-work-carousel" role="button" data-slide="prev">
+                                    <span class="icon-left_arrow" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="right carousel-control" href="#our-work-carousel" role="button" data-slide="next">
+                                    <span class="icon-right_arrow" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators our-work-indicators">
+                                <li data-target="#our-work-carousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#our-work-carousel" data-slide-to="1"></li>
+                                <li data-target="#our-work-carousel" data-slide-to="2"></li>
+                            </ol>
                         </div>
                     </div>
                 </div>
+                    <!-- <div class="col-md-4 our-work-info">
+                            <div class="our-work-info-num">
+                                <h5 title="01">01</h5>
+                            </div>
+                            <a id="externalLink" target="_blank" href="#"><span class="icon-link link-glow"></span></a>
+                            <h3>Crossroads</h3>
+                            <h4 class="sub-heading">front end / wordpress</h4>
+                        </div>
+
+                        <div class="col-md-7">
+                            <div class="row">
+                                <div id="our-work-carousel" class="carousel slide" data-ride="carousel">
+                                    Wrapper for slides
+                                    <div class="carousel-inner" role="listbox">
+                                        <?php while ( $carouselLoop->have_posts() ) : ?>
+                                            <?php $carouselLoop->the_post(); ?>
+                                            <?php
+                                                $categories = get_the_category();
+                                                $cat = '';
+                                                if ( ! empty( $categories ) ) {
+                                                    $cat = esc_html( $categories[0]->name );
+                                                }
+                                            ?>
+                                            <div
+                                                class="cat-all cat-<?= strtolower($cat) ?> item <?php if ($i == 1) echo 'active'; ?>"
+                                                data-title="<?php the_title() ?>"
+                                                data-category="<?= strtolower($cat) ?>"
+                                                data-link="<?php the_field('external_link') ?>"
+                                            >
+                                                <img src="<?php echo wp_get_attachment_url( get_post_thumbnail_id() ); ?>" alt="<?php the_title(); ?>">
+                                                <div class="carousel-caption">
+                                                </div>
+                                            </div>
+                                            <?php $i++; ?>
+                                        <?php endwhile; ?>
+                                        <?php wp_reset_query(); ?>
+                                    </div>
+
+                                    <div class="our-work-carousel-controls">
+                                        <a class="left carousel-control" href="#our-work-carousel" role="button" data-slide="prev">
+                                            <span class="icon-left_arrow" aria-hidden="true"></span>
+                                            <span class="sr-only">Previous</span>
+                                        </a>
+                                        <a class="right carousel-control" href="#our-work-carousel" role="button" data-slide="next">
+                                            <span class="icon-right_arrow" aria-hidden="true"></span>
+                                            <span class="sr-only">Next</span>
+                                        </a>
+                                    </div>
+
+                                    Indicators
+                                    <ol class="carousel-indicators our-work-indicators">
+                                        <li data-target="#our-work-carousel" data-slide-to="0" class="active"></li>
+                                        <li data-target="#our-work-carousel" data-slide-to="1"></li>
+                                        <li data-target="#our-work-carousel" data-slide-to="2"></li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div> -->
             </div>
         </section>
 
