@@ -3,6 +3,30 @@
 	            MMXVII copyright Imperium.
 	        </p>
 	    </div>
+        <section class="container-fluid dark-bg" id="small-footer" data-midnight="dark">
+            <div class="row">
+
+                <div class="container main">
+                    <div class="footer-content">
+                        <span class="icon-Logo logo"></span>
+                        <div class="f-soc-copyright">
+                            <div class="soc-footer">
+                                <p>Follow us:</p>
+                                <ul class="footer-icons">
+                                    <li><a href="#"><span class="icon icon-Facebook-Icon"></span></a></li>
+                                    <li><a href="#"><span class="icon icon-Behance-Icon"></span></a></li>
+                                    <li><a href="#"><span class="icon icon-Instagram-Icon"></span></a></li>
+                                    <li><a href="#" class="special"><span class="icon icon-Linked-In-Icon"></span></a></li>
+                                </ul>
+                            </div>
+                            <h5 class="copyright text-uppercase">
+                                MMXVII copyright Imperium.
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
 		<?php wp_footer(); ?>
 
@@ -47,12 +71,12 @@
             .fbmessenger.wposbottom_left{left:2px;right:initial;top:initial;bottom:0}
             .tooltiptext.wposbottom_left{left:60px;right:initial;top:initial;bottom:10px}
 
-            .fbmessenger.wposbottom_right{ left:auto; margin-left: auto; right:15px; top:initial; bottom:50px }
+            .fbmessenger.wposbottom_right{ left:auto; margin-left: auto; right:15px; top:initial; bottom: 7px; }
             @media (min-width: 992px) {
-                .fbmessenger.wposbottom_right{ left:50%; margin-left: 435px; right:auto; top:initial; bottom:50px }
+                .fbmessenger.wposbottom_right{ left:50%; margin-left: 435px; right:auto; top:initial; bottom:7px; }
             }
             @media (min-width: 1200px) {
-                .fbmessenger.wposbottom_right{ left:50%; margin-left: 535px; right:auto; top:initial; bottom:50px }
+                .fbmessenger.wposbottom_right{ left:50%; margin-left: 535px; right:auto; top:initial; bottom:50px; }
             }
 
             .tooltiptext.wposbottom_right{left:initial;right:60px;top:initial;bottom:10px}
