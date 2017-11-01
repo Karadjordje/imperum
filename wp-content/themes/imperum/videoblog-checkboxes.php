@@ -13,7 +13,9 @@
                             	<?php $loop = new WP_Query( $args ); ?>
                             	<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 	                            <div class="col-md-3 col-md-offset-1">
-	                                <div class="featured-img featured-img-small" style="background-image: url(<?php echo wp_get_attachment_url( get_post_thumbnail_id() ); ?>);"></div>
+	                            	<a href="<?php the_permalink() ?>">
+	                            		<div class="featured-img featured-img-small" style="background-image: url(<?php echo wp_get_attachment_url( get_post_thumbnail_id() ); ?>);"></div>
+	                            	</a>
 	                            </div>
 	                            <div class="col-md-1 post-num">
 	                                <h3>01</h3>
