@@ -2195,8 +2195,49 @@ textarea {
         font-weight: 500;
     }
 }
-
-
+/*  MIDNIGHT FIX WHEN CHANGING PAGE VIA NAVIGATION*/
+.head-nav {
+    position: fixed;
+    top : 100px;
+    width : 122px;
+    right : auto;
+    left : 50%;
+    transform : translate(-570px, 0);
+}
+.follow-nav {
+    position: fixed;
+    top : 104px;
+    width : 20px;
+    right : auto;
+    left : 50%;
+    transform : translate(565px, 0);
+}
+.style-nav {
+    position: fixed;
+    top: 180px;
+    right : auto;
+    width : 125px;
+    left : 50%;
+    transform : translate(-585px, 0);
+}
+.icons-nav {
+    position: fixed;
+    top: 185px;
+    right : auto;
+    width : 20px;
+    height : 137px;
+    left : 50%;
+    transform : translate(563px, 0);
+}
+.footer {
+    position: fixed;
+    bottom: 5%;
+    top: auto;
+    right : auto;
+    width : 150px;
+    left : 50%;
+    transform : translate(-570px, 0);
+}
 /*
 
     FREE CONSULTATION
