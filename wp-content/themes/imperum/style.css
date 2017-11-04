@@ -1756,6 +1756,7 @@ textarea {
 }
 textarea {
     margin-bottom: 40px;
+    resize: none;
 }
 #contact .main-content form {
     margin-bottom: 80px;
