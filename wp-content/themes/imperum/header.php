@@ -31,7 +31,7 @@
 
 		<!-- I load this HTML only front page (HTML for loading screen) -->
 		<?php if ( is_front_page() ) { ?>
-			<div class="loadingPage" style="display: none;">
+			<div class="loadingPage">
 		        <h1>Imperium</h1>
 		        <div class="loadingContent">
 		        	<img class="center-block" src="<?php bloginfo('template_directory'); ?>/img/landingLogo.png">

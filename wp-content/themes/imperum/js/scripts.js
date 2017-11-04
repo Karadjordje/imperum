@@ -236,16 +236,11 @@
 		  });
 
 		//PREVENT LOADINGSCREEN FROM SHOWING MULTIPLE TIMES
-		// var userHasVisited = sessionStorage.getItem('namespace.visited');
-		// sessionStorage.setItem('namespace.visited', 1);
-		// if (userHasVisited) {
-		//   $('.loadingPage').hide();
-		// }
-		  var cookieValue = $.cookie("user-session");
-		  if (!cookieValue || !cookieValue.length) {
-		    $('.loadingPage').show('fast');
-		    $.cookie("user-session", "1");
-		  }
+		var cookieValue = $.cookie("user-session");
+		if (cookieValue) {
+			$('.loadingPage').hide();
+		}
+		$.cookie("user-session", "1");
 
 
 		// LINK GLOW EFFECT
