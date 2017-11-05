@@ -1704,7 +1704,7 @@ section#small-footer .main {
     opacity: 1;
 }
 
-.video-blog-link .icon-eye {
+.video-blog-link .icon-View-Icon {
     font-size: 2em;
     position: absolute;
     top: 50%;
@@ -1758,6 +1758,7 @@ textarea {
     margin-bottom: 40px;
     resize: none;
     overflow-y: hidden;
+    cursor: auto !important;
 }
 #contact .main-content form {
     margin-bottom: 80px;

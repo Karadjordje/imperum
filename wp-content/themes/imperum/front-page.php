@@ -341,7 +341,7 @@
                                 <div class="video-blog-img" style="background-image: url(<?php echo wp_get_attachment_url( get_post_thumbnail_id() ); ?>);">
                                     <a href="<?php the_permalink() ?>">
                                         <div class="video-blog-link">
-                                            <span class="icon-eye"></span>
+                                            <span class="icon-View-Icon"></span>
                                         </div>
                                     </a>
                                 </div>
@@ -399,13 +399,13 @@
                                 </p>
 
                                 <ul>
-                                <li>
-                                    <span class="icon-Web-Icon sub-heading"></span> <a href="http://www.imperium-la.com" target="_blank">www.imperium-la.com</a></li>
-                                <li><span class="icon-Mail-Icon sub-heading"></span> <a href="mailto:hello@imperium-la.com" target="_blank">hello@imperium-la.com</a></li>
-                            </ul>
-
+                                    <li>
+                                        <span class="icon-Web-Icon sub-heading"></span> <a href="http://www.imperium-la.com" target="_blank">www.imperium-la.com</a></li>
+                                    <li><span class="icon-Mail-Icon sub-heading"></span> <a href="mailto:hello@imperium-la.com" target="_blank">hello@imperium-la.com</a></li>
+                                </ul>
                             </div>
                         </div>
+                    </div>
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-10 col-lg-8 col-md-offset-1 col-lg-offset-2">
                         <div class="row">
@@ -414,7 +414,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div><!-- END CONTAINER MAIN -->
             </div>
         </section>
 
