@@ -9,7 +9,7 @@
                     <img src="<?php bloginfo('template_directory'); ?>/img/whiteKeys.png">
                     <h4 class="sub-heading text-uppercase">In our hands lies</h4>
                     <h1 class="">Your Business</h1>
-                    <div class="col-md-offset-5 col-md-2"><hr class="line" /></div>
+                    <hr class="line" />
                 </div>
             </div>
         </div>
@@ -17,56 +17,48 @@
 
     <section class="container-fluid lite-bg" id="services-page" data-midnight="light">
         <div class="row pattern">
-            <div class="container grid">
-                <div class="row">
-                    <div class="col-md-2 col-md-offset-2"><div class="one"></div></div>
-                    <div class="col-md-2"><div class="one"></div></div>
-                    <div class="col-md-2"><div class="one"></div></div>
-                    <div class="col-md-2"><div class="one"></div></div>
-                    <div class="col-md-2"><div class="one"></div></div>
-                </div>
-            </div>
             <div class="container main">
-                <div class="row works-up">
+                <div class="col-sm-12 col-md-12 col-lg-10 col-lg-offset-1">
+                  <div class="row works-up">
 
-                    <div class="col-md-1 col-md-offset-1">
+                    <div class="works-up-left">
+                      <div class="works-up-head">
                         <h3 class="services-num">01</h3>
-                    </div>
-                    <div class="col-md-4 services-works">
                         <h4 class="text-uppercase">Visible on the internet</h4>
-                        <ul>
-                            <li>Custom web design and development</li>
-                            <li>iOS and Android app development</li>
-                            <li>Visual identity and branding</li>
-                        </ul>
+                      </div>
+                      <ul>
+                        <li>Custom web design and development</li>
+                        <li>iOS and Android app development</li>
+                        <li>Visual identity and branding</li>
+                      </ul>
                     </div>
-                    <div class="col-md-1">
+
+                    <div class="works-up-right">
+                      <div class="works-up-head">
                         <h3 class="services-num">02</h3>
-                    </div>
-                    <div class="col-md-4 services-works">
                         <h4 class="text-uppercase">Profitable from the internet</h4>
-                        <ul>
-                            <li><span>SEO (Search Engine Optimization)</span></li>
-                            <li><span>SEM (Search Engine Marketing)</span></li>
-                            <li><span>SMM (Social Media Marketing)</span></li>
-                        </ul>
+                      </div>
+                      <ul>
+                        <li>SEO (Search Engine Optimization)</li>
+                        <li>SEM (Search Engine Marketing)</li>
+                        <li>SMM (Social Media Marketing)</li>
+                      </ul>
                     </div>
 
+                  </div>
                 </div>
-                <div class="row works-head">
 
-                    <div class="col-md-10 col-md-offset-1 text-center">
-                        <h1>Steps we take during the process</h1>
-                        <div class="col-md-offset-5 col-md-2"><hr class="line" /></div>
-                        <div class="col-md-12">
-                            <p class="sub-heading">We care about you and your business.</p>
-                            <p>
-                                Here is a detailed description of our working process. Beside all these technical things we're reliable, responsible and fast team that delivers only high quality. Our designers, developers and marketing experts are one of the best in their field. Your business is our priority so we'll make sure that your results come quickly.
-                            </p>
-                        </div>
-                    </div>
-
+                <div class="col-sm-12 col-md-12 col-lg-10 col-lg-offset-1 text-center works-head">
+                  <h1>Steps we take during the process</h1>
+                  <hr class="line" />
+                  <div class="col-md-12">
+                    <p class="sub-heading">We care about you and your business.</p>
+                    <p>
+                      Here is a detailed description of our working process. Beside all these technical things we're reliable, responsible and fast team that delivers only high quality. Our designers, developers and marketing experts are one of the best in their field. Your business is our priority so we'll make sure that your results come quickly.
+                    </p>
+                  </div>
                 </div>
+
                 <div class="row works-down">
 
                     <div class="col-md-6">
