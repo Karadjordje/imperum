@@ -24,7 +24,7 @@
 	                                <hr class="dark-line" />
 	                            </div>
 	                            <div class="col-md-5">
-	                            	<a class="post-headline text-uppercase" href="<?php the_permalink() ?>">
+	                            	<a href="<?php the_permalink() ?>">
 	                            		<h4 class="post-headline text-uppercase"><?php the_title() ?></h4>
 	                            	</a>
 	                                <div class="post-body-short">
