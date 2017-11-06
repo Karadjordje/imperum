@@ -2735,9 +2735,7 @@ section#vbSingle-body .main {
     font-weight: 500;
     margin-bottom: 25px;
     color: #060b26;
-            position: absolute;
-        top: -25px;
-        left: 25%;
+            position: relative;
         width: auto;
 }
 .post-headline:hover, .post-headline:visited {
