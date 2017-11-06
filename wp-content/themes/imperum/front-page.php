@@ -387,7 +387,6 @@
                         <hr class="line" />
                     </div>
 
-                    <!-- <div class="col-md-8 col-md-offset-4 main-content"> -->
                     <div class="col-xs-12 col-sm-12 col-md-10 col-lg-8 col-md-offset-1 col-lg-offset-2">
                         <div class="row">
                             <div class="col-xs-10 col-sm-9 col-xs-offset-2 col-sm-offset-3 main-content">
@@ -399,13 +398,11 @@
                                 </p>
 
                                 <ul>
-                                    <li>
-                                        <span class="icon-Web-Icon sub-heading"></span> <a href="http://www.imperium-la.com" target="_blank">www.imperium-la.com</a></li>
+                                    <li><span class="icon-Web-Icon sub-heading"></span> <a href="http://www.imperium-la.com" target="_blank">www.imperium-la.com</a></li>
                                     <li><span class="icon-Mail-Icon sub-heading"></span> <a href="mailto:hello@imperium-la.com" target="_blank">hello@imperium-la.com</a></li>
                                 </ul>
                             </div>
                         </div>
-                    </div>
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-10 col-lg-8 col-md-offset-1 col-lg-offset-2">
                         <div class="row">
