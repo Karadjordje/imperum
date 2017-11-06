@@ -2556,16 +2556,6 @@ section#calendly .main {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
 .works-head {
     margin-bottom: 80px;
 }
@@ -2585,24 +2575,35 @@ section#calendly .main {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.works-down {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+}
+.works-down-one {
+    width: 50%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+.works-down-one:nth-child(even) {
+    padding-left: 15px;
+}
 .service-icons {
     width: 80px;
     height: 80px;
@@ -2612,6 +2613,7 @@ section#calendly .main {
             border-radius: 50%;
     position: relative;
     color: #c99e5a;
+    margin-left: 22%;
 }
 .service-icons span {
     position: absolute;
@@ -2623,19 +2625,31 @@ section#calendly .main {
             transform: translate(-50%, -50%);
 }
 
-
-
-
-
-
-
-
-
-
-
-.works-down h4 {
-    margin-top: 25px;
-    margin-bottom: 25px;
+.works-headline {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    position: relative;
+}
+.works-headline h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 22%;
+    position: relative;
+}
+.works-headline h4 {
+    margin-top: 7px;
+    margin-bottom: 0;
+}
+.works-down-one > p {
+    padding-left: 22%;
+    padding-right: 15px;
 }
 
 
@@ -2643,13 +2657,23 @@ section#calendly .main {
 
 
 
+/* .works-down h4 {
+    margin-top: 25px;
+    margin-bottom: 25px;
+} */
 
 
 
 
 
 
-.works-down .col-md-6 {
+
+
+
+
+
+
+/* .works-down .col-md-6 {
     margin-bottom: 50px;
 }
 .works-down h3 {
@@ -2660,7 +2684,7 @@ section#calendly .main {
 }
 .works-down .services-num:after {
     top: 30px;
-}
+} */
 
 
 /*

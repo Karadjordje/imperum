@@ -59,25 +59,71 @@
                   </div>
                 </div>
 
-                <div class="row works-down">
 
-                    <div class="col-md-6">
-                        <div class="row">
-                            <div class="col-md-8 col-md-offset-4">
-                                <div class="service-icons"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></div>
-                            </div>
-                            <div class="col-md-2 col-md-offset-2">
-                                <h3 class="services-num">01</h3>
-                            </div>
-                            <div class="col-md-8 services-works">
-                                <h4>Research</h4>
-                                <p>
-                                    First and foremost after understanding your <strong>business goals</strong> and <strong>needs</strong> we do research that is crucial in order to find out what <strong>style is the best fit</strong> for your business. We'll do <strong>competitors research</strong> in order to make your website looks better and be more effective that theirs.
-                                </p>
-                            </div>
-                        </div>
+                <div class="col-sm-12 col-md-12 col-lg-10 col-lg-offset-1 works-down">
+
+                    <div class="works-down-one">
+                      <div class="service-icons">
+                        <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                      </div>
+                      <div class="works-headline">
+                        <h3 class="services-num">01</h3>
+                        <h4>Research</h4>
+                      </div>
+                      <p>
+                        First and foremost after understanding your <strong>business goals</strong> and <strong>needs</strong> we do research that is crucial in order to find out what <strong>style is the best fit</strong> for your business. We'll do <strong>competitors research</strong> in order to make your website looks better and be more effective that theirs.
+                      </p>
                     </div>
-                    <div class="col-md-6">
+
+                    <div class="works-down-one">
+                      <div class="service-icons">
+                        <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                      </div>
+                      <div class="works-headline">
+                        <h3 class="services-num">01</h3>
+                        <h4>Research</h4>
+                      </div>
+                      <p>
+                        First and foremost after understanding your <strong>business goals</strong> and <strong>needs</strong> we do research that is crucial in order to find out what <strong>style is the best fit</strong> for your business. We'll do <strong>competitors research</strong> in order to make your website looks better and be more effective that theirs.
+                      </p>
+                    </div>
+
+                    <div class="works-down-one">
+                      <div class="service-icons">
+                        <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                      </div>
+                      <div class="works-headline">
+                        <h3 class="services-num">01</h3>
+                        <h4>Research</h4>
+                      </div>
+                      <p>
+                        First and foremost after understanding your <strong>business goals</strong> and <strong>needs</strong> we do research that is crucial in order to find out what <strong>style is the best fit</strong> for your business. We'll do <strong>competitors research</strong> in order to make your website looks better and be more effective that theirs.
+                      </p>
+                    </div>
+
+                    <div class="works-down-one">
+                      <div class="service-icons">
+                        <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                      </div>
+                      <div class="works-headline">
+                        <h3 class="services-num">01</h3>
+                        <h4>Research</h4>
+                      </div>
+                      <p>
+                        First and foremost after understanding your <strong>business goals</strong> and <strong>needs</strong> we do research that is crucial in order to find out what <strong>style is the best fit</strong> for your business. We'll do <strong>competitors research</strong> in order to make your website looks better and be more effective that theirs.
+                      </p>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+                    <!-- <div class="col-md-6">
                         <div class="row">
                             <div class="col-md-10 col-md-offset-2">
                                 <div class="service-icons"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></div>
@@ -163,7 +209,7 @@
                                 </p>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                     <div class="col-md-12 text-center">
                         <a class="btn btn-imperium btn-2" href="<?php echo site_url(); ?>/consultation/" role="button">Free consultation</a>
                     </div>
