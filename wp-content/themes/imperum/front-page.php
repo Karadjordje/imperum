@@ -395,7 +395,7 @@
 
 
                                 <p>
-                                    We're new raising company specialised in Web Development, making sure to provide high quality with business side of web development. So your website won't only be technicaly great but also optimized for high conversion rates and gathering new clients. <a href="#">View Pricing Plan.</a>
+                                    We're new raising company specialised in Web Development, making sure to provide high quality with business side of web development. So your website won't only be technicaly great but also optimized for high conversion rates and gathering new clients. <a href="<?php echo site_url(); ?>/pricing-plan/">View Pricing Plan.</a>
                                 </p>
 
                                 <ul>

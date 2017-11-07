@@ -1,72 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Pricing Plan</title>
+<?php /* Template Name: pricing-page */ ?>
 
-    <!-- FONTS -->
-    <link href="https://fonts.googleapis.com/css?family=Exo+2:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=latin-ext" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="icons/style.css">
+<?php get_header(); ?>
 
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-  </head>
-  <body>
-    <nav class="small-nav">
-        <div class="small-logo">
-            <h1 class="logo text-uppercase">Imperium <span class="glyphicon glyphicon-align-justify"></span></h1>
-        </div>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Service</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Videoblog</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
-
-    <div class="head-nav">
-        <h1 class="logo text-uppercase">Imperium</h1>
-        <p class="logo-dots">....</p>
-    </div>
-
-    <div class="follow-nav">
-        <div class="follow-nav-container">
-            <p class="rotate">Follow us:</p>
-        </div>
-    </div>
-
-    <div class="style-nav">
-        <ul class="custom-nav">
-            <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="services.html">Service</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="videoBlog.html">Videoblog</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </div>
-
-    <div class="icons-nav">
-        <ul class="icons">
-            <li><a href="#"><span class="icon-fb"></span></a></li>
-            <li><a href="#"><span class="icon-tw"></span></a></li>
-            <li><a href="#"><span class="icon-insta"></span></a></li>
-            <li><a href="#"><span class="icon-in"></span></a></li>
-        </ul>
-    </div>
-
-    <section class="container-fluid lite-bg" id="pricing-page" data-midnight="light">
+<section class="container-fluid lite-bg" id="pricing-page" data-midnight="light">
         <div class="row pattern">
             <div class="container grid">
                 <div class="row">
@@ -335,20 +271,4 @@
             </div>
         </div>
     </section>
-
-    <div class="footer">
-        <p class="copyright">
-            MMXVII copyright Imperium.
-        </p>
-    </div>
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/midnight.jquery.min.js"></script>
-    <script src="js/jquery.visible.min.js"></script>
-    <script src="js/progressbar.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
-  </body>
-</html>
+<?php get_footer(); ?>
