@@ -17,7 +17,7 @@
                 <div class="row works-head">
 
                     <div class="col-md-10 col-md-offset-1 text-center">
-                        <img src="img/darkKeys.png">
+                        <img src="http://localhost/imperum/wp-content/themes/imperum/img/darkKeys.png">
                         <h3 class="text-uppercase">Imperium</h3>
                         <h1>Pricing plan and value proposition</h1>
                         <div class="col-md-offset-3 col-md-6"><hr class="line" /></div>
@@ -145,7 +145,7 @@
                 <div class="row works-head">
 
                     <div class="col-md-10 col-md-offset-1 text-center">
-                        <img src="img/darkKeys.png">
+                        <img src="http://localhost/imperum/wp-content/themes/imperum/img/darkKeys.png">
                         <h3 class="text-uppercase">Imperium</h3>
                         <h1>Steps we make during the process</h1>
                         <div class="col-md-offset-3 col-md-6"><hr class="line" /></div>
@@ -163,7 +163,7 @@
                     <div class="col-md-6">
                         <div class="row">
                             <div class="col-md-8 col-md-offset-4">
-                                <div class="service-icons"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></div>
+                                <div class="service-icons"><span class="icon-Research-Icon" aria-hidden="true"></span></div>
                             </div>
                             <div class="col-md-2 col-md-offset-2">
                                 <h3 class="services-num">01</h3>
@@ -179,7 +179,7 @@
                     <div class="col-md-6">
                         <div class="row">
                             <div class="col-md-10 col-md-offset-2">
-                                <div class="service-icons"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></div>
+                                <div class="service-icons"><span class="icon-Design-Icon" aria-hidden="true"></span></div>
                             </div>
 
                             <div class="col-md-2">
@@ -197,7 +197,7 @@
                     <div class="col-md-6">
                         <div class="row">
                             <div class="col-md-8 col-md-offset-4">
-                                <div class="service-icons"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></div>
+                                <div class="service-icons"><span class="icon-Front-End-Icon" aria-hidden="true"></span></div>
                             </div>
 
                             <div class="col-md-2 col-md-offset-2">
@@ -214,7 +214,7 @@
                     <div class="col-md-6">
                         <div class="row">
                             <div class="col-md-10 col-md-offset-2">
-                                <div class="service-icons"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></div>
+                                <div class="service-icons"><span class="icon-Back-End-Icon" aria-hidden="true"></span></div>
                             </div>
 
                             <div class="col-md-2">
@@ -232,7 +232,7 @@
                     <div class="col-md-6">
                         <div class="row">
                             <div class="col-md-8 col-md-offset-4">
-                                <div class="service-icons"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></div>
+                                <div class="service-icons"><span class="icon-Digital-Marketing" aria-hidden="true"></span></div>
                             </div>
 
                             <div class="col-md-2 col-md-offset-2">
@@ -249,7 +249,7 @@
                     <div class="col-md-6">
                         <div class="row">
                             <div class="col-md-10 col-md-offset-2">
-                                <div class="service-icons"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></div>
+                                <div class="service-icons"><span class="icon-Customer-Support" aria-hidden="true"></span></div>
                             </div>
 
                             <div class="col-md-2">
@@ -264,7 +264,7 @@
                         </div>
                     </div>
                     <div class="col-md-12 text-center">
-                        <a class="btn btn-imperium btn-2" href="#" role="button">Free consultation</a>
+                        <a class="btn btn-imperium btn-2" href="<?php echo site_url(); ?>/consultation/" role="button">Free consultation</a>
                     </div>
 
                 </div>
