@@ -46,7 +46,7 @@
 	                            </div>
 
 
-	                            <div id="portfolio-carousel" class="carousel slide" data-interval="2000" data-ride="carousel">
+	                            <div id="portfolio-carousel" class="carousel slide" data-interval="7000" data-ride="carousel">
 
 	                                <div class="tablet-monitor carousel-inner">
 	                                	<?php while ( $carouselProjects->have_posts() ) : ?>
@@ -92,22 +92,22 @@
 	                        <div class="project-icons">
 	                            <div class="project-icon-info" id="colorOne">
 	                                <div class="project-icon">
-	                                    <span class="glyphicon glyphicon-remove"></span>
+	                                    <span class="glyphicon icon-Color"></span>
 	                                </div>
 	                                <h5>223300</h5>
 	                            </div><div class="project-icon-info" id="colorTwo">
 	                                <div class="project-icon">
-	                                    <span class="glyphicon glyphicon-remove"></span>
+	                                    <span class="glyphicon icon-Color"></span>
 	                                </div>
 	                                <h5>223300</h5>
 	                            </div><div class="project-icon-info" id="colorThree">
 	                                <div class="project-icon">
-	                                    <span class="glyphicon glyphicon-remove"></span>
+	                                    <span class="glyphicon icon-Color"></span>
 	                                </div>
 	                                <h5>223300</h5>
 	                            </div><div class="project-icon-info" id="colorFour">
 	                                <div class="project-icon">
-	                                    <span class="glyphicon glyphicon-remove"></span>
+	                                    <span class="glyphicon icon-Color"></span>
 	                                </div>
 	                                <h5>223300</h5>
 	                            </div>
