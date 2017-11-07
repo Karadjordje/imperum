@@ -313,6 +313,12 @@
 	  	$('#projectDuration').text(projectDuration);
 	  	$('#shortDescription').text(shortDescription);
 
+	  	var link = $('#projectLink').text();
+
+	  	var projectLinkUrl = $('#projectLink').text().split('//')[1].replace(/\//g, '');
+	  	$('#projectLink').text('');
+	  	var aTag = $('#projectLink').append('<a href="' + link + '">' + projectLinkUrl + '</a>');
+
 
 	  	var colorOne = currentElement.data('colorone');
 		var colorTwo = currentElement.data('colortwo');
