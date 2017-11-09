@@ -2858,7 +2858,43 @@ section#calendly .main {
     PORTFOLIO page
 
 */
-section#portfolio .main {
+@media (max-width: 575px) {
+    #home .specVH {
+        height: 100vh;
+    }
+}
+#home .main .spec {
+    height: 25%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    position: absolute;
+    width: 100%;
+    left: 0
+}
+
+@media (min-width: 575px) {
+    #home .main .spec {
+        height: 100px;
+        position: relative;
+        width: 100%;
+        left: auto;
+    }
+}
+#home .main .spec p {
+    margin-bottom: 0;
+}
+#portfolio .main {
     padding-top: 90px;
     padding-bottom: 100px;
     border-left: 1px solid #b4b5bd;
@@ -3019,35 +3055,81 @@ section#portfolio .main {
     letter-spacing: 0.1em;
     line-height: 1.5;
 }
-@media (max-width: 420px) {
+/* @media (max-width: 420px) {
     table td[class*=col-], table th[class*=col-] {
         display: table;
     }
     span.dot {
         display: none;
     }
+} */
+#portfolioTable {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
 }
-@media (max-width: 991px) {
-    #portfolio .main table {
-        width: 100%;
-    }
-}
-#portfolio .main table tr td {
+#portfolio .main #portfolioTable .pfTinfo {
     line-height: 2.6em;
     letter-spacing: 0.1em;
-    font-weight: 500;
+    font-weight: 600;
 }
-#portfolio .main table tr td:first-child {
+#portfolio .main #portfolioTable .pfTinfo:nth-child(even) {
+    width: 100%;
+    padding-left: 0;
+    margin-bottom: 10px;
+}
+#portfolio .main #portfolioTable .pfTinfo:nth-child(odd) {
     color: #c29b5a;
+    text-align: left;
+    width: 100%;
+    padding-right: 0;
 }
-#portfolio .main table tr td:last-child .dot {
+#portfolio .main #portfolioTable .pfTinfo:nth-child(even) .dot {
     float: right;
+    display: none;
 }
-#portfolio .main table tr td:hover .dot {
+#portfolio .main #portfolioTable .pfTinfo:hover .dot {
     color: #c29b5a;
 }
 #projectLink a {
     color: #000;
+}
+@media (min-width: 576px) {
+    #portfolio .main #portfolioTable .pfTinfo {
+        line-height: 2.6em;
+        letter-spacing: 0.1em;
+        font-weight: 600;
+    }
+    #portfolio .main #portfolioTable .pfTinfo:nth-child(even) {
+        width: 75%;
+        padding-left: 15px;
+        margin-bottom: 0px;
+    }
+    #portfolio .main #portfolioTable .pfTinfo:nth-child(odd) {
+        color: #c29b5a;
+        text-align: right;
+        width: 25%;
+        padding-right: 15px;
+    }
+    #portfolio .main #portfolioTable .pfTinfo:nth-child(even) .dot {
+        float: right;
+        display: block;
+    }
+    #portfolio .main #portfolioTable .pfTinfo:hover .dot {
+        color: #c29b5a;
+    }
+    #projectLink a {
+        color: #000;
+    }
 }
 
 
@@ -3467,8 +3549,15 @@ section#vbSingle-comments .main {
 }
 
 .video-short-headline {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
 }
 .video-short-headline:after {
     content: '';
@@ -3497,8 +3586,15 @@ section#vbSingle-comments .main {
     width: 100%
 }
 .video-short-tags-cats {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
 }
 .video-short-tags-cats .subject,
 .video-short-tags-cats .tags {

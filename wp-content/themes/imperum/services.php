@@ -4,14 +4,14 @@
 
     <section class="container-fluid dark-bg" id="home" data-midnight="dark">
         <div class="row">
-            <div class="container main text-center">
-                <div class="col-md-8 col-md-offset-2">
-                    <img src="<?php bloginfo('template_directory'); ?>/img/whiteKeys.png">
-                    <h4 class="sub-heading text-uppercase">In our hands lies</h4>
-                    <h1 class="">Your Business</h1>
-                    <hr class="line" />
-                </div>
+          <div class="container main text-center">
+            <div class="col-md-8 col-md-offset-2">
+              <img src="<?php bloginfo('template_directory'); ?>/img/whiteKeys.png">
+              <h4 class="sub-heading text-uppercase">In our hands lies</h4>
+              <h1 class="">Your Business</h1>
+              <hr class="line" />
             </div>
+          </div>
         </div>
     </section>
 
