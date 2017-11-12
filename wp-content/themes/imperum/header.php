@@ -43,6 +43,8 @@
 		    </div>
 		<?php } ?>
 
+	<!-- Do not load this HTML on pricing plan page (HTML for navigation) -->
+	<?php if ( !is_page('pricing-plan') ) : ?>
 	    <div class="container small-nav">
 	        <div class="small-logo">
 	            <span class="icon-Logo logo"></span>
@@ -100,3 +102,5 @@
 	            <li><a href="#" class="special"><span class="icon icon-Linked-In-Icon"></span></a></li>
 	        </ul>
 	    </div>
+
+	<?php endif; ?>

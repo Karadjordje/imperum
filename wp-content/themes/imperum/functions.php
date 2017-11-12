@@ -560,7 +560,7 @@ function wpse250243_comment_form_default_fields( $fields ) {
         'author' => '<div  class="inputs-style">' . '<input id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) . '" maxlength="245"' . $aria_req . $html_req . ' . required="required" /> <span class="floating-label">' . __( 'YOUR NAME' ) . '</span> </div>',
         'email' => '<div class="inputs-style"> <input id="email" name="email" type="text" value="' . esc_attr(  $commenter['comment_author_email'] ) .
                 '" ' . $aria_req . ' . required="required"> <span class="floating-label">' . __( 'YOUR E-MAIL' ) . '</span> </div>',
-        'comment_field' => '<div class="inputs-style"> <textarea id="comment" name="comment" rows="1" maxlength="65525" aria-required="true" required="required"></textarea> <span class="floating-label">' . __( 'WRITE COMMENT' ) . '</span> </div>',
+        'comment_field' => '<div class="inputs-style"> <textarea id="comment" class="autoExpand" name="comment" rows="1" maxlength="65525" aria-required="true" required="required"></textarea> <span class="floating-label">' . __( 'WRITE COMMENT' ) . '</span> </div>',
     ];
 
     return $fields;

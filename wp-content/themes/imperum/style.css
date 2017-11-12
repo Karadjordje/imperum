@@ -3068,39 +3068,38 @@ section#portfolio .main {
 .pricing-list {
     padding-right: 0px;
     padding-left: 0px;
-    width: 83.33333333%;
-    margin-left: 8.33333333%;
+    /*width: 83.33333333%;*/
+    /*margin-left: 8.33333333%;*/
     position: relative;
 }
 .pricing-list > div,
 .simple-web,
 .enterprise-web,
 .custom-web {
-    float: left;
+    /*float: left;*/
 }
 
 .pricing-list > div {
-    width: 100%;
+    /*width: 100%;*/
     border: 1px solid #c09858;
     background-color: #fff;
 }
 .simple-web,
 .enterprise-web {
     background-color: white;
-    width: 31%;
+    /*width: 31%;*/
     color: #070b26;
 }
 .simple-web {
-    margin-right: 38%;
+    /*margin-right: 38%;*/
 }
 .custom-web {
     background-color: #c09858;
-    width: 38%;
+    /*width: 38%;*/
     margin-top: 0px;
     color: #fff;
-    position: absolute;
-    top: -30px;
-    left: 31%;
+    position: relative;
+    top: 0px;
 }
 .simple-web header,
 .enterprise-web header {
@@ -3252,12 +3251,12 @@ section#vbSingle-body .main {
 }
 .post-headline {
     font-family: 'Playfair Display', serif;
-    margin-top: 2px;
+    margin-top: 0;
     font-weight: 500;
     margin-bottom: 25px;
     color: #060b26;
-            position: relative;
-        width: auto;
+    position: relative;
+    width: auto;
 }
 .post-headline:hover, .post-headline:visited {
     text-decoration: none;
@@ -3268,7 +3267,6 @@ section#vbSingle-body .main {
 .post-body {
     font-weight: 500;
     margin-bottom: 50px;
-    padding-top: 10%;
 }
 .subject,
 .tags,
@@ -3280,22 +3278,54 @@ section#vbSingle-body .main {
     letter-spacing: 0.1em;
 }
 #vbSingle-body .subject {
-    width: 25%;
+    width: 50%;
     color: #c09858;
 }
 #vbSingle-body .tags {
-    width: 75%;
+    width: 50%;
     color: #c09858;
 }
 #vbSingle-body .date-of-post {
     text-align: right;
-    width: 20%;
+    width: 25%;
+}
+#vbSingle-body .post-num {
+    margin-top: 0;
+    width: 22%;
+}
+.single-video-preview-head:after {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 12%;
+    width: 29px;
+    height: 1px;
+    background-color: #070b26;
+}
+.single-video-preview-head {
+    display: flex;
+    flex-direction: row;
+}
+.single-video-preview-body {
+    padding-left: 0;
+}
+.single-video-preview-cats {
+    display: flex;
+    flex-direction: row;
 }
 .post-body-param {
     margin-bottom: 50px;
 }
-.post-icons {
+.social-video {
+    display: flex;
+    flex-direction: row;
+}
+.social-video .social-text {
+    width: 30%;
     padding: 0;
+}
+.social-video .social-icons ul {
+    padding-left: 0;
 }
 .post-icons li {
     display: inline-block;
@@ -3313,6 +3343,10 @@ section#vbSingle-comments .main {
 .comment-one {
     padding-top: 30px;
     padding-bottom: 30px;
+}
+.comment-body {
+    padding-bottom: 30px;
+    padding-top: 30px;
     border-bottom: 1px solid #c09858;
 }
 .comments {
@@ -3322,38 +3356,50 @@ section#vbSingle-comments .main {
     text-align: left;
 }
 .share-post-text {
-    text-align: right;
+    text-align: left;
 }
 @media(min-width: 576px) {
-    #vbSingle-body .post-headline {
-        position: relative;
-        top: auto;
-        left: auto;
+    .comment-one,
+    .comment-respond {
+        margin-left: 21px;
+    }
+    .social-video .social-text {
+        width: 22%;
+    }
+    .share-post-text {
+        text-align: right;
     }
     .post-body {
         padding-top: 0;
+    }
+    .single-video-preview-body {
+        padding-left: 22%;
     }
     .average-difficulty {
         width: 50%;
         text-align: left;
     }
     #vbSingle-body .tags {
-        width: 55%;
+        width: 50%;
     }
     .post-numz {
         text-align: right;
-    }
-    .mobile-video-dark-line {
-        position: absolute;
-        top: 57px;
-        left: 45px;
-        width: 15%;
     }
     .share-post-text {
         text-align: left;
     }
     .featured-img-small {
         margin-bottom: 0;
+    }
+    .single-video-preview-head:after {
+        left: 8%;
+        width: 66px;
+    }
+}
+@media (min-width: 768px) {
+    .comment-one,
+    .comment-respond {
+        margin-left: 18px;
     }
 }
 @media (min-width: 992px) {
@@ -3363,6 +3409,16 @@ section#vbSingle-comments .main {
     .featured-img-small {
         min-width: 260px;
         min-height: 140px;
+    }
+    .comment-one,
+    .comment-respond {
+        margin-left: -15px;
+    }
+}
+@media (min-width: 1200px) {
+    .comment-one,
+    .comment-respond {
+        margin-left: 0;
     }
 }
 
@@ -3481,6 +3537,7 @@ section#vbSingle-comments .main {
 }
 .video-short-headline a {
     display: block;
+    flex: 1;
 }
 .video-short-headline h3 {
     margin-top: 0;
@@ -3488,7 +3545,6 @@ section#vbSingle-comments .main {
 }
 .video-short-headline h4 {
     margin-top: 7px;
-    width: auto;
 }
 .post-body-short {
     padding-left: 0;
@@ -3509,7 +3565,6 @@ section#vbSingle-comments .main {
         left: 9%;
         width: 66px;
     }
-
 }
 @media(min-width: 576px) {
     .post-body-short {
@@ -3585,7 +3640,10 @@ section#vbSingle-comments .main {
 #home,
 #services-page,
 #portfolio,
-#vblog-page {
+#vblog-page,
+#vbSingle-head,
+#vbSingle-body,
+#pricing-page {
     font-size: 80%;
 }
 @media (min-width:576px) {
@@ -3598,7 +3656,10 @@ section#vbSingle-comments .main {
     #home,
     #services-page,
     #portfolio,
-    #vblog-page {
+    #vblog-page,
+    #vbSingle-head,
+    #vbSingle-body,
+    #pricing-page {
         font-size: 85%;
     }
 }
@@ -3612,7 +3673,10 @@ section#vbSingle-comments .main {
     #home,
     #services-page,
     #portfolio,
-    #vblog-page {
+    #vblog-page,
+    #vbSingle-head,
+    #vbSingle-body,
+    #pricing-page {
         font-size: 90%;
     }
 }
@@ -3626,7 +3690,10 @@ section#vbSingle-comments .main {
     #home,
     #services-page,
     #portfolio,
-    #vblog-page {
+    #vblog-page,
+    #vbSingle-head,
+    #vbSingle-body,
+    #pricing-page {
         font-size: 95%;
     }
 }
@@ -3640,7 +3707,35 @@ section#vbSingle-comments .main {
     #home,
     #services-page,
     #portfolio,
-    #vblog-page {
+    #vblog-page,
+    #vbSingle-head,
+    #vbSingle-body,
+    #pricing-page {
         font-size: 100%;
+    }
+}
+
+
+/*
+
+    PRICING-LIST
+
+*/
+.equalHMWrap {
+    justify-content: space-between;
+}
+.eqWrap {
+    display: flex;
+    flex-direction: column;
+}
+.equalHW {
+    flex: 1;
+}
+@media(min-width: 768px) {
+    .eqWrap {
+        flex-direction: row;
+    }
+    .custom-web {
+        top: -30px;
     }
 }
