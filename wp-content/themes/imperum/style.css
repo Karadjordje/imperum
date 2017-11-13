@@ -524,7 +524,7 @@ section#small-footer .main {
 
 */
 /* LOADING page */
-.loadingPage {
+#loadingPage {
     text-align: center;
     background: #fff url('./img/patternXXX.png');
     position: fixed;
@@ -546,7 +546,7 @@ section#small-footer .main {
         -ms-flex-pack: justify;
             justify-content: space-between;
 }
-.loadingPage h1 {
+#loadingPage h1 {
     text-transform: uppercase;
     margin: 0;
     padding: 40px 0 10px 0;
@@ -582,11 +582,12 @@ section#small-footer .main {
         -ms-flex-direction: column;
             flex-direction: column;
 }
-.loadingPage h3 {
+#loadingPage .loadingFooter h4 {
     padding: 40px 0;
     text-align: center;
     color: #000;
     margin: 0;
+    font-family: 'Playfair Display', serif;
 }
 .progressbar-text {
     position: inherit;
@@ -3732,6 +3733,7 @@ section#vbSingle-comments .main {
 }
 
 /* -- FONT SIZE -- */
+#loadingPage,
 .head-container,
 #services,
 #clients-say,
@@ -3748,6 +3750,7 @@ section#vbSingle-comments .main {
     font-size: 80%;
 }
 @media (min-width:576px) {
+    #loadingPage,
     .head-container,
     #services,
     #clients-say,
@@ -3765,6 +3768,7 @@ section#vbSingle-comments .main {
     }
 }
 @media (min-width:768px) {
+    #loadingPage,
     .head-container,
     #services,
     #clients-say,
@@ -3782,6 +3786,7 @@ section#vbSingle-comments .main {
     }
 }
 @media (min-width:992px) {
+    #loadingPage,
     .head-container,
     #services,
     #clients-say,
@@ -3799,6 +3804,7 @@ section#vbSingle-comments .main {
     }
 }
 @media (min-width: 1200px) {
+    #loadingPage,
     .head-container,
     #services,
     #clients-say,

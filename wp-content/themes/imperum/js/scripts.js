@@ -254,8 +254,8 @@
 		bar.animate(1.0);  // Number from 0.0 to 1.0
 
 		function updateText (){
-		    var progressBarText = $('.progressbar-text');
-		    var loadingPage = $('.loadingPage');
+		    var progressBarText = $('#progressbar');
+		    var loadingPage = $('#loadingPage');
 		    if (progressBarText.text() == '100 %') {
 		        loadingPage.fadeOut(350);
 		    }
@@ -282,7 +282,7 @@
 		//PREVENT LOADINGSCREEN FROM SHOWING MULTIPLE TIMES
 		var cookieValue = $.cookie("user-session");
 		if (cookieValue) {
-			$('.loadingPage').hide();
+			$('#loadingPage').hide();
 		}
 		$.cookie("user-session", "1");
 

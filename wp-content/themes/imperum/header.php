@@ -31,14 +31,14 @@
 
 		<!-- I load this HTML only front page (HTML for loading screen) -->
 		<?php if ( is_front_page() ) { ?>
-			<div class="loadingPage">
+			<div id="loadingPage">
 		        <h1>Imperium</h1>
 		        <div class="loadingContent">
 		        	<img class="center-block" src="<?php bloginfo('template_directory'); ?>/img/landingLogo.png">
 		        	<div id="progressbar"></div>
 		        </div>
 				<div class="loadingFooter">
-		        	<h3>Dare to be extraordinary.</h3>
+		        	<h4>Dare to be extraordinary.</h4>
 		    	</div>
 		    </div>
 		<?php } ?>
