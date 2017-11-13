@@ -30,18 +30,9 @@
 
 	    <section class="container-fluid lite-bg" id="vbSingle-head" data-midnight="light">
 	        <div class="row pattern">
-	            <div class="container grid">
-	                <div class="row">
-	                    <div class="col-md-2 col-md-offset-2"><div class="one"></div></div>
-	                    <div class="col-md-2"><div class="one"></div></div>
-	                    <div class="col-md-2"><div class="one"></div></div>
-	                    <div class="col-md-2"><div class="one"></div></div>
-	                    <div class="col-md-2"><div class="one"></div></div>
-	                </div>
-	            </div>
 	            <div class="container main">
 	                <div class="row">
-	                	<div class="col-lg-9 col-lg-offset-2">
+	                	<div class="col-xs-12 col-lg-10 col-lg-offset-1">
 	                	    <div class="featured-img featured-img-big" style="background-image: url(<?php echo wp_get_attachment_url( get_post_thumbnail_id() ); ?>);"></div>
 	                	</div>
 	                </div>
@@ -51,13 +42,12 @@
 
 	    <section class="container-fluid lite-bg" id="vbSingle-body" data-midnight="light">
 	        <div class="row">
-
 	            <div class="container main">
                 	<div class="row">
-	                	<div class="col-xs-12 col-sm-11 col-md-11 col-lg-8 col-sm-offset-1 col-md-offset-1 col-lg-offset-3">
+	                	<div class="col-xs-12 col-lg-10 col-lg-offset-1">
 	                		<div class="single-video-preview">
 	                			<div class="single-video-preview-head">
-                				    <h3 class="post-num">01</h3>
+                				    <h3>01</h3>
                 				    <h4 class="post-headline">Web Design speed art - monter</h4>
 	                			</div>
 	                			<div class="single-video-preview-body">
@@ -71,7 +61,8 @@
 	                				    			echo $category->cat_name . ' ';
 	                				    		} ?>
 	                				    	</p>
-	                				    </div><div class="tags">
+	                				    </div>
+	                				    <div class="tags">
 	                				        <p>
 	                				        	<?php
 													$posttags = get_the_tags();
@@ -82,18 +73,18 @@
 													}
 												?>
 	                				        </p>
-	                				    </div><div class="date-of-post hidden-xs hidden-sm">
+	                				    </div>
+	                				    <div class="date-of-post">
 	                				        <p><?php the_time('j. m. Y'); ?></p>
 	                				    </div>
 	                				</div>
 	                			</div>
-	                		</div><!-- END single-video-preview -->
             					<div class="social-video">
             						<div class="social-text">
-            						    <p class="share-post-text">Share this post:</p>
+            						    <p>Share this post:</p>
             						</div>
             						<div class="social-icons">
-            						    <ul class="post-icons">
+            						    <ul>
             						        <li><a href="#"><span class="icon-Facebook-Icon"></span></a></li>
             						        <li><a href="#"><span class="icon-Twitter-Icon"></span></a></li>
             						        <li><a href="#"><span class="icon-Google-Plus-Icon"></span></a></li>
@@ -101,6 +92,7 @@
             						    </ul>
             						</div>
             					</div>
+	                		</div><!-- END single-video-preview -->
 	                	</div>
 	                </div>
 	            </div>
@@ -109,15 +101,12 @@
 
 	    <section class="container-fluid lite-bg" id="vbSingle-comments" data-midnight="light">
 	        <div class="row pattern">
-	            <div class="container grid">
-	                <div class="col-md-2 col-md-offset-2"><div class="one"></div></div>
-	                <div class="col-md-2"><div class="one"></div></div>
-	                <div class="col-md-2"><div class="one"></div></div>
-	                <div class="col-md-2"><div class="one"></div></div>
-	                <div class="col-md-2"><div class="one"></div></div>
-	            </div>
-	            <div class="container">
-	              <?php comments_template( '', true ); ?>
+	            <div class="container main">
+                	<div class="row">
+	                	<div class="col-xs-12 col-lg-10 col-lg-offset-1">
+	              			<?php comments_template( '', true ); ?>
+	              		</div>
+	              	</div>
 	            </div>
 	        </div>
 	    </section>
