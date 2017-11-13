@@ -3174,6 +3174,7 @@ section#calendly .main {
 }
 .simple-web {
     /*margin-right: 38%;*/
+    order: 2;
 }
 .custom-web {
     background-color: #c09858;
@@ -3182,6 +3183,10 @@ section#calendly .main {
     color: #fff;
     position: relative;
     top: 0px;
+    order: 1;
+}
+.enterprise-web {
+    order: 3;
 }
 .simple-web header,
 .enterprise-web header {
@@ -4008,6 +4013,15 @@ section#calendly .main {
     }
     .custom-web {
         top: -30px;
+    }
+    .simple-web {
+        order: 1;
+    }
+    .custom-web {
+        order: 2;
+    }
+    .enterprise-web {
+        order: 3;
     }
 }
 }
