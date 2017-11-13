@@ -4,18 +4,8 @@
 
     <section class="container-fluid lite-bg" id="pricing-page" data-midnight="light">
         <div class="row pattern">
-            <div class="container grid">
-                <div class="row">
-                    <div class="col-md-2 col-md-offset-2"><div class="one"></div></div>
-                    <div class="col-md-2"><div class="one"></div></div>
-                    <div class="col-md-2"><div class="one"></div></div>
-                    <div class="col-md-2"><div class="one"></div></div>
-                    <div class="col-md-2"><div class="one"></div></div>
-                </div>
-            </div>
             <div class="container main">
                 <div class="row works-head">
-
                     <div class="col-md-10 col-md-offset-1 text-center">
                         <img src="http://localhost/imperum/wp-content/themes/imperum/img/darkKeys.png">
                         <h3 class="text-uppercase">Imperium</h3>
@@ -27,11 +17,11 @@
                     </div>
                 </div>
 
-                <div class="col-xs-6 col-sm-12 col-md-10 col-lg-10 col-xs-offset-3 col-sm-offset-0 col-md-offset-1 col-lg-offset-1">
-                    <div class="row">
-                        <div class="pricing-list">
-                            <div class="equalHWrap eqWrap">
-                                <div class="equalHW eq simple-web">
+                <div class="row">
+                    <div class="col-xs-6 col-sm-12 col-md-10 col-xs-offset-3 col-sm-offset-0 col-md-offset-1">
+                        <div class="row">
+                            <div class="pricing-list">
+                                <div class="simple-web">
                                     <header class="text-center">
                                         <h3>Simple Website</h3>
                                         <hr class="line" />
@@ -58,7 +48,7 @@
                                         <p>You will be able to add as much pages as you want.</p>
                                     </div>
                                 </div>
-                                <div class="equalHW eq custom-web">
+                                <div class="custom-web">
                                     <header class="text-center">
                                         <h3>Custom Design Website</h3>
                                         <hr class="line" />
@@ -97,7 +87,7 @@
                                         <p>You will be able to add as much pages as you want.</p>
                                     </div>
                                 </div>
-                                <div class="equalHW eq enterprise-web">
+                                <div class="enterprise-web">
                                     <header class="text-center">
                                         <h3>Enterprise Website or Webapp</h3>
                                         <hr class="line" />
@@ -136,20 +126,23 @@
                                         <p>You will be able to add as much pages as you want.</p>
                                     </div>
                                 </div>
-                            </div>
-                        </div><!-- END pricing-list -->
-                    </div><!-- END .row -->
-                </div><!-- END col-xs-6 col-sm-12 col-md-10 col-lg-10 col-xs-offset-3 col-sm-offset-0 col-md-offset-1 col-lg-offset-1 -->
+                            </div><!-- END pricing-list -->
+                        </div><!-- END .row -->
+                    </div>
+                </div><!-- END .row -->
             </div><!-- END container main -->
             <div class="container main">
                 <div class="col-sm-12 col-md-12 col-lg-10 col-lg-offset-1 text-center works-head">
                     <div class="col-md-10 col-md-offset-1 text-center">
                         <img src="http://localhost/imperum/wp-content/themes/imperum/img/darkKeys.png">
                         <h3 class="text-uppercase">Imperium</h3>
-                        <h1>Steps we take during the process</h1>
+                        <h1>Steps we make<br/>during the process</h1>
                         <div class="col-md-offset-3 col-md-6"><hr class="line"></div>
                         <div class="col-md-12">
-                            <p class="sub-heading">www.imperium-la.com</p>
+                            <p class="sub-heading">We care about you and your business.</p>
+                            <p>
+                                Here is a detailed description of our working process. Beside all these technical things we're reliable, responsible and fast team that delivers only high quality. Our designers, developers and marketing experts are one of the best in their field. Your business is our priority so we'll make sure that your results come quickly.
+                            </p>
                         </div>
                     </div>
                 </div>
