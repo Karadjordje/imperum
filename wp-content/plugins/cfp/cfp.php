@@ -22,10 +22,10 @@ function html_form_code_ENG() {
   echo '<label class="floating-label">YOUR E-MAIL</label>';
   echo '</div>';
 
-  echo '<div class="group inputs-style">';
-  echo '<input type="text" id="subject" name="subject" required class="input-field" tabindex="3" >';
-  echo '<label class="floating-label"l>SUBJECT</label>';
-  echo '</div>';
+  // echo '<div class="group inputs-style">';
+  // echo '<input type="text" id="subject" name="subject" required class="input-field" tabindex="3" >';
+  // echo '<label class="floating-label"l>SUBJECT</label>';
+  // echo '</div>';
 
   echo '<div class="group inputs-style">';
   echo '<textarea name="message" id="message" class="textarea-field autoExpand" required maxlength="1000" tabindex="4" role="button" data-min-rows="" rows="1"></textarea>';
