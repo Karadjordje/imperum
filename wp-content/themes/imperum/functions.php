@@ -346,31 +346,54 @@ function html5blankcomments($comment, $args, $depth)
 		$add_below = 'div-comment';
 	}
 ?>
-    <!-- heads up: starting < for the html tag (li or div) in the next line: -->
-    <<?php echo $tag ?> <?php comment_class(empty( $args['has_children'] ) ? '' : 'parent') ?> id="comment-<?php comment_ID() ?>">
-	<?php if ( 'div' != $args['style'] ) : ?>
-	<div id="div-comment-<?php comment_ID() ?>" class="comment-body">
-	<?php endif; ?>
-	<div class="comment-author vcard">
-	<?php printf(__('<h4>%s</h4>'), get_comment_author_link()) ?>
-	</div>
-<?php if ($comment->comment_approved == '0') : ?>
-	<em class="comment-awaiting-moderation"><?php _e('Your comment is awaiting moderation.') ?></em>
-	<br />
-<?php endif; ?>
-
-	<div class="comment-meta commentmetadata"><a href="<?php echo htmlspecialchars( get_comment_link( $comment->comment_ID ) ) ?>">
-		<?php
-			 ?></a><?php edit_comment_link(__('(Edit)'),'  ','' );
-		?>
-	</div>
-
-	<?php comment_text() ?>
-
-	<?php if ( 'div' != $args['style'] ) : ?>
-	</div>
-	<?php endif; ?>
+    <div class="comment-one clearfix">
+        <?php printf(__('<h4>%s</h4>'), get_comment_author_link()) ?>
+        <?php if ( 'div' != $args['style'] ) : ?>
+            <div id="div-comment-<?php comment_ID() ?>" class="comment-body">
+                <?php comment_text() ?>
+            </div>
+    	<?php endif; ?>
+    </div>
 <?php }
+
+/*function html5blankcomments($comment, $args, $depth)
+{
+    $GLOBALS['comment'] = $comment;
+    extract($args, EXTR_SKIP);
+
+    if ( 'div' == $args['style'] ) {
+        $tag = 'div';
+        $add_below = 'comment';
+    } else {
+        $tag = 'p';
+        $add_below = 'div-comment';
+    }
+?>
+    <!-- heads up: starting < for the html tag (li or div) in the next line: -->
+    <!-- <<?php echo $tag ?> <?php comment_class(empty( $args['has_children'] ) ? '' : 'parent') ?> id="comment-<?php comment_ID() ?>"> -->
+    <?php if ( 'div' != $args['style'] ) : ?>
+       <div id="div-comment-<?php comment_ID() ?>" class="comment-body">
+    <?php endif; ?>
+    <div class="comment-author vcard">
+       <?php printf(__('<h4>%s</h4>'), get_comment_author_link()) ?>
+    </div>
+    <?php if ($comment->comment_approved == '0') : ?>
+        <em class="comment-awaiting-moderation"><?php _e('Your comment is awaiting moderation.') ?></em>
+        <br />
+    <?php endif; ?>
+
+    <div class="comment-meta commentmetadata"><a href="<?php echo htmlspecialchars( get_comment_link( $comment->comment_ID ) ) ?>">
+        <?php
+             ?></a><?php edit_comment_link(__('(Edit)'),'  ','' );
+        ?>
+    </div>
+
+    <?php comment_text() ?>
+
+    <?php if ( 'div' != $args['style'] ) : ?>
+    </div>
+    <?php endif; ?>
+<?php }*/
 
 /*------------------------------------*\
 	Actions + Filters + ShortCodes
