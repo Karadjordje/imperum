@@ -7,7 +7,7 @@
 
 		<section class="container-fluid dark-bg" id="home" data-midnight="dark">
 	        <div class="row">
-	            <div class="container main">
+	            <div class="container main text-center specVH">
 	                <div class="col-md-8 col-md-offset-2 text-center clearfix">
 	                    <img src="<?php bloginfo('template_directory'); ?>/img/whiteKeys.png">
 	                    <h4 class="sub-heading text-uppercase"><?php foreach ((get_the_category()) as $category) {

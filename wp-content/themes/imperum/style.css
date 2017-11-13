@@ -351,7 +351,7 @@ section#small-footer .main {
             to(rgba(7,11,38,.95))
         ),
         url('./img/noisy-texture-100x100-o46-d10-c-0e293a-t1.png') repeat,
-        url('./img/overlayPicture.jpg') no-repeat center/cover;
+        url('./img/overlayPicture.jpg') no-repeat bottom/cover;
 
     background: -webkit-linear-gradient(
             top,
@@ -359,7 +359,7 @@ section#small-footer .main {
             rgba(7,11,38,.95) 100%
         ),
         url('./img/noisy-texture-100x100-o46-d10-c-0e293a-t1.png') repeat,
-        url('./img/overlayPicture.jpg') no-repeat center/cover;
+        url('./img/overlayPicture.jpg') no-repeat bottom/cover;
 
     background: -o-linear-gradient(
             top,
@@ -367,7 +367,7 @@ section#small-footer .main {
             rgba(7,11,38,.95) 100%
         ),
         url('./img/noisy-texture-100x100-o46-d10-c-0e293a-t1.png') repeat,
-        url('./img/overlayPicture.jpg') no-repeat center/cover;
+        url('./img/overlayPicture.jpg') no-repeat bottom/cover;
 
     background: linear-gradient(
             to bottom,
@@ -375,7 +375,7 @@ section#small-footer .main {
             rgba(7,11,38,.95) 100%
         ),
         url('./img/noisy-texture-100x100-o46-d10-c-0e293a-t1.png') repeat,
-        url('./img/overlayPicture.jpg') no-repeat center/cover;
+        url('./img/overlayPicture.jpg') no-repeat bottom/cover;
 
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0e293a', endColorstr='#070b26',GradientType=0 ); /* IE6-9 */
 }

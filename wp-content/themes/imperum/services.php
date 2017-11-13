@@ -4,7 +4,7 @@
 
     <section class="container-fluid dark-bg" id="home" data-midnight="dark">
         <div class="row">
-          <div class="container main text-center">
+          <div class="container main text-center specVH">
             <div class="col-md-8 col-md-offset-2">
               <img src="<?php bloginfo('template_directory'); ?>/img/whiteKeys.png">
               <h4 class="sub-heading text-uppercase">In our hands lies</h4>
