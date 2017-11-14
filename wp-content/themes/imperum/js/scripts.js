@@ -1,5 +1,7 @@
 (function ($, root, undefined) {
 
+
+	// HEX TO RGB CHECK FOR COLOR
 	function hexToRgb (hex) {
 
 		if (hex.charAt && hex.charAt(0) === '#') {
