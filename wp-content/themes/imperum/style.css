@@ -3709,6 +3709,7 @@ section#calendly .main {
     display: inline-block;
     width: 33.333%;
     position: relative;
+    height: 100px;
 }
 .categories h3 {
     margin-bottom: 35px;
@@ -3728,13 +3729,19 @@ section#calendly .main {
 .categories .checkboxCustom {
     margin-right: 0px;
     display: block;
+    position: relative;
 }
 .categories .checkboxCustom label {
     padding-left: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
 }
 .categories .checkboxCustom label:before {
-    left: 43%;
     top: 35px;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
 }
 #vblog-page .subject {
     color: #c09858;
