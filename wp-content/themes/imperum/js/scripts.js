@@ -1,5 +1,13 @@
 (function ($, root, undefined) {
 
+	//HIDE BORDER ON PRICING-PLAN PAGE
+	var windowLocation = window.location.pathname;
+	var containerMain = $('section .main');
+	if (windowLocation === "/pricing-plan/") {
+		containerMain.css({'border' : 'none'});
+	}
+
+	// HEX TO RGB CHECK FOR COLOR
 	function hexToRgb (hex) {
 
 		if (hex.charAt && hex.charAt(0) === '#') {
