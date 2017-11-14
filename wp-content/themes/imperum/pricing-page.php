@@ -131,7 +131,7 @@
                     </div>
                 </div><!-- END .row -->
             </div><!-- END container main -->
-            <div class="container main">
+            <div class="container main" style="border: none;">
                 <div class="col-sm-12 col-md-12 col-lg-10 col-lg-offset-1 text-center works-head">
                     <div class="col-md-10 col-md-offset-1 text-center">
                         <img src="http://localhost/imperum/wp-content/themes/imperum/img/darkKeys.png">
