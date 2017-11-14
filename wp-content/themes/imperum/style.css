@@ -1700,6 +1700,9 @@ textarea {
     color: #060b26;
     text-decoration: underline;
 }
+#submit_btn {
+    margin-bottom: 50px;
+}
 
 /*
 
@@ -2781,31 +2784,32 @@ section#calendly .main {
 .tablet {
     position: relative;
     width: 100%;
-    -webkit-border-radius: 20px;
-            border-radius: 20px;
-    background-color: rgba(255, 255, 255, .8);
-    -webkit-box-shadow: 0px 5px 20px rgba(0,0,0,0.3);
-            box-shadow: 0px 5px 20px rgba(0,0,0,0.3);
+    -webkit-border-radius: 0;
+            border-radius: 0;
+    background-color: transparent;
+    -webkit-box-shadow: none;
+            box-shadow: none;
     padding-top: 16px;
     padding-bottom: 16px;
-    padding-left: 7%;
-    padding-right: 7%;
+    padding-left: 0;
+    padding-right: 0;
     text-align: center;
     margin-bottom: 60px;
 }
 .tablet .tablet-monitor {
     display: inline-block;
     border: 2px solid #c29b5a;
+    height: 150px;
 }
 .tablet .tablet-monitor img {
     width: 100%;
 }
 .tablet-spicers {
-    display: inline-block;
+    display: none;
     width: 7px;
     position: absolute;
-    top: 50%;
-    left: 34px;
+    top: 45%;
+    left: 28px;
     margin-top: -4%;
 }
 .tablet .tablet-spicer-bg,
@@ -2829,12 +2833,12 @@ section#calendly .main {
     background-color: #fff;
     top: 50%;
     margin-top: -15px;
-    right: 20px;
     border: 1px solid #c29b5a;
     -webkit-border-radius: 50%;
             border-radius: 50%;
     width: 30px;
     height: 30px;
+    display: none;
 }
 .tablet .tablet-btn span {
     line-height: 28px;
@@ -2912,12 +2916,45 @@ section#calendly .main {
         margin-right: 5%;
     }
 }
+@media (min-width: 576px) {
+    .tablet-spicers {
+        display: inline-block;
+    }
+    .tablet .tablet-monitor {
+        height: 300px;
+    }
+    .tablet {
+        -webkit-border-radius: 20px;
+                border-radius: 20px;
+        background-color: rgba(255, 255, 255, .8);
+        -webkit-box-shadow: 0px 5px 20px rgba(0,0,0,0.3);
+                box-shadow: 0px 5px 20px rgba(0,0,0,0.3);
+        padding-left: 7%;
+        padding-right: 7%;
+    }
+    .tablet .tablet-btn {
+        display: block;
+        right: 1%;
+    }
+}
+@media (min-width: 768px) {
+    .tablet .tablet-monitor {
+        height: 420px;
+    }
+    .tablet-spicers {
+        top: 50%;
+    }
+}
 @media (min-width: 992px) {
     .project-icon-info {
         margin-right: 5%;
     }
     .project-icon span {
         font-size: 3em;
+    }
+    .tablet .tablet-btn {
+        display: block;
+        right: 2%;
     }
 }
 @media (min-width: 1200px) {
@@ -3737,6 +3774,7 @@ section#calendly .main {
     background-color: #070b26;
 }
 .video-short-headline a {
+    color: #080f28;
     display: block;
     -webkit-box-flex: 1;
     -webkit-flex: 1;
