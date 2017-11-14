@@ -4,7 +4,7 @@
 
     <section class="container-fluid lite-bg" id="pricing-page" data-midnight="light">
         <div class="row pattern">
-            <div class="container main">
+            <div class="container main" style="border: none;">
                 <div class="row works-head">
                     <div class="col-md-10 col-md-offset-1 text-center">
                         <img src="http://localhost/imperum/wp-content/themes/imperum/img/darkKeys.png">
