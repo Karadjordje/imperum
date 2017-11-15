@@ -360,10 +360,14 @@
 	  	$('#shortDescription').text(shortDescription);
 
 	  	var linkInserted = $('#projectLink').text();
+	  	var projectLinkUrl = $('#projectLink').text();
+	  	if (projectLinkUrl.indexOf('http') === 0) {
+	  		projectLinkUrl = projectLinkUrl.split('//')[1].replace(/\//g, '');
+	  	}
 
-	  	var projectLinkUrl = $('#projectLink').text().split('//')[1].replace(/\//g, '');
 	  	$('#projectLink').text('');
-	  	var aTag = $('#projectLink').append('<a rel="noopener noreferrer" target="_blank" href="' + linkInserted + '">' + projectLinkUrl + '</a>');
+	  	var aTag = $('#projectLink').append('<a rel="noopener noreferrer" target="_blank" href="'
+	  	 + linkInserted + '">' + projectLinkUrl + '</a>');
 
 
 	  	var colorOne = currentElement.data('colorone');
