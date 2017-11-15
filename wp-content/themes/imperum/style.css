@@ -2778,7 +2778,7 @@ section#calendly .main {
 #portfolio .main {
     padding-top: 90px;
     padding-bottom: 100px;
-    border-left: 1px solid #b4b5bd;
+    /* border-left: 1px solid #b4b5bd; */
     position: relative;
 }
 .tablet {
@@ -2991,6 +2991,8 @@ section#calendly .main {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
+    padding-left: 0;
+    padding-right: 0;
 }
 #portfolio .main #portfolioTable .pfTinfo {
     line-height: 2.6em;
@@ -3019,20 +3021,24 @@ section#calendly .main {
     color: #000;
 }
 @media (min-width: 576px) {
+    #portfolioTable {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
     #portfolio .main #portfolioTable .pfTinfo {
         line-height: 2.6em;
         letter-spacing: 0.1em;
         font-weight: 600;
     }
     #portfolio .main #portfolioTable .pfTinfo:nth-child(even) {
-        width: 75%;
+        width: 74%;
         padding-left: 15px;
         margin-bottom: 0px;
     }
     #portfolio .main #portfolioTable .pfTinfo:nth-child(odd) {
         color: #c29b5a;
         text-align: right;
-        width: 25%;
+        width: 26%;
         padding-right: 15px;
     }
     #portfolio .main #portfolioTable .pfTinfo:nth-child(even) .dot {
@@ -3044,6 +3050,16 @@ section#calendly .main {
     }
     #projectLink a {
         color: #000;
+    }
+}
+@media (min-width: 768px) {
+    #portfolio .main #portfolioTable .pfTinfo:nth-child(even) {
+        width: 77.5%;
+        padding-left: 15px;
+        margin-bottom: 0px;
+    }
+    #portfolio .main #portfolioTable .pfTinfo:nth-child(odd) {
+        width: 22.5%;
     }
 }
 
