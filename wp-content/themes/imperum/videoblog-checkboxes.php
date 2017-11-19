@@ -38,7 +38,7 @@
 	                            		</div>
 	                            		<div class="col-xs-7 col-lg-8 col-md-8 col-md-offset-1 video-short-body">
 	                         				<div class="video-short-headline">
-	                          	  			    <h3 class="post-num"><?php echo $counter = $_total_posts - $_current_post; ?></h3>
+	                          	  			    <h3 class="post-num"><?php echo 0 . $counter = $_total_posts - $_current_post; ?></h3>
 		                            			<a href="<?php the_permalink() ?>">
 		                            				<h4 class="post-headline text-uppercase"><?php the_title() ?></h4>
 		                            			</a>
