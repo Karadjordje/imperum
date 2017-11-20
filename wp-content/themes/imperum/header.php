@@ -55,7 +55,7 @@
 	    <div class="smallNav" style="display: none;">
 	    	<span class="icon-X"></span>
 	    	<ul>
-	    		<li class="scrollToHome"><a href="<?php if(!is_front_page()) echo home_url(); else echo '#home' ?>">Home</a></li>
+	    		<li class="scrollToHome"><a href="<?php if(!is_front_page()) echo home_url(); else echo '#' ?>">Home</a></li>
 	    		<li><a href="<?php echo site_url(); ?>/Service/">Services</a></li>
 	    		<li><a href="<?php echo site_url(); ?>/Portfolio/">Portfolio</a></li>
 	    		<li><a href="<?php echo site_url(); ?>/Videoblog/">Videoblog</a></li>
@@ -77,7 +77,7 @@
 	    <div class="style-nav">
 	        <ul class="custom-nav">
 	            <li class="scrollToHome <?php if ( is_front_page() ) echo 'active' ?>">
-	            	<a href="<?php if(!is_front_page()) echo home_url(); else echo '#home' ?>">Home</a>
+	            	<a href="<?php if(!is_front_page()) echo home_url(); else echo '#' ?>">Home</a>
 	            </li>
 	            <li class="<?php if(is_page('Service')) echo 'active'; ?>">
 	            	<a href="<?php echo site_url(); ?>/Service/">Service</a>
