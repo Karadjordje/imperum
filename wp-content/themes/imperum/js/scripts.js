@@ -238,11 +238,11 @@
 		var bar = new ProgressBar.Line(progressbar, {
 		  strokeWidth: 4,
 		  easing: 'easeInOut',
-		  duration: 1400,
+		  duration: 2400,
 		  color: '#000',
 		  trailColor: '#eee',
 		  trailWidth: 1,
-		  svgStyle: {width: '100%', height: '2px'},
+		  svgStyle: {width: '100%', height: '1px'},
 		  text: {
 		    style: {},
 		    autoStyleContainer: false
@@ -263,7 +263,7 @@
 		    }
 		};
 
-		setTimeout(updateText, 1400);
+		setTimeout(updateText, 2400);
 		}
 
 		// Applied globally on all textareas with the "autoExpand" class

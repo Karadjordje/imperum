@@ -528,9 +528,12 @@ section#small-footer .main {
     color: #000;
     margin: 0;
     font-family: 'Playfair Display', serif;
+    letter-spacing: 3px;
 }
 .progressbar-text {
     position: inherit;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2em;
 }
 .loadingContent img {
     width: 60%;

@@ -32,7 +32,7 @@
 		<!-- I load this HTML only front page (HTML for loading screen) -->
 		<?php if ( is_front_page() ) { ?>
 			<div id="loadingPage">
-		        <h1>Imperium</h1>
+		        <h1><span class="icon-Logo midnightLogo"></span></h1>
 		        <div class="loadingContent">
 		        	<img class="center-block" src="<?php bloginfo('template_directory'); ?>/img/landingLogo.png">
 		        	<div id="progressbar"></div>
