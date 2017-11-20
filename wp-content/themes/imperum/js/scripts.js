@@ -303,15 +303,27 @@
 
 
 		// ScrollTo page sections
+		var loc = window.location.pathname;
+		var urlArray = new Array( "Service/", "Portfolio/", "Videoblog/", "html5-blank/video-6/", "consultation/", "pricing-plan/" );
+		var isFound = true;
+		for(var i=0,len=urlArray.length;i<len;i++) {
+			if(loc.indexOf(urlArray[i])> -1) {
+			    isFound = false;
+			    break;
+			}
+		}
+
+		if(isFound) {
+			$('.scrollToHome').click(function(){
+			  $(window).scrollTo("#home", 1500);
+			});
+		}
+
 		$('.scrollToContact').click(function(){
 		  $(window).scrollTo($('#contact'), 1500);
 		});
 
-		if (window.location.href === 'http://www.imperium-la.com/#') {
-			$('.scrollToHome').click(function(){
-			  $(window).scrollTo("0px", 1500);
-			});
-		}
+
 
 		  if (window.location.hash.length) {
 		    var $target = $(window.location.hash);
@@ -330,13 +342,10 @@
 		var title = currentElement.data('title');
 		var cat = currentElement.data('category');
 		var projectLink = currentElement.data('link');
-		var postNumber = currentElement.data('number');
 
 	  	$('.our-work-info h3').text(title);
 	  	$('.our-work-info h4').text(cat);
 	  	$("#externalLink").attr('href', projectLink);
-	  	$(".postTitle").text(postNumber);
-	  	$(".postTitle").attr('title', postNumber);
 	});
 
 	// This will link to specific slide when page loads so we dont have empty content
@@ -434,7 +443,6 @@
 	}
 
 	$('#category-checkboxes').on('change', 'input:checkbox', function(e) {
-
 		var $chb = $(this);
 		var category = $chb.data('category');
 
@@ -474,18 +482,7 @@
 			$catItems.removeClass('hidden');
 		});
 
-		var currentElement = $('.cat-all.item').eq(0); // This is my current element in this function, this was added so we can capture data changes > same as when slides switch
-
-		currentElement.addClass('active');
-
-
-		var title = currentElement.data('title');
-		var cat = currentElement.data('category');
-		var projectLink = currentElement.data('link');
-
-	  	$('.our-work-info h3').text(title);
-	  	$('.our-work-info h4').text(cat);
-	  	$("#externalLink").attr('href', projectLink);
+		$('.cat-all.item').eq(0).addClass('active');
 	});
 
 
