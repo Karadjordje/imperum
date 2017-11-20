@@ -2014,11 +2014,12 @@ textarea {
     }
     .style-nav .custom-nav li a {
         text-decoration: none;
-        padding: 12px 15px;
+        padding: 10px 15px;
         display: block;
         font-weight: 500;
         color: #cdcdcd;
         text-transform: uppercase;
+        letter-spacing: 3px;
     }
 /*     .style-nav .custom-nav li a:after {
     display:block;
@@ -2059,9 +2060,9 @@ textarea {
     }
     .icons-nav .icons li a {
         color: #fff;
-        margin-bottom: 9px;
+        margin-bottom: 6px;
         display: block;
-        font-size: 18px;
+        font-size: 15px;
     }
     .icons li a.special {
         margin-bottom: 0;
@@ -2083,6 +2084,7 @@ textarea {
         line-height: 1.5;
         text-transform: uppercase;
         font-weight: 500;
+        letter-spacing: 2px;
     }
 }
 /*  MIDNIGHT FIX WHEN CHANGING PAGE VIA NAVIGATION*/

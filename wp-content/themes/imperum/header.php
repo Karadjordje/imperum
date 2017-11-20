@@ -56,7 +56,7 @@
 	    	<span class="icon-X"></span>
 	    	<ul>
 	    		<li><a href="<?php if(!is_front_page()) echo home_url(); else echo '#' ?>">Home</a></li>
-	    		<li><a href="<?php echo site_url(); ?>/Service/">Service</a></li>
+	    		<li><a href="<?php echo site_url(); ?>/Service/">Services</a></li>
 	    		<li><a href="<?php echo site_url(); ?>/Portfolio/">Portfolio</a></li>
 	    		<li><a href="<?php echo site_url(); ?>/Videoblog/">Videoblog</a></li>
 	    		<li class="scrollToContact"><a href="<?php if(!is_front_page()) echo home_url(); ?>#contact">Contact</a></li>

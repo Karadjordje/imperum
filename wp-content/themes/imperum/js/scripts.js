@@ -203,7 +203,7 @@
         $('.style-nav').midnight().css({
             'top': '180px',
             'right' : 'auto',
-            'width' : '125px',
+            'width' : '141px',
             'left' : '50%',
             'transform' : 'translate(-585px, 0)'
         });
@@ -307,9 +307,11 @@
 		  $(window).scrollTo($('#contact'), 1500);
 		});
 
-		$('.scrollToHome').click(function(){
-		  $(window).scrollTo("0px", 1500);
-		});
+		if (window.location.href === 'http://www.imperium-la.com/#') {
+			$('.scrollToHome').click(function(){
+			  $(window).scrollTo("0px", 1500);
+			});
+		}
 
 		  if (window.location.hash.length) {
 		    var $target = $(window.location.hash);
