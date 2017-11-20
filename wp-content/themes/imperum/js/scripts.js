@@ -330,10 +330,13 @@
 		var title = currentElement.data('title');
 		var cat = currentElement.data('category');
 		var projectLink = currentElement.data('link');
+		var postNumber = currentElement.data('number');
 
 	  	$('.our-work-info h3').text(title);
 	  	$('.our-work-info h4').text(cat);
 	  	$("#externalLink").attr('href', projectLink);
+	  	$(".postTitle").text(postNumber);
+	  	$(".postTitle").attr('title', postNumber);
 	});
 
 	// This will link to specific slide when page loads so we dont have empty content
@@ -431,6 +434,7 @@
 	}
 
 	$('#category-checkboxes').on('change', 'input:checkbox', function(e) {
+
 		var $chb = $(this);
 		var category = $chb.data('category');
 
@@ -470,7 +474,18 @@
 			$catItems.removeClass('hidden');
 		});
 
-		$('.cat-all.item').eq(0).addClass('active');
+		var currentElement = $('.cat-all.item').eq(0); // This is my current element in this function, this was added so we can capture data changes > same as when slides switch
+
+		currentElement.addClass('active');
+
+
+		var title = currentElement.data('title');
+		var cat = currentElement.data('category');
+		var projectLink = currentElement.data('link');
+
+	  	$('.our-work-info h3').text(title);
+	  	$('.our-work-info h4').text(cat);
+	  	$("#externalLink").attr('href', projectLink);
 	});
 
 

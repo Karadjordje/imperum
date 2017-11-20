@@ -250,7 +250,7 @@
                     <div class="our-work-all">
                         <div class="our-work-info">
                             <div class="our-work-info-num">
-                                <h5 title="01">01</h5>
+                                <h5 class="postTitle" title="01">01</h5>
                             </div><div class="our-work-cat">
                                 <a id="externalLink" target="_blank" href="#"><span class="icon-link link-glow"></span></a>
                                 <h3>Crossroads</h3>
@@ -261,7 +261,21 @@
                         <div id="our-work-carousel" class="carousel slide" data-ride="carousel">
                             <!-- Wrapper for slides -->
                             <div class="carousel-inner" role="listbox">
-                                <?php while ( $carouselLoop->have_posts() ) : ?>
+                                <?php while ( $carouselLoop->have_posts() ) :
+
+                                    // current page number - paged is 0 on the home page, we use 1 instead
+                                    $_current_page  = is_paged() ?  get_query_var( 'paged', 1 ) : 1;
+
+                                    // posts per page
+                                    $_ppp           = get_query_var( 'posts_per_page', get_option( 'posts_per_page' ) );
+
+                                    // current post index on the current page
+                                    $_current_post  = $carouselLoop->current_post;
+
+                                    // total number of found posts
+                                    $_total_posts   = $carouselLoop->found_posts;
+
+                                ?>
                                     <?php $carouselLoop->the_post(); ?>
                                     <?php
                                         $categories = get_the_category();
@@ -275,6 +289,7 @@
                                         data-title="<?php the_title() ?>"
                                         data-category="<?= strtolower($cat) ?>"
                                         data-link="<?php the_field('external_link') ?>"
+                                        data-number="<?php echo $counter = $_total_posts - ( $_current_page - 1 ) * $_ppp - $_current_post -1; ?>"
                                     >
                                         <img src="<?php echo wp_get_attachment_url( get_post_thumbnail_id() ); ?>" alt="<?php the_title(); ?>">
                                         <div class="carousel-caption">
