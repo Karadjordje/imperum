@@ -23,6 +23,11 @@ body {
 h1, h3 {
     font-family: 'Playfair Display', serif;
 }
+h1 {
+    font-size: 48px;
+    line-height: 100%;
+    font-weight: 400;
+}
 a {
     color: #c99e5a;
 }
@@ -110,8 +115,11 @@ a:focus, a:hover {
 }
 
 .main-content p {
-    letter-spacing: 0.2em;
-    line-height: 2.3;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    line-height: 30px;
+    font-size: 1em;
 }
 .main-content {
     padding-top: 30px;
@@ -119,14 +127,16 @@ a:focus, a:hover {
 .headline {
     margin-top: 0px;
     letter-spacing: 0.1em;
+    margin-bottom: 16px;
 }
 .sub-heading {
     color: #c09858;
-    font-weight: 700;
+    font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 1.5px;
+    letter-spacing: 4px;
     font-size: 1em;
-    margin-bottom: 5px;
+    margin-bottom: 12px;
+    font-family: 'Open Sans', sans-serif;
 }
 .line {
     margin-top: 0px;
@@ -147,14 +157,16 @@ a:focus, a:hover {
     border: none;
     -webkit-border-radius: 0px;
             border-radius: 0px;
-    text-transform: uppercase;
     border-radius: 0px;
-    padding: 10px 10px;
+    padding: 9px 10px;
     -webkit-transition: background-color .35s ease;
          -o-transition: background-color .35s ease;
             transition: background-color .35s ease;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
     font-size: 12px;
     letter-spacing: 0.1em;
+    text-transform: uppercase;
 }
 .btn-imperium:focus {
     color: #fff;
@@ -542,10 +554,10 @@ section#small-footer .main {
 
 /* HOME section */
 #home h1 {
-    margin-bottom: 25px;
+    margin-bottom: 16px;
 }
 #home .main-content p {
-    margin-bottom: 30px;
+    margin-bottom: 33px;
 }
 
 /* SERVICE section */
@@ -555,8 +567,9 @@ section#small-footer .main {
 }
 #services .service h3 {
     font-family: 'Playfair Display', serif;
-    font-size: 1em;
+    font-size: .9em;
     font-weight: 600;
+    letter-spacing: 1px;
 }
 #services .service p,
 #services .service h3:first-child {
@@ -566,10 +579,13 @@ section#small-footer .main {
 #services .service h3:nth-last-child(2) {
     margin-bottom: 10px;
 }
+#services .service:nth-child(2) h3 {
+    white-space: nowrap;
+}
 #services .service:after {
     content: attr(title);
     font-family: 'Playfair Display', serif;
-    font-size: 5.5em;
+    font-size: 4.8em;
     line-height: .3;
     color: #e6e6e9;
     position: absolute;
@@ -588,6 +604,11 @@ section#small-footer .main {
     }
     #services .service h3:nth-last-child(2) {
         margin-bottom: 30px;
+    }
+}
+@media(min-width: 768px) {
+    #services .service h3 {
+        font-size: 1em;
     }
 }
 
@@ -903,6 +924,7 @@ section#small-footer .main {
 }
 .our-work-info-num h5 {
     position: absolute;
+    font-family: 'Playfair Display', serif;
     bottom: 11%;
     right: auto;
     left: 50px;
@@ -1647,7 +1669,13 @@ textarea {
 @media (min-width: 575px) {
     input[type=text],
     textarea {
-        width: 52.2%;
+        width: 63.6%;
+    }
+}
+@media (min-width: 768px) {
+    input[type=text],
+    textarea {
+        width: 70.6%;
     }
 }
 textarea {
@@ -3912,6 +3940,9 @@ section#calendly .main {
 #pricing-page {
     font-size: 80%;
 }
+h1 {
+    font-size: 30px;
+}
 @media (min-width:576px) {
     #loadingPage,
     .head-container,
@@ -3928,6 +3959,9 @@ section#calendly .main {
     #vbSingle-body,
     #pricing-page {
         font-size: 85%;
+    }
+    h1 {
+        font-size: 36px;
     }
 }
 @media (min-width:768px) {
@@ -3947,6 +3981,9 @@ section#calendly .main {
     #pricing-page {
         font-size: 90%;
     }
+    h1 {
+        font-size: 40px;
+    }
 }
 @media (min-width:992px) {
     #loadingPage,
@@ -3965,6 +4002,9 @@ section#calendly .main {
     #pricing-page {
         font-size: 95%;
     }
+    h1 {
+        font-size: 44px;
+    }
 }
 @media (min-width: 1200px) {
     #loadingPage,
@@ -3982,5 +4022,8 @@ section#calendly .main {
     #vbSingle-body,
     #pricing-page {
         font-size: 100%;
+    }
+    h1 {
+        font-size: 48px;
     }
 }
