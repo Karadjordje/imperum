@@ -839,7 +839,7 @@ section#small-footer .main {
 }
 .our-work-indicators {
     display: none;
-    bottom: -20px;
+    bottom: -27px;
     position: absolute;
     left: 0%;
     width: 100%;
@@ -1013,7 +1013,7 @@ section#small-footer .main {
     }
     .our-work-indicators {
         display: block;
-        bottom: -20px;
+        bottom: -27px;
         position: absolute;
         left: 0%;
         width: 100%;
@@ -1165,7 +1165,7 @@ section#small-footer .main {
         background-image: none;
     }
     .our-work-indicators {
-        bottom: -20px;
+        bottom: -27px;
         position: absolute;
         left: 0%;
         width: 100%;
@@ -1324,7 +1324,7 @@ section#small-footer .main {
         background-image: none;
     }
     .our-work-indicators {
-        bottom: -20px;
+        bottom: -27px;
         position: absolute;
         left: 0%;
         width: 539px;
@@ -1455,7 +1455,7 @@ section#small-footer .main {
         background-image: none;
     }
     .our-work-indicators {
-        bottom: -20px;
+        bottom: -27px;
         position: absolute;
         left: 0%;
         width: 539px;
@@ -1469,12 +1469,13 @@ section#small-footer .main {
         height: 6px;
         -webkit-border-radius: 6px;
                 border-radius: 6px;
+        margin: 1px 7px 1px 8px;
     }
     .our-work-indicators .active {
         background-color: #cba262;
         width: 6px;
         height: 6px;
-        margin: 1px;
+        margin: 1px 7px 1px 8px;
     }
     .our-work-info {
         width: 34.7%;
