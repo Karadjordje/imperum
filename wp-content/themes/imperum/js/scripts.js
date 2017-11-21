@@ -203,7 +203,7 @@
         $('.style-nav').midnight().css({
             'top': '180px',
             'right' : 'auto',
-            'width' : '125px',
+            'width' : '141px',
             'left' : '50%',
             'transform' : 'translate(-585px, 0)'
         });
@@ -235,35 +235,35 @@
 		// LOADING SCREEN
 		var progressbarDiv = $('#progressbar');
 		if (progressbarDiv.length) {
-		var bar = new ProgressBar.Line(progressbar, {
-		  strokeWidth: 4,
-		  easing: 'easeInOut',
-		  duration: 1400,
-		  color: '#000',
-		  trailColor: '#eee',
-		  trailWidth: 1,
-		  svgStyle: {width: '100%', height: '2px'},
-		  text: {
-		    style: {},
-		    autoStyleContainer: false
-		  },
-		  step: (state, bar) => {
-		    bar.setText(Math.round(bar.value() * 100) + ' %');
-		  }
+			var bar = new ProgressBar.Line(progressbar, {
+			  strokeWidth: 4,
+			  easing: 'easeInOut',
+			  duration: 2400,
+			  color: '#000',
+			  trailColor: '#eee',
+			  trailWidth: 1,
+			  svgStyle: {width: '100%', height: '1px'},
+			  text: {
+			    style: {},
+			    autoStyleContainer: false
+			  },
+			  step: (state, bar) => {
+			    bar.setText(Math.round(bar.value() * 100) + ' %');
+			  }
 
-		});
+			});
 
-		bar.animate(1.0);  // Number from 0.0 to 1.0
+			bar.animate(1.0);  // Number from 0.0 to 1.0
 
-		function updateText (){
-		    var progressBarText = $('#progressbar');
-		    var loadingPage = $('#loadingPage');
-		    if (progressBarText.text() == '100 %') {
-		        loadingPage.fadeOut(350);
-		    }
-		};
+			function updateText (){
+			    var progressBarText = $('#progressbar');
+			    var loadingPage = $('#loadingPage');
+			    if (progressBarText.text() == '100 %') {
+			        loadingPage.fadeOut(350);
+			    }
+			};
 
-		setTimeout(updateText, 1400);
+			setTimeout(updateText, 2400);
 		}
 
 		// Applied globally on all textareas with the "autoExpand" class
@@ -303,19 +303,46 @@
 
 
 		// ScrollTo page sections
-		$('.scrollToContact').click(function(){
-		  $(window).scrollTo($('#contact'), 1500);
+		var loc = window.location.pathname;
+		var urlArray = new Array( "Service/", "Portfolio/", "Videoblog/", "html5-blank/video-6/", "consultation/", "pricing-plan/" );
+		var isFound = false;
+
+		urlArray.forEach(function(item){
+			if (loc.indexOf(item) > -1) {
+				isFound = true;
+				return;
+			}
 		});
 
-		$('.scrollToHome').click(function(){
-		  $(window).scrollTo("0px", 1500);
+		var lastClickedEl = null;
+		if(!isFound) {
+			$('.scrollToHome').click(function(){
+				if (lastClickedEl === 'home') {
+					console.log('already clicked');
+					return;
+				}
+				lastClickedEl = 'home';
+			  	$(window).scrollTo("#home", 1500);
+			});
+		}
+
+		$('.scrollToContact').click(function(){
+			if (lastClickedEl === 'contact') {
+				console.log('already clicked');
+				return;
+			}
+			lastClickedEl = 'contact';
+		  	$(window).scrollTo($('#contact'), 1500);
 		});
+
+
 
 		  if (window.location.hash.length) {
-		    var $target = $(window.location.hash);
-		    if ($target.length) {
-		      $(window).scrollTo($target, 1500);
-		    }
+			var $target = $(window.location.hash);
+				lastOffset = $(window).scrollTop();
+			if ($target.length) {
+			  	$(window).scrollTo($target, 1500);
+			}
 		  }
 
 	});

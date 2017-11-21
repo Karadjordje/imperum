@@ -47,7 +47,7 @@
 	                	<div class="col-xs-12 col-lg-10 col-lg-offset-1">
 	                		<div class="single-video-preview">
 	                			<div class="single-video-preview-head">
-                				    <h3>01</h3>
+                				    <h3><?php the_field('post_number') ?></h3>
                 				    <h4 class="post-headline">Web Design speed art - monter</h4>
 	                			</div>
 	                			<div class="single-video-preview-body">
