@@ -6,7 +6,7 @@
 	        <div class="row">
 	            <div class="container main">
 	                <div class="col-md-8 col-md-offset-2 text-center">
-	                    <img src="<?php bloginfo('template_directory'); ?>/img/whiteKeys.png">
+	                    <img src="<?php bloginfo('template_directory'); ?>/img/whiteKeys.png" height="40px" class="fleurDeLis">
 	                    <h4 class="sub-heading text-uppercase">Welcome to our</h4>
 	                    <h1 class="headline text-uppercase">Videoblog page</h1>
 	                    <div class="col-md-offset-5 col-md-2"><hr class="line" /></div>

@@ -6,7 +6,7 @@
             <div class="row">
                 <div class="container main">
                     <div class="col-md-8 col-md-offset-2 text-center clearfix">
-                        <img src="<?php bloginfo('template_directory'); ?>/img/whiteKeys.png" height="40px">
+                        <img src="<?php bloginfo('template_directory'); ?>/img/whiteKeys.png" height="40px" class="fleurDeLis">
                         <h4 class="sub-heading text-uppercase">Select a day</h4>
                         <h1 class="headline">Take Free Consultation</h1>
                         <div class="col-sm-offset-5 col-sm-2 clearfix"><hr class="line" /></div>

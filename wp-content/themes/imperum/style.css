@@ -137,6 +137,8 @@ a:focus, a:hover {
     font-size: 1em;
     margin-bottom: 12px;
     font-family: 'Open Sans', sans-serif;
+    margin-top: 0;
+    line-height: .8;
 }
 .line {
     margin-top: 0px;
@@ -467,6 +469,9 @@ section#small-footer .main {
 }
 .pattern {
     background: url(./img/patternXXX.png);
+}
+.fleurDeLis {
+    margin-bottom: 20px;
 }
 
 
