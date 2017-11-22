@@ -237,7 +237,7 @@ a:focus, a:hover {
     cursor: pointer;
     font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.2em;
     font-size: 0.8em;
 }
 .checkboxCustom label:before {
@@ -3007,7 +3007,7 @@ section#calendly .main {
 #portfolio .main-content p {
     font-weight: 500;
     letter-spacing: 0.1em;
-    line-height: 1.5;
+    line-height: 2.4;
 }
 /* @media (max-width: 420px) {
     table td[class*=col-], table th[class*=col-] {
@@ -3095,7 +3095,7 @@ section#calendly .main {
     #portfolio .main #portfolioTable .pfTinfo:nth-child(even) {
         width: 77.5%;
         padding-left: 15px;
-        margin-bottom: 0px;
+        margin-bottom: 4px;
     }
     #portfolio .main #portfolioTable .pfTinfo:nth-child(odd) {
         width: 22.5%;
@@ -3404,6 +3404,7 @@ section#calendly .main {
 }
 .average-difficulty h3 {
     text-transform: uppercase;
+    letter-spacing: .75px;
 }
 @media (min-width: 575px) {
     .average-difficulty {
@@ -3483,6 +3484,8 @@ section#calendly .main {
     color: #060b26;
     position: relative;
     width: auto;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
 }
 .single-video-preview-head h4:hover,
 .single-video-preview-head h4:visited {
@@ -3641,7 +3644,12 @@ section#calendly .main {
     }
 }
 
-
+.single-video-preview p {
+    font-size: 1em;
+    font-weight: 600;
+    letter-spacing: .1em;
+    line-height: 21px;
+}
 .single-video-preview ul,
 .single-video-preview p {
     margin-bottom: 0;
@@ -3742,7 +3750,12 @@ section#calendly .main {
     padding: 9px 0px;
     display: block;
     color: #c09858;
-    font-size: .9em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-decoration: none;
 }
 .custom-tabs li.active a {
     color: #fff;
@@ -3768,12 +3781,13 @@ section#calendly .main {
 }
 .categories h3 {
     margin-bottom: 35px;
+    padding-top: 10px;
 }
 .categories h3:after {
     content: attr(title);
     position: absolute;
     color: rgba(255, 255, 255, .1);
-    font-size: 2em;
+    font-size: 3.4em;
     top: 32%;
     left: 50%;
     margin-right: -50%;

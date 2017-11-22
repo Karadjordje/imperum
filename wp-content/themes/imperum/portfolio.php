@@ -39,7 +39,7 @@
                     <div class="tablet-spicer-sm"></div>
                 </div>
 
-                <div id="portfolio-carousel" class="carousel slide" data-interval="7000" data-ride="carousel">
+                <div id="portfolio-carousel" class="carousel slide" data-interval="15000" data-ride="carousel">
                   <div class="tablet-monitor carousel-inner">
                   	<?php while ( $carouselProjects->have_posts() ) : ?>
                   		<?php $carouselProjects->the_post(); ?>

@@ -23,7 +23,7 @@
 	                        </h3>
 	                        <div class="checkboxCustom">
 	                            <input checked type="checkbox" name="uxWebChb" id="uxWebChb" data-category="ux-web-tactics">
-	                            <label for="uxWebChb">UX WEB TACTICS</label>
+	                            <label for="uxWebChb">DESIGN AND ART</label>
 	                        </div>
 	                    </div><div class="categories">
 	                        <h3 title="<?php echo $cat_count_marketing->count; ?>">
@@ -39,7 +39,7 @@
 	                        </h3>
 	                        <div class="checkboxCustom">
 	                            <input checked type="checkbox" name="outherChb" id="outherChb" data-category="other-tactics">
-	                            <label for="outherChb">OTHER TACTICS</label>
+	                            <label for="outherChb">UX & SEO TACTICS</label>
 	                        </div>
 	                    </div>
 	                </div>
