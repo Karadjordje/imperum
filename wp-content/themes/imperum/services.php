@@ -6,9 +6,9 @@
         <div class="row">
           <div class="container main text-center specVH">
             <div class="col-md-8 col-md-offset-2">
-              <img src="<?php bloginfo('template_directory'); ?>/img/whiteKeys.png">
+              <img src="<?php bloginfo('template_directory'); ?>/img/whiteKeys.png" height="40px" class="fleurDeLis">
               <h4 class="sub-heading text-uppercase">In our hands lies</h4>
-              <h1 class="">Your Business</h1>
+              <h1 class="headline">Your Business</h1>
               <hr class="line" />
             </div>
           </div>

@@ -27,7 +27,7 @@
 								?>
 	                            <div class="col-xs-12 col-lg-10 col-lg-offset-1 video-short">
 	                            	<div class="row">
-	                            		<div class="video-short-img col-xs-5 col-lg-3 col-md-3">
+	                            		<div class="video-short-img col-xs-5 col-md-4 col-lg-4">
 	                            			<a href="<?php the_permalink() ?>">
 	                            				<div class="featured-img featured-img-small" style="background-image: url(<?php echo wp_get_attachment_url( get_post_thumbnail_id() ); ?>);">
 	                            					<div class="video-blog-link">
@@ -36,7 +36,7 @@
 	                            				</div>
 	                            			</a>
 	                            		</div>
-	                            		<div class="col-xs-7 col-lg-8 col-md-8 col-md-offset-1 video-short-body">
+	                            		<div class="col-xs-7 col-lg-8 col-md-8 video-short-body">
 	                         				<div class="video-short-headline">
 	                          	  			    <h3 class="post-num"><?php echo $_total_posts - ( $_current_page - 1 ) * $_ppp - $_current_post ?></h3>
 		                            			<a href="<?php the_permalink() ?>">

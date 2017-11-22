@@ -6,7 +6,7 @@
 	        <div class="row">
 	            <div class="container main text-center specVH">
 	                <div class="col-md-8 col-md-offset-2">
-	                    <img src="<?php bloginfo('template_directory'); ?>/img/whiteKeys.png">
+	                    <img src="<?php bloginfo('template_directory'); ?>/img/whiteKeys.png" height="40px" class="fleurDeLis">
 	                    <h4 class="sub-heading text-uppercase" id="shortDescription">Short movie</h4>
 	                    <h1 class="headline">Crossroads</h1>
                       <hr class="line" />
@@ -39,7 +39,7 @@
                     <div class="tablet-spicer-sm"></div>
                 </div>
 
-                <div id="portfolio-carousel" class="carousel slide" data-interval="7000" data-ride="carousel">
+                <div id="portfolio-carousel" class="carousel slide" data-interval="15000" data-ride="carousel">
                   <div class="tablet-monitor carousel-inner">
                   	<?php while ( $carouselProjects->have_posts() ) : ?>
                   		<?php $carouselProjects->the_post(); ?>

@@ -23,6 +23,11 @@ body {
 h1, h3 {
     font-family: 'Playfair Display', serif;
 }
+h1 {
+    font-size: 48px;
+    line-height: 0.83;
+    font-weight: 400;
+}
 a {
     color: #c99e5a;
 }
@@ -110,8 +115,11 @@ a:focus, a:hover {
 }
 
 .main-content p {
-    letter-spacing: 0.2em;
-    line-height: 2.3;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    line-height: 30px;
+    font-size: 1em;
 }
 .main-content {
     padding-top: 30px;
@@ -119,14 +127,18 @@ a:focus, a:hover {
 .headline {
     margin-top: 0px;
     letter-spacing: 0.1em;
+    margin-bottom: 16px;
 }
 .sub-heading {
     color: #c09858;
-    font-weight: 700;
+    font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 1.5px;
+    letter-spacing: 4px;
     font-size: 1em;
-    margin-bottom: 5px;
+    margin-bottom: 16px;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 0;
+    line-height: .8;
 }
 .line {
     margin-top: 0px;
@@ -135,6 +147,9 @@ a:focus, a:hover {
     margin-left: auto;
     margin-right: auto;
     width: 60px;
+}
+#home .main .line {
+    margin-bottom: 20px;
 }
 .dark-line {
     border-color: #070b26;
@@ -147,14 +162,16 @@ a:focus, a:hover {
     border: none;
     -webkit-border-radius: 0px;
             border-radius: 0px;
-    text-transform: uppercase;
     border-radius: 0px;
-    padding: 10px 10px;
+    padding: 9px 10px;
     -webkit-transition: background-color .35s ease;
          -o-transition: background-color .35s ease;
             transition: background-color .35s ease;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
     font-size: 12px;
     letter-spacing: 0.1em;
+    text-transform: uppercase;
 }
 .btn-imperium:focus {
     color: #fff;
@@ -223,7 +240,7 @@ a:focus, a:hover {
     cursor: pointer;
     font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.2em;
     font-size: 0.8em;
 }
 .checkboxCustom label:before {
@@ -246,9 +263,9 @@ a:focus, a:hover {
     font-size: 2em;
     left: 50%;
     margin-right: -50%;
-    -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -43%);
+        -ms-transform: translate(-50%, -43%);
+            transform: translate(-50%, -43%);
 }
 
 section#services .btn-imperium {
@@ -257,6 +274,12 @@ section#services .btn-imperium {
 section .main {
     padding-top: 200px;
     padding-bottom: 100px;
+    border-left: none;
+    position: relative;
+}
+section#home .main {
+    padding-top: 200px;
+    padding-bottom: 90px;
     border-left: none;
     position: relative;
 }
@@ -456,6 +479,9 @@ section#small-footer .main {
 .pattern {
     background: url(./img/patternXXX.png);
 }
+.fleurDeLis {
+    margin-bottom: 19px;
+}
 
 
 /*
@@ -528,9 +554,12 @@ section#small-footer .main {
     color: #000;
     margin: 0;
     font-family: 'Playfair Display', serif;
+    letter-spacing: 3px;
 }
 .progressbar-text {
     position: inherit;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2em;
 }
 .loadingContent img {
     width: 60%;
@@ -539,10 +568,11 @@ section#small-footer .main {
 
 /* HOME section */
 #home h1 {
-    margin-bottom: 25px;
+    margin-bottom: 26px;
+    line-height: 100%;
 }
 #home .main-content p {
-    margin-bottom: 30px;
+    margin-bottom: 0px;
 }
 
 /* SERVICE section */
@@ -552,8 +582,9 @@ section#small-footer .main {
 }
 #services .service h3 {
     font-family: 'Playfair Display', serif;
-    font-size: 1em;
+    font-size: .9em;
     font-weight: 600;
+    letter-spacing: 1px;
 }
 #services .service p,
 #services .service h3:first-child {
@@ -563,10 +594,13 @@ section#small-footer .main {
 #services .service h3:nth-last-child(2) {
     margin-bottom: 10px;
 }
+#services .service:nth-child(2) h3 {
+    white-space: nowrap;
+}
 #services .service:after {
     content: attr(title);
     font-family: 'Playfair Display', serif;
-    font-size: 5.5em;
+    font-size: 4.8em;
     line-height: .3;
     color: #e6e6e9;
     position: absolute;
@@ -585,6 +619,11 @@ section#small-footer .main {
     }
     #services .service h3:nth-last-child(2) {
         margin-bottom: 30px;
+    }
+}
+@media(min-width: 768px) {
+    #services .service h3 {
+        font-size: 1em;
     }
 }
 
@@ -839,7 +878,7 @@ section#small-footer .main {
 }
 .our-work-indicators {
     display: none;
-    bottom: -20px;
+    bottom: -27px;
     position: absolute;
     left: 0%;
     width: 100%;
@@ -900,6 +939,7 @@ section#small-footer .main {
 }
 .our-work-info-num h5 {
     position: absolute;
+    font-family: 'Playfair Display', serif;
     bottom: 11%;
     right: auto;
     left: 50px;
@@ -1013,7 +1053,7 @@ section#small-footer .main {
     }
     .our-work-indicators {
         display: block;
-        bottom: -20px;
+        bottom: -27px;
         position: absolute;
         left: 0%;
         width: 100%;
@@ -1165,7 +1205,7 @@ section#small-footer .main {
         background-image: none;
     }
     .our-work-indicators {
-        bottom: -20px;
+        bottom: -27px;
         position: absolute;
         left: 0%;
         width: 100%;
@@ -1324,7 +1364,7 @@ section#small-footer .main {
         background-image: none;
     }
     .our-work-indicators {
-        bottom: -20px;
+        bottom: -27px;
         position: absolute;
         left: 0%;
         width: 539px;
@@ -1455,7 +1495,7 @@ section#small-footer .main {
         background-image: none;
     }
     .our-work-indicators {
-        bottom: -20px;
+        bottom: -27px;
         position: absolute;
         left: 0%;
         width: 539px;
@@ -1469,12 +1509,13 @@ section#small-footer .main {
         height: 6px;
         -webkit-border-radius: 6px;
                 border-radius: 6px;
+        margin: 1px 6px 1px 6px;
     }
     .our-work-indicators .active {
         background-color: #cba262;
         width: 6px;
         height: 6px;
-        margin: 1px;
+        margin: 1px 6px 1px 6px;
     }
     .our-work-info {
         width: 34.7%;
@@ -1644,7 +1685,13 @@ textarea {
 @media (min-width: 575px) {
     input[type=text],
     textarea {
-        width: 52.2%;
+        width: 63.6%;
+    }
+}
+@media (min-width: 768px) {
+    input[type=text],
+    textarea {
+        width: 70.6%;
     }
 }
 textarea {
@@ -2014,11 +2061,12 @@ textarea {
     }
     .style-nav .custom-nav li a {
         text-decoration: none;
-        padding: 12px 15px;
+        padding: 10px 15px;
         display: block;
         font-weight: 500;
         color: #cdcdcd;
         text-transform: uppercase;
+        letter-spacing: 3px;
     }
 /*     .style-nav .custom-nav li a:after {
     display:block;
@@ -2059,9 +2107,9 @@ textarea {
     }
     .icons-nav .icons li a {
         color: #fff;
-        margin-bottom: 9px;
+        margin-bottom: 6px;
         display: block;
-        font-size: 18px;
+        font-size: 15px;
     }
     .icons li a.special {
         margin-bottom: 0;
@@ -2083,6 +2131,7 @@ textarea {
         line-height: 1.5;
         text-transform: uppercase;
         font-weight: 500;
+        letter-spacing: 2px;
     }
 }
 /*  MIDNIGHT FIX WHEN CHANGING PAGE VIA NAVIGATION*/
@@ -2148,9 +2197,12 @@ section#calendly .main {
 }
 #calendly .hash-sign {
     margin-top: 0px;
+    font-size: 24px;
 }
 #calendly .main p {
-    font-weight: bold;
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 20px;
 }
 
 
@@ -2968,7 +3020,7 @@ section#calendly .main {
 #portfolio .main-content p {
     font-weight: 500;
     letter-spacing: 0.1em;
-    line-height: 1.5;
+    line-height: 2.4;
 }
 /* @media (max-width: 420px) {
     table td[class*=col-], table th[class*=col-] {
@@ -3056,7 +3108,7 @@ section#calendly .main {
     #portfolio .main #portfolioTable .pfTinfo:nth-child(even) {
         width: 77.5%;
         padding-left: 15px;
-        margin-bottom: 0px;
+        margin-bottom: 4px;
     }
     #portfolio .main #portfolioTable .pfTinfo:nth-child(odd) {
         width: 22.5%;
@@ -3365,6 +3417,7 @@ section#calendly .main {
 }
 .average-difficulty h3 {
     text-transform: uppercase;
+    letter-spacing: .75px;
 }
 @media (min-width: 575px) {
     .average-difficulty {
@@ -3390,9 +3443,11 @@ section#calendly .main {
 }
 .featured-img-small {
     position: relative;
-    max-width: 100%;
-    min-height: 140px;
+    width: 100%;
+    max-width: 263px;
+    min-height: 150px;
     margin-bottom: 20px;
+    margin-top: 10px;
 }
 
 
@@ -3444,6 +3499,8 @@ section#calendly .main {
     color: #060b26;
     position: relative;
     width: auto;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
 }
 .single-video-preview-head h4:hover,
 .single-video-preview-head h4:visited {
@@ -3602,7 +3659,12 @@ section#calendly .main {
     }
 }
 
-
+.single-video-preview p {
+    font-size: 1em;
+    font-weight: 600;
+    letter-spacing: .1em;
+    line-height: 21px;
+}
 .single-video-preview ul,
 .single-video-preview p {
     margin-bottom: 0;
@@ -3703,7 +3765,12 @@ section#calendly .main {
     padding: 9px 0px;
     display: block;
     color: #c09858;
-    font-size: .9em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-decoration: none;
 }
 .custom-tabs li.active a {
     color: #fff;
@@ -3729,12 +3796,13 @@ section#calendly .main {
 }
 .categories h3 {
     margin-bottom: 35px;
+    padding-top: 10px;
 }
 .categories h3:after {
     content: attr(title);
     position: absolute;
     color: rgba(255, 255, 255, .1);
-    font-size: 2em;
+    font-size: 3.4em;
     top: 32%;
     left: 50%;
     margin-right: -50%;
@@ -3907,6 +3975,9 @@ section#calendly .main {
 #pricing-page {
     font-size: 80%;
 }
+h1 {
+    font-size: 30px;
+}
 @media (min-width:576px) {
     #loadingPage,
     .head-container,
@@ -3923,6 +3994,9 @@ section#calendly .main {
     #vbSingle-body,
     #pricing-page {
         font-size: 85%;
+    }
+    h1 {
+        font-size: 36px;
     }
 }
 @media (min-width:768px) {
@@ -3942,6 +4016,9 @@ section#calendly .main {
     #pricing-page {
         font-size: 90%;
     }
+    h1 {
+        font-size: 40px;
+    }
 }
 @media (min-width:992px) {
     #loadingPage,
@@ -3960,6 +4037,9 @@ section#calendly .main {
     #pricing-page {
         font-size: 95%;
     }
+    h1 {
+        font-size: 44px;
+    }
 }
 @media (min-width: 1200px) {
     #loadingPage,
@@ -3977,5 +4057,8 @@ section#calendly .main {
     #vbSingle-body,
     #pricing-page {
         font-size: 100%;
+    }
+    h1 {
+        font-size: 48px;
     }
 }

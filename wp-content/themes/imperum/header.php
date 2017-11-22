@@ -32,7 +32,7 @@
 		<!-- I load this HTML only front page (HTML for loading screen) -->
 		<?php if ( is_front_page() ) { ?>
 			<div id="loadingPage">
-		        <h1>Imperium</h1>
+		        <h1><span class="icon-Logo midnightLogo"></span></h1>
 		        <div class="loadingContent">
 		        	<img class="center-block" src="<?php bloginfo('template_directory'); ?>/img/landingLogo.png">
 		        	<div id="progressbar"></div>
@@ -55,7 +55,7 @@
 	    <div class="smallNav" style="display: none;">
 	    	<span class="icon-X"></span>
 	    	<ul>
-	    		<li><a href="<?php if(!is_front_page()) echo home_url(); else echo '#' ?>">Home</a></li>
+	    		<li class="scrollToHome"><a href="<?php if(!is_front_page()) echo home_url(); else echo '#' ?>">Home</a></li>
 	    		<li><a href="<?php echo site_url(); ?>/service/">Service</a></li>
 	    		<li><a href="<?php echo site_url(); ?>/portfolio/">Portfolio</a></li>
 	    		<li><a href="<?php echo site_url(); ?>/videoblog/">Videoblog</a></li>
