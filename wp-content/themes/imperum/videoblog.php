@@ -8,7 +8,7 @@
 	                <div class="col-md-8 col-md-offset-2 text-center">
 	                    <img src="<?php bloginfo('template_directory'); ?>/img/whiteKeys.png" height="40px" class="fleurDeLis">
 	                    <h4 class="sub-heading text-uppercase">Welcome to our</h4>
-	                    <h1 class="headline text-uppercase">Videoblog page</h1>
+	                    <h1 class="headline">Videoblog page</h1>
 	                    <div class="col-md-offset-5 col-md-2"><hr class="line" /></div>
 	                </div>
 	                <div id="video-checkboxes" class="col-md-6 col-md-offset-3 vb-posts-info">
@@ -56,13 +56,6 @@
 
 	    <section class="container-fluid lite-bg" id="vblog-page" data-midnight="light">
 	        <div class="row pattern">
-	            <div class="container grid">
-	                <div class="col-md-2 col-md-offset-2"><div class="one"></div></div>
-	                <div class="col-md-2"><div class="one"></div></div>
-	                <div class="col-md-2"><div class="one"></div></div>
-	                <div class="col-md-2"><div class="one"></div></div>
-	                <div class="col-md-2"><div class="one"></div></div>
-	            </div>
 	            <!-- Nav tabs -->
 	            <div class="container main">
 	                <div class="tab-content">
@@ -104,7 +97,7 @@
                             	?>
 	                            <div class="col-xs-12 col-lg-10 col-lg-offset-1 video-short">
 	                            	<div class="row">
-	                            		<div class="video-short-img col-xs-5 col-lg-3 col-md-3">
+	                            		<div class="video-short-img col-xs-5 col-md-4 col-lg-4">
 	                            			<a href="<?php the_permalink() ?>">
 	                            				<div class="featured-img featured-img-small" style="background-image: url(<?php echo wp_get_attachment_url( get_post_thumbnail_id() ); ?>);">
 	                            					<div class="video-blog-link">
@@ -113,7 +106,7 @@
 	                            				</div>
 	                            			</a>
 	                            		</div>
-	                            		<div class="col-xs-7 col-lg-8 col-md-8 col-md-offset-1 video-short-body">
+	                            		<div class="col-xs-7 col-md-8 col-lg-8 video-short-body">
 	                         				<div class="video-short-headline">
 	                          	  			    <h3 class="post-num"><?php echo 0 . $counter = $_total_posts - $_current_post; ?></h3>
 		                            			<a href="<?php the_permalink() ?>">

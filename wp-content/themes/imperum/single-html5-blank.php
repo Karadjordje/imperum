@@ -13,7 +13,7 @@
 	                    <h4 class="sub-heading text-uppercase"><?php foreach ((get_the_category()) as $category) {
 	                    	echo $category->cat_name . ' ';
 	                    } ?></h4>
-	                    <h1 class="headline text-uppercase"><?php the_title(); ?></h1>
+	                    <h1 class="headline"><?php the_title(); ?></h1>
 	                    <div class="col-sm-offset-5 col-sm-2 clearfix"><hr class="line" /></div>
 	                </div>
 	                <div class="col-md-6 col-md-offset-3 vb-head-info">
