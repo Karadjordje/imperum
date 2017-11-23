@@ -206,17 +206,23 @@ a:focus, a:hover {
 }
 @media (min-width: 768px) {
     .btn-2 {
-        width: 35.2%;
+        /* idth: 35.2%; */
+        width: 100%;
+        max-width: 181px;
     }
 }
 @media (min-width: 992px) {
     .btn-2 {
-        width: 35.2%;
+        /* width: 35.2%; */
+        width: 100%;
+        max-width: 197px;
     }
 }
 @media (min-width: 1200px) {
     .btn-2 {
-        width: 35.2%;
+        /* width: 35.2%; */
+        width: 100%;
+        max-width: 190px;
     }
 }
 .btn-imperium:hover {
@@ -3495,7 +3501,7 @@ section#calendly .main {
     width: 100%;
     max-width: 263px;
     min-height: 150px;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
     margin-top: 10px;
 }
 
@@ -3625,40 +3631,51 @@ section#calendly .main {
         -ms-flex-direction: row;
             flex-direction: row;
 }
-.subject,
-.tags {
-    display: inline-block;
+.single-video-preview-cats .subject,
+.single-video-preview-cats .tags {
+    text-transform: uppercase;
+    display: block;
+    letter-spacing: 1.5px;
 }
-.date-of-post {
+.single-video-preview-cats .date-of-post {
     display: none;
 }
-.subject,
-.tags,
-.date-of-post {
+.single-video-preview-cats .subject,
+.single-video-preview-cats .tags,
+.single-video-preview-cats .date-of-post {
     font-size: .9em;
     font-weight: 700;
     text-decoration: underline;
     letter-spacing: 0.1em;
 }
-.subject {
-    width: 50%;
-    color: #c09858;
+.single-video-preview-cats .subject {
+    margin-right: 4%;
 }
-.tags {
-    width: 50%;
+.single-video-preview-cats .subject p {
+    /* width: 50%; */
     color: #c09858;
+    font-weight: 900;
+    text-decoration: underline;
+}
+.single-video-preview-cats .tags p {
+    /* width: 50%; */
+    color: #c09858;
+    font-weight: 600;
+    text-decoration: underline;
 }
 @media (min-width: 768px) {
-    .subject {
-        width: 25%;
+    .single-video-preview-cats .subject {
+        /* width: 25%; */
     }
-    .tags {
-        width: 50%;
+    .single-video-preview-cats .tags {
+        /* width: 50%; */
     }
-    .date-of-post {
-        display: inline-block;
+    .single-video-preview-cats .date-of-post {
+        display: block;
         text-align: right;
         width: 25%;
+        position: absolute;
+        right: 0;
     }
 }
 
@@ -3690,10 +3707,13 @@ section#calendly .main {
 }
 .social-icons ul li a {
     display: block;
-    font-size: 1.3em;
+    font-size: 15px;
     margin-top: -4px;
     margin-right: 10px;
     color: #060b26;
+}
+.social-icons ul li a.spec {
+    font-size: 18px;
 }
 .social-icons ul li a:hover {
     color: #d88400;
@@ -3738,6 +3758,7 @@ section#calendly .main {
 .commHL {
     padding-left: 0;
     margin-bottom: 40px;
+    letter-spacing: 1.5px;
 }
 .comment-one {
     padding-top: 0px;
@@ -3746,11 +3767,17 @@ section#calendly .main {
 }
 .comment-one h4 {
     margin-top: 0;
-    margin-bottom: 15px;
+    margin-bottom: 12 px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 600;
 }
 .comment-body {
-    padding-bottom: 30px;
+    padding-bottom: 25px;
     border-bottom: 1px solid #c09858;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 1px;
 }
 #respond {
     padding-left: 0;
@@ -3827,7 +3854,7 @@ section#calendly .main {
 }
 #latest .vb-posts > div,
 #most-popular .vb-posts > div {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 #vblog-page .main {
     padding-top: 100px;
@@ -3878,13 +3905,18 @@ section#calendly .main {
 }
 #vblog-page .subject {
     color: #c09858;
+    font-weight: 900;
+    letter-spacing: 1.5px;
+    margin-right: 5%;
 }
 #vblog-page .tags {
     color: #c09858;
+    font-weight: 600;
+    letter-spacing: 1.5px;
 }
 .post-body-short {
     font-weight: 500;
-    margin-bottom: 25px;
+    /* margin-bottom: 25px; */
 }
 .post-body-short a {
     color: #060b26;
@@ -3926,13 +3958,18 @@ section#calendly .main {
     width: 22%;
 }
 .video-short-headline h4 {
-    margin-top: 7px;
+    font-family: 'Playfair Display', serif;
+    margin-top: 0px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 1.5px;
 }
 .post-body-short {
     padding-left: 0;
 }
-.post-body-short p {
-    width: 100%
+.post-body-short > p {
+    width: 100%;
+    margin-bottom: 11px;
 }
 .video-short-tags-cats {
     display: -webkit-box;
@@ -3944,10 +3981,14 @@ section#calendly .main {
     -webkit-flex-direction: row;
         -ms-flex-direction: row;
             flex-direction: row;
+    text-transform: uppercase;
 }
 .video-short-tags-cats .subject,
 .video-short-tags-cats .tags {
-    width: 50%;
+    /* width: 50%; */
+}
+.post-body-short .video-short-tags-cats p {
+    margin-bottom: 0;
 }
 @media(min-width: 992px) {
     .video-short-headline:after {

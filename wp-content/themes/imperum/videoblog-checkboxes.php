@@ -17,7 +17,7 @@
 									$_current_page  = is_paged() ?  get_query_var( 'paged', 1 ) : 1;
 
 									// posts per page
-									$_ppp           = get_query_var( 'posts_per_page', get_option( 'posts_per_page' ) );
+									$_ppp           = 5;
 
 									// current post index on the current page
 									$_current_post  = $loop->current_post;
@@ -38,13 +38,13 @@
 	                            		</div>
 	                            		<div class="col-xs-7 col-lg-8 col-md-8 video-short-body">
 	                         				<div class="video-short-headline">
-	                          	  			    <h3 class="post-num"><?php echo 0 . $counter = $_total_posts - $_current_post; ?></h3>
+	                          	  			    <h3 class="post-num"><?php echo $_total_posts - ( $_current_page - 1 ) * $_ppp - $_current_post ?></h3>
 		                            			<a href="<?php the_permalink() ?>">
 		                            				<h4 class="post-headline text-uppercase"><?php the_title() ?></h4>
 		                            			</a>
 	                          				</div>
 	                            		    <div class="post-body-short">
-	                            		        <p><?php the_excerpt(); ?></p>
+	                            		        <p><?php echo get_the_excerpt(); ?></p>
 		                            		    <div class="video-short-tags-cats">
 		                            		    	<div class="subject">
 		                            		    	    <p>

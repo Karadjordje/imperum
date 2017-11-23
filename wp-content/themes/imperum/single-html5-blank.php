@@ -87,7 +87,7 @@
             						    <ul>
             						        <li><a href="#"><span class="icon-Facebook-Icon"></span></a></li>
             						        <li><a href="#"><span class="icon-Twitter-Icon"></span></a></li>
-            						        <li><a href="#"><span class="icon-Google-Plus-Icon"></span></a></li>
+            						        <li><a href="#" class="spec"><span class="icon-Google-Plus-Icon"></span></a></li>
             						        <li><a href="#"><span class="icon-Pinterest-Icon"></span></a></li>
             						    </ul>
             						</div>
