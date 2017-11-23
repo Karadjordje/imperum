@@ -149,7 +149,7 @@ a:focus, a:hover {
     width: 60px;
 }
 #home .main .line {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 .dark-line {
     border-color: #070b26;
@@ -280,7 +280,7 @@ section .main {
 section#home .main {
     padding-top: 200px;
     padding-bottom: 90px;
-    border-left: none;
+    /*border-left: none;*/
     position: relative;
 }
 section#services-page .main {
@@ -572,7 +572,7 @@ section#small-footer .main {
     line-height: 100%;
 }
 #home .main-content p {
-    margin-bottom: 0px;
+    margin-bottom: 40px;
 }
 
 /* SERVICE section */
@@ -1730,25 +1730,37 @@ textarea {
 #contact .main-content ul li {
     display: inline-block;
     font-family: 'Playfair Display', serif;
-    font-weight: 600;
+    font-weight: 500;
     margin-right: 20px;
     letter-spacing: 0.1em;
     font-size: 13px;
 }
 #contact .main-content ul li span {
-    vertical-align: text-bottom;
+    vertical-align: text-top;
     margin-right: 3px;
 }
 #contact .main-content ul li a {
     text-decoration: none;
     color: #060b26;
+    display: inline-block;
 }
 #contact .main-content ul li a:hover {
     color: #060b26;
-    text-decoration: underline;
+    font-weight: bold;
+}
+#contact .main-content ul li a::after {
+    display: block;
+    content: attr(title);
+    font-weight: bold;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
 }
 #submit_btn {
     margin-bottom: 50px;
+}
+#contact .pricingPlanLink:hover {
+    color: #c99e5a;
 }
 
 /*
@@ -1990,11 +2002,13 @@ textarea {
     .midnightHeader.dark,
     .midnightHeader.dark .icons li a {
         color: white;
+       display: inline-block;
     }
     .midnightHeader.light .custom-nav li > a,
     .midnightHeader.light,
     .midnightHeader.light .icons li a {
         color: #060b26;
+       display: inline-block;
     }
     .midnightHeader.dark .custom-nav li.active > a {
        color: white;
@@ -2068,10 +2082,10 @@ textarea {
         text-transform: uppercase;
         letter-spacing: 3px;
     }
-/*     .style-nav .custom-nav li a:after {
+     .style-nav .custom-nav li a:after {
     display:block;
     content: '';
-    border-bottom: solid 3px #c09858;
+    border-bottom: solid 1px #c09858;
     -webkit-transform: scaleX(0);
         -ms-transform: scaleX(0);
             transform: scaleX(0);
@@ -2091,7 +2105,7 @@ textarea {
   -webkit-transform-origin:0 50%;
       -ms-transform-origin:0 50%;
           transform-origin:0 50%;
-} */
+}
 
     /* -- SOC Icons -- */
     .icons-nav .icons {
@@ -2508,7 +2522,8 @@ section#calendly .main {
 }
 .works-head p:last-child {
     font-weight: 600;
-    letter-spacing: 0.5px;
+    letter-spacing: 1px;
+    line-height: 20px;
 }
 
 
@@ -2589,16 +2604,20 @@ section#calendly .main {
     position: relative;
 }
 .works-headline h4 {
-    margin-top: 7px;
+    margin-top: 4px;
     margin-bottom: 0;
     font-family: 'Playfair Display', serif;
     letter-spacing: 1px;
     font-weight: 400;
+    font-size: 1.7em;
 }
 .works-down-one > p {
     padding-left: 15%;
     padding-right: 15px;
-    letter-spacing: .5px;
+    letter-spacing: 1px;
+}
+.works-down-one:nth-child(even) {
+    padding-left: 0px;
 }
 @media (min-width: 575px) {
     .works-down {
@@ -2684,16 +2703,17 @@ section#calendly .main {
         position: relative;
     }
     .works-headline h4 {
-        margin-top: 7px;
+        margin-top: 6px;
         margin-bottom: 0;
         font-family: 'Playfair Display', serif;
         letter-spacing: 1px;
         font-weight: 400;
+        font-size: 1.7em;
     }
     .works-down-one > p {
         padding-left: 22%;
         padding-right: 15px;
-        letter-spacing: .5px;
+        letter-spacing: 1px;
     }
 }
 
@@ -2771,16 +2791,17 @@ section#calendly .main {
         position: relative;
     }
     .works-headline h4 {
-        margin-top: 7px;
+        margin-top: 4px;
         margin-bottom: 0;
         font-family: 'Playfair Display', serif;
         letter-spacing: 1px;
         font-weight: 400;
+        font-size: 1.7em;
     }
     .works-down-one > p {
         padding-left: 22%;
         padding-right: 15px;
-        letter-spacing: .5px;
+        letter-spacing: 1px;
     }
 }
 
@@ -3121,6 +3142,10 @@ section#calendly .main {
     PRICING page
 
 */
+#pricing-page h3.pricingFleur {
+    margin-top: 0;
+    line-height: .83px;
+}
 #pricing-page .row .main {
     padding-top: 100px;
 }
@@ -3214,6 +3239,10 @@ section#calendly .main {
     padding-left: 5%;
     padding-right: 5%;
 }
+.pricing-list-box p {
+    letter-spacing: .1em;
+    line-height: 22px;
+}
 .pricing-list header > h2,
 .pricing-list header > h3 {
     font-family: 'Playfair Display', serif;
@@ -3223,10 +3252,12 @@ section#calendly .main {
 }
 .pricing-list header > h3 {
     margin-bottom: 25px;
-    font-size: 1.6em;
+    font-size: 1.7em;
+    letter-spacing: .1em;
 }
 .pricing-list header > h2 {
-    font-size: 2.6em;
+    font-size: 2.37em;
+    letter-spacing: .1em;
 }
 .pricing-list header .line {
     width: 40%;
@@ -3289,6 +3320,12 @@ section#calendly .main {
     margin-bottom: 0;
     font-weight: 500;
 }
+#pricing-page p.sub-heading-link {
+    margin-bottom: 90px;
+}
+#pricing-page .fleurDeLis {
+    margin-top: 70px;
+}
 @media (min-width: 575px) {
     .simple-web,
     .enterprise-web {
@@ -3299,6 +3336,12 @@ section#calendly .main {
     .simple-web,
     .custom-web {
         margin-bottom: 50px;
+    }
+    #pricing-page p.sub-heading-link {
+        margin-bottom: 0;
+    }
+    #pricing-page .fleurDeLis {
+        margin-top: 0;
     }
 }
 @media (min-width: 768px) {
@@ -3356,6 +3399,9 @@ section#calendly .main {
             -ms-flex-pack: justify;
                 justify-content: space-between;
     }
+    #pricing-page p.sub-heading-link {
+        margin-bottom: 74px;
+    }
 }
 @media (min-width: 1200px) {
     .simple-web .pricing-list-box p:last-child,
@@ -3375,6 +3421,9 @@ section#calendly .main {
     .custom-web .pricing-list-box p:last-child {
         padding-left: 60px;
         padding-right: 35px;
+    }
+    #pricing-page p.sub-heading-link {
+        margin-bottom: 120px;
     }
 }
 

@@ -131,7 +131,7 @@
                       <span class="icon-Customer-Support"></span>
                     </div>
                     <div class="works-headline">
-                      <h3 class="services-num">01</h3>
+                      <h3 class="services-num">06</h3>
                       <h4>Customer Support</h4>
                     </div>
                     <p>

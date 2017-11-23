@@ -7,12 +7,12 @@
             <div class="container main" style="border: none;">
                 <div class="row works-head">
                     <div class="col-md-10 col-md-offset-1 text-center">
-                        <img src="http://localhost/imperum/wp-content/themes/imperum/img/darkKeys.png">
-                        <h3><span class="icon-Logo logo"></span></h3>
+                        <img height="40px" width="40px" src="http://localhost/imperum/wp-content/themes/imperum/img/darkKeys.png" class="fleurDeLis">
+                        <h3 class="pricingFleur"><span class="icon-Logo logo"></span></h3>
                         <h1>Pricing plan and value proposition</h1>
                         <div class="col-md-offset-3 col-md-6"><hr class="line" /></div>
                         <div class="col-md-12">
-                            <p class="sub-heading">www.imperium-la.com</p>
+                            <p class="sub-heading sub-heading-link">www.imperium-la.com</p>
                         </div>
                     </div>
                 </div>
@@ -136,7 +136,7 @@
                     <div class="col-md-10 col-md-offset-1 text-center">
                         <img src="http://localhost/imperum/wp-content/themes/imperum/img/darkKeys.png">
                         <h3><span class="icon-Logo logo"></span></h3>
-                        <h1>Steps we make<br/>during the process</h1>
+                        <h1>Steps we make during the process</h1>
                         <div class="col-md-offset-3 col-md-6"><hr class="line"></div>
                         <div class="col-md-12">
                             <p class="sub-heading">We care about you and your business.</p>

@@ -323,6 +323,8 @@
 				}
 				lastClickedEl = 'home';
 			  	$(window).scrollTo("#home", 1500);
+  			  	$('.custom-nav .active').removeClass('active');
+		  		$('.scrollToHome').addClass('active');
 			});
 		}
 
@@ -333,17 +335,19 @@
 			}
 			lastClickedEl = 'contact';
 		  	$(window).scrollTo($('#contact'), 1500);
+		  	$('.custom-nav .active').removeClass('active');
+		  	$('.scrollToContact').addClass('active');
 		});
 
 
 
-		  if (window.location.hash.length) {
+		if (window.location.hash.length) {
 			var $target = $(window.location.hash);
 				lastOffset = $(window).scrollTop();
 			if ($target.length) {
 			  	$(window).scrollTo($target, 1500);
 			}
-		  }
+		}
 
 	});
 

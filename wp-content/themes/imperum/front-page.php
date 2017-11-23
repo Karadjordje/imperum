@@ -20,7 +20,7 @@
                         <div class="row">
                             <div class="col-xs-10 col-sm-9 col-xs-offset-2 col-sm-offset-3 main-content">
                                 <p>
-                                    <span class="hidden-min">Schedule COMPLETELY FREE consultation with our expert<br/>to help you figure out all concerns and doubts about your project.</span>We care about you and your business.
+                                    <span class="hidden-min">Schedule COMPLETELY FREE consultation with our expert<br/>to help you figure out all concerns and doubts about your project.</span> We care about you and your business.
                                 </p>
                             </div>
                         </div>
@@ -410,12 +410,12 @@
 
 
                                 <p>
-                                    We're new raising company specialised in Web Development, making sure to provide high quality with business side of web development. So your website won't only be technicaly great but also optimized for high conversion rates and gathering new clients. <a href="<?php echo site_url(); ?>/pricing-plan/">View Pricing Plan.</a>
+                                    We're new raising company specialised in Web Development, making sure to provide high quality with business side of web development. So your website won't only be technicaly great but also optimized for high conversion rates and gathering new clients. <a  href="<?php echo site_url(); ?>/pricing-plan/" class="pricingPlanLink">View Pricing Plan.</a>
                                 </p>
 
                                 <ul>
-                                    <li><span class="icon-Web-Icon sub-heading"></span> <a href="http://www.imperium-la.com" target="_blank">www.imperium-la.com</a></li>
-                                    <li><span class="icon-Mail-Icon sub-heading"></span> <a href="mailto:hello@imperium-la.com" target="_blank">hello@imperium-la.com</a></li>
+                                    <li><span class="icon-Web-Icon sub-heading"></span> <a href="http://www.imperium-la.com" target="_blank" title="www.imperium-la.com">www.imperium-la.com</a></li>
+                                    <li><span class="icon-Mail-Icon sub-heading"></span> <a href="mailto:hello@imperium-la.com" target="_blank" title="hello@imperium-la.com">hello@imperium-la.com</a></li>
                                 </ul>
                             </div>
                         </div>
