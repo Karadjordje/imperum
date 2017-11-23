@@ -44,7 +44,7 @@
 		                            			</a>
 	                          				</div>
 	                            		    <div class="post-body-short">
-	                            		        <p><?php the_excerpt(); ?></p>
+	                            		        <p><?php echo get_the_excerpt(); ?></p>
 		                            		    <div class="video-short-tags-cats">
 		                            		    	<div class="subject">
 		                            		    	    <p>
