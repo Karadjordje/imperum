@@ -12,7 +12,7 @@
                         <hr class="line" />
                     </div>
                     <div class="col-md-8 col-md-offset-2 main-content text-center">
-                        <p class="text-uppercase">
+                        <p class="text-uppercase freeConsParagraph">
                             We're speaking your language! Take completely free consultations and we gonna find out why you're not reaching your goals.
                         </p>
                     </div>
