@@ -56,9 +56,9 @@
 	    	<span class="icon-X"></span>
 	    	<ul>
 	    		<li class="scrollToHome"><a href="<?php if(!is_front_page()) echo home_url(); else echo '#' ?>">Home</a></li>
-	    		<li><a href="<?php echo site_url(); ?>/Service/">Services</a></li>
-	    		<li><a href="<?php echo site_url(); ?>/Portfolio/">Portfolio</a></li>
-	    		<li><a href="<?php echo site_url(); ?>/Videoblog/">Videoblog</a></li>
+	    		<li><a href="<?php echo site_url(); ?>/service/">Service</a></li>
+	    		<li><a href="<?php echo site_url(); ?>/portfolio/">Portfolio</a></li>
+	    		<li><a href="<?php echo site_url(); ?>/videoblog/">Videoblog</a></li>
 	    		<li class="scrollToContact"><a href="<?php if(!is_front_page()) echo home_url(); ?>#contact">Contact</a></li>
 	    	</ul>
 	    </div>
@@ -80,13 +80,13 @@
 	            	<a href="<?php if(!is_front_page()) echo home_url(); else echo '#' ?>">Home</a>
 	            </li>
 	            <li class="<?php if(is_page('Service')) echo 'active'; ?>">
-	            	<a href="<?php echo site_url(); ?>/Service/">Service</a>
+	            	<a href="<?php echo site_url(); ?>/service/">Service</a>
 	            </li>
 	            <li class="<?php if(is_page('Portfolio')) echo 'active'; ?>">
-	            	<a href="<?php echo site_url(); ?>/Portfolio/">Portfolio</a>
+	            	<a href="<?php echo site_url(); ?>/portfolio/">Portfolio</a>
 	            </li>
 	            <li class="<?php if(is_page('Videoblog')) echo 'active'; ?>">
-	            	<a href="<?php echo site_url(); ?>/Videoblog/">Videoblog</a>
+	            	<a href="<?php echo site_url(); ?>/videoblog/">Videoblog</a>
 	            </li>
 	            <li class="scrollToContact">
 	            	<a href="<?php if(!is_front_page()) echo home_url(); ?>#contact">Contact</a>

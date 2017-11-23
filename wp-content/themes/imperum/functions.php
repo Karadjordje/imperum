@@ -481,6 +481,7 @@ function create_post_type_html5()
         'public' => true,
         'hierarchical' => true, // Allows your posts to behave like Hierarchy Pages
         'has_archive' => true,
+        'rewrite' => array('slug' => 'video-blog'),
         'supports' => array(
             'title',
             'editor',
