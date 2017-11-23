@@ -304,7 +304,7 @@
 
 		// ScrollTo page sections
 		var loc = window.location.pathname;
-		var urlArray = new Array( "Service/", "Portfolio/", "Videoblog/", "html5-blank/video-6/", "consultation/", "pricing-plan/" );
+		var urlArray = new Array( "services/", "portfolio/", "videoblog/", "video-blog/", "consultation/", "pricing-plan/" );
 		var isFound = false;
 
 		urlArray.forEach(function(item){
