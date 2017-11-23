@@ -206,17 +206,23 @@ a:focus, a:hover {
 }
 @media (min-width: 768px) {
     .btn-2 {
-        width: 35.2%;
+        /* idth: 35.2%; */
+        width: 100%;
+        max-width: 181px;
     }
 }
 @media (min-width: 992px) {
     .btn-2 {
-        width: 35.2%;
+        /* width: 35.2%; */
+        width: 100%;
+        max-width: 197px;
     }
 }
 @media (min-width: 1200px) {
     .btn-2 {
-        width: 35.2%;
+        /* width: 35.2%; */
+        width: 100%;
+        max-width: 190px;
     }
 }
 .btn-imperium:hover {
@@ -3577,8 +3583,10 @@ section#calendly .main {
             flex-direction: row;
 }
 .single-video-preview-cats .subject,
-.single-video-preview-cats.tags {
-    display: inline-block;
+.single-video-preview-cats .tags {
+    text-transform: uppercase;
+    display: block;
+    letter-spacing: 1.5px;
 }
 .single-video-preview-cats .date-of-post {
     display: none;
@@ -3592,24 +3600,33 @@ section#calendly .main {
     letter-spacing: 0.1em;
 }
 .single-video-preview-cats .subject {
-    width: 50%;
-    color: #c09858;
+    margin-right: 4%;
 }
-.single-video-preview-cats .tags {
-    width: 50%;
+.single-video-preview-cats .subject p {
+    /* width: 50%; */
     color: #c09858;
+    font-weight: 900;
+    text-decoration: underline;
+}
+.single-video-preview-cats .tags p {
+    /* width: 50%; */
+    color: #c09858;
+    font-weight: 600;
+    text-decoration: underline;
 }
 @media (min-width: 768px) {
     .single-video-preview-cats .subject {
-        width: 25%;
+        /* width: 25%; */
     }
     .single-video-preview-cats .tags {
-        width: 50%;
+        /* width: 50%; */
     }
     .single-video-preview-cats .date-of-post {
-        display: inline-block;
+        display: block;
         text-align: right;
         width: 25%;
+        position: absolute;
+        right: 0;
     }
 }
 
@@ -3641,10 +3658,13 @@ section#calendly .main {
 }
 .social-icons ul li a {
     display: block;
-    font-size: 1.3em;
+    font-size: 15px;
     margin-top: -4px;
     margin-right: 10px;
     color: #060b26;
+}
+.social-icons ul li a.spec {
+    font-size: 18px;
 }
 .social-icons ul li a:hover {
     color: #d88400;
@@ -3689,6 +3709,7 @@ section#calendly .main {
 .commHL {
     padding-left: 0;
     margin-bottom: 40px;
+    letter-spacing: 1.5px;
 }
 .comment-one {
     padding-top: 0px;
@@ -3697,11 +3718,17 @@ section#calendly .main {
 }
 .comment-one h4 {
     margin-top: 0;
-    margin-bottom: 15px;
+    margin-bottom: 12 px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 600;
 }
 .comment-body {
-    padding-bottom: 30px;
+    padding-bottom: 25px;
     border-bottom: 1px solid #c09858;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 1px;
 }
 #respond {
     padding-left: 0;
