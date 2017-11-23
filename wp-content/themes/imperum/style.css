@@ -230,8 +230,8 @@ a:focus, a:hover {
     color: #ffffff;
 }
 .checkboxCustom {
-    display: inline-block;
-    margin-right: 15px;
+    /* display: inline-block;
+    margin-right: 15px; */
 }
 .checkboxCustom:last-child {
     margin-right: 0;
@@ -579,6 +579,9 @@ section#small-footer .main {
 }
 #home .main-content p {
     margin-bottom: 40px;
+}
+#home .main-content .freeConsParagraph {
+    margin-bottom: 0;
 }
 
 /* SERVICE section */
@@ -1447,7 +1450,20 @@ section#small-footer .main {
     #our-work .checkbox-content {
         margin-top: 30px;
         margin-bottom: 30px;
-        padding-right: 0
+        padding-right: 0;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
     }
 
     .our-work-all {
