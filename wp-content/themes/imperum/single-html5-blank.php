@@ -33,7 +33,13 @@
 	            <div class="container main">
 	                <div class="row">
 	                	<div class="col-xs-12 col-lg-10 col-lg-offset-1">
-	                	    <div class="featured-img featured-img-big" style="background-image: url(<?php echo wp_get_attachment_url( get_post_thumbnail_id() ); ?>);"></div>
+	                	    <!-- <div class="featured-img featured-img-big" style="background-image: url(<?php echo wp_get_attachment_url( get_post_thumbnail_id() ); ?>);"></div> -->
+
+	                	    <div class="featured-img featured-img-big">
+	                	    	<iframe height="100%" width="100%" src="<?php the_field('enter_video_link') ?>">
+
+	                	    	</iframe>
+	                	    </div>
 	                	</div>
 	                </div>
 	            </div>
