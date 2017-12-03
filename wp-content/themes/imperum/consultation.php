@@ -27,7 +27,7 @@
                     <div class="row">
                         <div class="col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
                             <!-- Calendly inline widget begin -->
-                            <div class="calendly-inline-widget" data-url="https://calendly.com/jovancevicmilos" style="max-width:100%; height:400px; margin: 100px auto; border: 1px solid #c69e60;"></div>
+                            <div class="calendly-inline-widget" data-url="https://calendly.com/hello-362" style="max-width:100%; height:400px; margin: 100px auto; border: 1px solid #c69e60;"></div>
                             <script type="text/javascript" src="https://calendly.com/assets/external/widget.js"></script>
                             <!-- Calendly inline widget end -->
                         </div>
