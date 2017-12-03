@@ -3511,13 +3511,18 @@ section#calendly .main {
 }
 .featured-img-big {
     padding-bottom: 56%;
+    position: relative;
+    border: none;
+    margin-left: 25px;
+}
+.featured-img-big iframe {
+    position: absolute;
 }
 .featured-img-small {
     position: relative;
     width: 100%;
     max-width: 263px;
     min-height: 150px;
-    /* margin-bottom: 20px; */
     margin-top: 10px;
 }
 
