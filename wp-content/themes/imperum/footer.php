@@ -16,10 +16,10 @@
                             <div class="soc-footer">
                                 <p>Follow us:</p>
                                 <ul class="footer-icons">
-                                    <li><a href="#"><span class="icon icon-Facebook-Icon"></span></a></li>
-                                    <li><a href="#"><span class="icon icon-Behance-Icon"></span></a></li>
-                                    <li><a href="#"><span class="icon icon-Instagram-Icon"></span></a></li>
-                                    <li><a href="#" class="special"><span class="icon icon-Linked-In-Icon"></span></a></li>
+                                    <li><a href="https://www.facebook.com/imperium.mmxvii" target="_blank"><span class="icon icon-Facebook-Icon"></span></a></li>
+                                    <li><a href="https://www.behance.net/imperiumine560" target="_blank"><span class="icon icon-Behance-Icon"></span></a></li>
+                                    <li><a href="https://www.instagram.com/imperium_studio/" target="_blank"><span class="icon icon-Instagram-Icon"></span></a></li>
+                                    <li><a href="www.linkedin.com/in/imperiumwebstudio" target="_blank" class="special"><span class="icon icon-Linked-In-Icon"></span></a></li>
                                 </ul>
                             </div>
                             <h5 class="copyright text-uppercase">
