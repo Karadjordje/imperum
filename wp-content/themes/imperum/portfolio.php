@@ -107,13 +107,13 @@
             <div class="col-xs-12 col-sm-12 col-md-10 col-lg-8 col-md-offset-1 col-lg-offset-2">
             	<div class="row">
             		<div class="col-xs-10 col-sm-9 col-xs-offset-2 col-sm-offset-3">
-          		    <h4 class="sub-heading">This is some of</h4>
+          		    <h4 class="sub-heading">Overview</h4>
             		</div>
               </div>
             </div>
 
         		<div class="col-xs-11 col-sm-11 col-md-10 col-lg-9 col-xs-offset-1 col-sm-offset-1 col-md-offset-2 col-lg-offset-3">
-      		    <h1 class="headline">Our work</h1>
+      		    <h1 class="text-uppercase headline">Project Details</h1>
       		    <hr class="line" />
         		</div>
 
