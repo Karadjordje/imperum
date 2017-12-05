@@ -382,7 +382,7 @@
 		var shortDescription = currentElement.data('pshortdescription');
 
 	  	$('#projectName').text(title);
-	  	$('.headline').text(title);
+	  	$('#home .headline').text(title);
 	  	$('#projectContent').text(content);
 	  	$('#projectLink').text(projectLink);
 	  	$('#projectCategory').text(projectCategory);
