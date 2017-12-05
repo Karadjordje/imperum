@@ -3553,7 +3553,9 @@ section#calendly .main {
     }
 }
 
-
+.single-video-preview {
+    position: relative;
+}
 .single-video-preview-head {
     display: -webkit-box;
     display: -webkit-flex;
