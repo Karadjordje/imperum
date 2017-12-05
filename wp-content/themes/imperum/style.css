@@ -3513,7 +3513,7 @@ section#calendly .main {
     padding-bottom: 56%;
     position: relative;
     border: none;
-    margin-left: 25px;
+    margin-left: 0px;
 }
 .featured-img-big iframe {
     position: absolute;
@@ -3525,7 +3525,11 @@ section#calendly .main {
     min-height: 150px;
     margin-top: 10px;
 }
-
+@media(min-width: 992px) {
+    .featured-img-big {
+        margin-left: 25px;
+    }
+}
 
 /* VBSINGLE-BODY */
 #vbSingle-body {
