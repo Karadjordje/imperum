@@ -106,7 +106,7 @@
             <div class="row">
 
                 <div class="container main">
-                    <div id="clients-carousel" class="carousel slide" data-interval="3000" data-ride="carousel">
+                    <div id="clients-carousel" class="carousel slide" data-interval="10000" data-ride="carousel">
                         <div class="carousel-inner">
                             <div class="item active">
                                 <div class="client-one">
