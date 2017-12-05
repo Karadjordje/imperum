@@ -3525,7 +3525,7 @@ section#calendly .main {
     min-height: 150px;
     margin-top: 10px;
 }
-@media(min-width: 992px) {
+@media(min-width: 1200px) {
     .featured-img-big {
         margin-left: 25px;
     }
