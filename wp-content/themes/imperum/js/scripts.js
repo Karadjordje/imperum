@@ -351,7 +351,6 @@
 
 	});
 
-
 	// Front page carousel dynamic change of content
 	$('#our-work-carousel').carousel().on('slide.bs.carousel', function(e) {
 		var currentElement = $(e.relatedTarget);
@@ -359,10 +358,13 @@
 		var title = currentElement.data('title');
 		var cat = currentElement.data('category');
 		var projectLink = currentElement.data('link');
+		var currentNumber = currentElement.data('number');
 
 	  	$('.our-work-info h3').text(title);
 	  	$('.our-work-info h4').text(cat);
 	  	$("#externalLink").attr('href', projectLink);
+	  	$('.postTitle').attr('title', '0' + currentNumber);
+	  	$('.postTitle').text('0' + currentNumber);
 	});
 
 	// This will link to specific slide when page loads so we dont have empty content
