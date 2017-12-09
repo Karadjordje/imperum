@@ -18,9 +18,9 @@
 	                </div>
 	                <div class="col-md-6 col-md-offset-3 vb-head-info">
 	                    <div class="average-difficulty">
-	                        <h3><span>Spent Time:</span>26h<?php the_field('spent_time') ?></h3>
+	                        <h3><span>Spent Time:</span><?php the_field('spent_time') ?></h3>
 	                    </div><div class="average-difficulty">
-	                        <h3><span>Difficulty:</span>BEGINNER <?php the_field('difficulty') ?></h3>
+	                        <h3><span>Difficulty:</span><?php the_field('difficulty') ?></h3>
 	                    </div>
 	                </div>
 	                <span class="icon-down_arrow arrow-down"></span>
