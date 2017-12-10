@@ -73,7 +73,7 @@
 			    subject: $("input[name=subject]").val(),
 			    msg: $("textarea[name=message]").val()
 			};
-			$.post("//imperium-la.com/wp-content/plugins/cfp/contact_me_ENG.php", data, function(e) {
+			$.post("//www.imperium-la.com/wp-content/plugins/cfp/contact_me_ENG.php", data, function(e) {
 		        $("#contact_form  input[required=true], #contact_form textarea[required=true]").val("")
 		        $('#contact_results').html(e.text);
 
